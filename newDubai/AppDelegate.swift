@@ -7,16 +7,37 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var orientationLock = UIInterfaceOrientationMask.portrait
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        FirebaseApp.configure()
+        
+        //忽略SIGPIPE导致的程序crash
+        signal(SIGPIPE, SIG_IGN)
+        
+        UINavigationBar.appearance().barTintColor = UIColor(red:0.11, green:0.11, blue:0.11, alpha:1.0)
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        
+        if #available(iOS 11.0, *){
+            UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffset.init(horizontal: -150, vertical: 0), for: .default)
+        }else {
+            UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffset.init(horizontal: 0, vertical: -60), for: .default)
+        }
+        
         return true
+    }
+    
+    public func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask{
+        return self.orientationLock
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
