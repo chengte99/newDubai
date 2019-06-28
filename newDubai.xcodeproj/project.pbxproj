@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F4C7BEAB2FE83AC266E9B22 /* Pods_newDubai.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CFA577B1F0EC6A9A6F4FD5 /* Pods_newDubai.framework */; };
 		7620A0D922C5A0C60047670D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0D822C5A0C60047670D /* AppDelegate.swift */; };
 		7620A0DB22C5A0C60047670D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0DA22C5A0C60047670D /* ViewController.swift */; };
 		7620A0DE22C5A0C60047670D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0DC22C5A0C60047670D /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15D427918185F7D68215A5F1 /* Pods-newDubai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newDubai.release.xcconfig"; path = "Target Support Files/Pods-newDubai/Pods-newDubai.release.xcconfig"; sourceTree = "<group>"; };
 		7620A0D522C5A0C60047670D /* newDubai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newDubai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7620A0D822C5A0C60047670D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7620A0DA22C5A0C60047670D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		7620A0DF22C5A0C90047670D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7620A0E222C5A0C90047670D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7620A0E422C5A0C90047670D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C3C50BA49D735E296595B8A /* Pods-newDubai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newDubai.debug.xcconfig"; path = "Target Support Files/Pods-newDubai/Pods-newDubai.debug.xcconfig"; sourceTree = "<group>"; };
+		C3CFA577B1F0EC6A9A6F4FD5 /* Pods_newDubai.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newDubai.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F4C7BEAB2FE83AC266E9B22 /* Pods_newDubai.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		127832B44E163AEDF1EA7246 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C3C50BA49D735E296595B8A /* Pods-newDubai.debug.xcconfig */,
+				15D427918185F7D68215A5F1 /* Pods-newDubai.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		15C14CD98DD3CE32B343E6BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3CFA577B1F0EC6A9A6F4FD5 /* Pods_newDubai.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7620A0CC22C5A0C60047670D = {
 			isa = PBXGroup;
 			children = (
 				7620A0D722C5A0C60047670D /* newDubai */,
 				7620A0D622C5A0C60047670D /* Products */,
+				127832B44E163AEDF1EA7246 /* Pods */,
+				15C14CD98DD3CE32B343E6BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7620A0E722C5A0C90047670D /* Build configuration list for PBXNativeTarget "newDubai" */;
 			buildPhases = (
+				2013FD2ACCD122098A23D432 /* [CP] Check Pods Manifest.lock */,
 				7620A0D122C5A0C60047670D /* Sources */,
 				7620A0D222C5A0C60047670D /* Frameworks */,
 				7620A0D322C5A0C60047670D /* Resources */,
+				F2EC6E10EAB985DCE2F74750 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2013FD2ACCD122098A23D432 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-newDubai-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2EC6E10EAB985DCE2F74750 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-newDubai/Pods-newDubai-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-newDubai/Pods-newDubai-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-newDubai/Pods-newDubai-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7620A0D122C5A0C60047670D /* Sources */ = {
@@ -280,11 +349,13 @@
 		};
 		7620A0E822C5A0C90047670D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C3C50BA49D735E296595B8A /* Pods-newDubai.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C5235969FU;
 				INFOPLIST_FILE = newDubai/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +369,13 @@
 		};
 		7620A0E922C5A0C90047670D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15D427918185F7D68215A5F1 /* Pods-newDubai.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C5235969FU;
 				INFOPLIST_FILE = newDubai/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
