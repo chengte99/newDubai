@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,24 @@
 		7620A0DE22C5A0C60047670D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0DC22C5A0C60047670D /* Main.storyboard */; };
 		7620A0E022C5A0C90047670D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0DF22C5A0C90047670D /* Assets.xcassets */; };
 		7620A0E322C5A0C90047670D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0E122C5A0C90047670D /* LaunchScreen.storyboard */; };
+		7620A0EE22C5A5EC0047670D /* WebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0ED22C5A5EC0047670D /* WebData.swift */; };
+		7620A0F022C5A5F80047670D /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0EF22C5A5F80047670D /* DeviceData.swift */; };
+		7620A0F322C5A6070047670D /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* LogData.swift */; };
+		7620A0F522C5A61D0047670D /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F422C5A61D0047670D /* APIManager.swift */; };
+		7620A0F722C5A6280047670D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F622C5A6280047670D /* Constant.swift */; };
+		7620A0F922C5A63B0047670D /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F822C5A63B0047670D /* AppUtility.swift */; };
+		7620A0FB22C5A6480047670D /* AppKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0FA22C5A6480047670D /* AppKey.swift */; };
+		7620A0FD22C5A6540047670D /* AppTouchID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0FC22C5A6540047670D /* AppTouchID.swift */; };
+		7620A0FF22C5A65F0047670D /* AESHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0FE22C5A65F0047670D /* AESHelp.swift */; };
+		7620A10122C5A66E0047670D /* TTJBDetect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10022C5A66E0047670D /* TTJBDetect.swift */; };
+		7620A10322C5A6950047670D /* WebkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10222C5A6950047670D /* WebkitViewController.swift */; };
+		7620A10522C5A6AC0047670D /* NewWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10422C5A6AC0047670D /* NewWKWebViewController.swift */; };
+		7620A10722C5A6BA0047670D /* NewWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10622C5A6BA0047670D /* NewWindowViewController.swift */; };
+		7620A10F22C5A6F60047670D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10A22C5A6F50047670D /* Reachability.m */; };
+		7620A11022C5A6F60047670D /* OpenInChromeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10C22C5A6F50047670D /* OpenInChromeController.m */; };
+		7620A11122C5A6F60047670D /* CacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10E22C5A6F60047670D /* CacheManager.m */; };
+		7620A11322C5AC740047670D /* OpenInFirefoxControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A11222C5AC740047670D /* OpenInFirefoxControllerSwift.swift */; };
+		7620A11622C5B0010047670D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7620A11522C5B0000047670D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +42,29 @@
 		7620A0DF22C5A0C90047670D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7620A0E222C5A0C90047670D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7620A0E422C5A0C90047670D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7620A0ED22C5A5EC0047670D /* WebData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebData.swift; sourceTree = "<group>"; };
+		7620A0EF22C5A5F80047670D /* DeviceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceData.swift; sourceTree = "<group>"; };
+		7620A0F222C5A6070047670D /* LogData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogData.swift; sourceTree = "<group>"; };
+		7620A0F422C5A61D0047670D /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		7620A0F622C5A6280047670D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		7620A0F822C5A63B0047670D /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
+		7620A0FA22C5A6480047670D /* AppKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppKey.swift; sourceTree = "<group>"; };
+		7620A0FC22C5A6540047670D /* AppTouchID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTouchID.swift; sourceTree = "<group>"; };
+		7620A0FE22C5A65F0047670D /* AESHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AESHelp.swift; sourceTree = "<group>"; };
+		7620A10022C5A66E0047670D /* TTJBDetect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTJBDetect.swift; sourceTree = "<group>"; };
+		7620A10222C5A6950047670D /* WebkitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebkitViewController.swift; sourceTree = "<group>"; };
+		7620A10422C5A6AC0047670D /* NewWKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWKWebViewController.swift; sourceTree = "<group>"; };
+		7620A10622C5A6BA0047670D /* NewWindowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWindowViewController.swift; sourceTree = "<group>"; };
+		7620A10822C5A6F40047670D /* newDubai-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "newDubai-Bridging-Header.h"; sourceTree = "<group>"; };
+		7620A10922C5A6F50047670D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		7620A10A22C5A6F50047670D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		7620A10B22C5A6F50047670D /* CacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheManager.h; sourceTree = "<group>"; };
+		7620A10C22C5A6F50047670D /* OpenInChromeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenInChromeController.m; sourceTree = "<group>"; };
+		7620A10D22C5A6F50047670D /* OpenInChromeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenInChromeController.h; sourceTree = "<group>"; };
+		7620A10E22C5A6F60047670D /* CacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheManager.m; sourceTree = "<group>"; };
+		7620A11222C5AC740047670D /* OpenInFirefoxControllerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenInFirefoxControllerSwift.swift; sourceTree = "<group>"; };
+		7620A11422C5AD5A0047670D /* newDubai.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = newDubai.entitlements; sourceTree = "<group>"; };
+		7620A11522C5B0000047670D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7C3C50BA49D735E296595B8A /* Pods-newDubai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newDubai.debug.xcconfig"; path = "Target Support Files/Pods-newDubai/Pods-newDubai.debug.xcconfig"; sourceTree = "<group>"; };
 		C3CFA577B1F0EC6A9A6F4FD5 /* Pods_newDubai.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newDubai.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -46,7 +87,6 @@
 				7C3C50BA49D735E296595B8A /* Pods-newDubai.debug.xcconfig */,
 				15D427918185F7D68215A5F1 /* Pods-newDubai.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,14 +119,61 @@
 		7620A0D722C5A0C60047670D /* newDubai */ = {
 			isa = PBXGroup;
 			children = (
+				7620A11422C5AD5A0047670D /* newDubai.entitlements */,
+				7620A0EC22C5A5D40047670D /* Model */,
+				7620A0EB22C5A5CA0047670D /* Manager */,
+				7620A0EA22C5A5AD0047670D /* Controller */,
 				7620A0D822C5A0C60047670D /* AppDelegate.swift */,
-				7620A0DA22C5A0C60047670D /* ViewController.swift */,
 				7620A0DC22C5A0C60047670D /* Main.storyboard */,
 				7620A0DF22C5A0C90047670D /* Assets.xcassets */,
 				7620A0E122C5A0C90047670D /* LaunchScreen.storyboard */,
 				7620A0E422C5A0C90047670D /* Info.plist */,
+				7620A11522C5B0000047670D /* GoogleService-Info.plist */,
+				7620A10B22C5A6F50047670D /* CacheManager.h */,
+				7620A10E22C5A6F60047670D /* CacheManager.m */,
+				7620A10D22C5A6F50047670D /* OpenInChromeController.h */,
+				7620A10C22C5A6F50047670D /* OpenInChromeController.m */,
+				7620A10922C5A6F50047670D /* Reachability.h */,
+				7620A10A22C5A6F50047670D /* Reachability.m */,
+				7620A10822C5A6F40047670D /* newDubai-Bridging-Header.h */,
 			);
 			path = newDubai;
+			sourceTree = "<group>";
+		};
+		7620A0EA22C5A5AD0047670D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7620A0DA22C5A0C60047670D /* ViewController.swift */,
+				7620A10222C5A6950047670D /* WebkitViewController.swift */,
+				7620A10422C5A6AC0047670D /* NewWKWebViewController.swift */,
+				7620A10622C5A6BA0047670D /* NewWindowViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7620A0EB22C5A5CA0047670D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				7620A0F422C5A61D0047670D /* APIManager.swift */,
+				7620A0F622C5A6280047670D /* Constant.swift */,
+				7620A0F822C5A63B0047670D /* AppUtility.swift */,
+				7620A0FA22C5A6480047670D /* AppKey.swift */,
+				7620A0FC22C5A6540047670D /* AppTouchID.swift */,
+				7620A0FE22C5A65F0047670D /* AESHelp.swift */,
+				7620A10022C5A66E0047670D /* TTJBDetect.swift */,
+				7620A11222C5AC740047670D /* OpenInFirefoxControllerSwift.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		7620A0EC22C5A5D40047670D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7620A0ED22C5A5EC0047670D /* WebData.swift */,
+				7620A0EF22C5A5F80047670D /* DeviceData.swift */,
+				7620A0F222C5A6070047670D /* LogData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,6 +188,7 @@
 				7620A0D222C5A0C60047670D /* Frameworks */,
 				7620A0D322C5A0C60047670D /* Resources */,
 				F2EC6E10EAB985DCE2F74750 /* [CP] Embed Pods Frameworks */,
+				7620A11722C5B0E00047670D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -123,6 +211,12 @@
 				TargetAttributes = {
 					7620A0D422C5A0C60047670D = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -150,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7620A0E322C5A0C90047670D /* LaunchScreen.storyboard in Resources */,
+				7620A11622C5B0010047670D /* GoogleService-Info.plist in Resources */,
 				7620A0E022C5A0C90047670D /* Assets.xcassets in Resources */,
 				7620A0DE22C5A0C60047670D /* Main.storyboard in Resources */,
 			);
@@ -180,6 +275,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7620A11722C5B0E00047670D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/Fabric/run\"\n";
+		};
 		F2EC6E10EAB985DCE2F74750 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -204,7 +317,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7620A0FF22C5A65F0047670D /* AESHelp.swift in Sources */,
+				7620A0F922C5A63B0047670D /* AppUtility.swift in Sources */,
+				7620A10522C5A6AC0047670D /* NewWKWebViewController.swift in Sources */,
+				7620A0F722C5A6280047670D /* Constant.swift in Sources */,
+				7620A11122C5A6F60047670D /* CacheManager.m in Sources */,
+				7620A0FD22C5A6540047670D /* AppTouchID.swift in Sources */,
+				7620A10322C5A6950047670D /* WebkitViewController.swift in Sources */,
+				7620A0F522C5A61D0047670D /* APIManager.swift in Sources */,
+				7620A0EE22C5A5EC0047670D /* WebData.swift in Sources */,
+				7620A11322C5AC740047670D /* OpenInFirefoxControllerSwift.swift in Sources */,
+				7620A0FB22C5A6480047670D /* AppKey.swift in Sources */,
+				7620A10722C5A6BA0047670D /* NewWindowViewController.swift in Sources */,
+				7620A10F22C5A6F60047670D /* Reachability.m in Sources */,
+				7620A0F022C5A5F80047670D /* DeviceData.swift in Sources */,
+				7620A10122C5A66E0047670D /* TTJBDetect.swift in Sources */,
+				7620A11022C5A6F60047670D /* OpenInChromeController.m in Sources */,
 				7620A0DB22C5A0C60047670D /* ViewController.swift in Sources */,
+				7620A0F322C5A6070047670D /* LogData.swift in Sources */,
 				7620A0D922C5A0C60047670D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,16 +482,22 @@
 			baseConfigurationReference = 7C3C50BA49D735E296595B8A /* Pods-newDubai.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = newDubai/newDubai.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = C5235969FU;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = newDubai/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = itstar.ios.newDubai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "newDubai/newDubai-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -372,16 +508,21 @@
 			baseConfigurationReference = 15D427918185F7D68215A5F1 /* Pods-newDubai.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = newDubai/newDubai.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = C5235969FU;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = newDubai/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = itstar.ios.newDubai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "newDubai/newDubai-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
