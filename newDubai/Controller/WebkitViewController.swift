@@ -94,7 +94,17 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
             if let registerString = dic["register"] as? String{
                 if let url = URL(string: registerString){
                     if UIApplication.shared.canOpenURL(url){
-                        UIApplication.shared.openURL(url)
+//                        UIApplication.shared.openURL(url)
+                        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                    }
+                }
+            }
+            
+            if let registerString = dic["url"] as? String{
+                if let url = URL(string: registerString){
+                    if UIApplication.shared.canOpenURL(url){
+//                        UIApplication.shared.openURL(url)
+                        UIApplication.shared.open(url, options: [:], completionHandler: nil)
                     }
                 }
             }
@@ -305,7 +315,7 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
                                     let urlStrArray = self.web_url!.components(separatedBy: "mb")
                                     let host = urlStrArray.first!
                                     
-                                    if (KEY_CODE == "xh" || KEY_CODE == "xhx" || KEY_CODE == "xhxx"){
+                                    if (KEY_CODE == "ndbp" || KEY_CODE == "ndbpp" || KEY_CODE == "ndbppp"){
                                         self.fastLogin_js7(acc: acc, pw: enPW, type: "touchID")
                                     }else{
                                         self.fastLogin(host: host, acc: acc, pwd: enPW, type: "touchID", currentURL: self.web_url!)
@@ -352,7 +362,7 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
                                         let urlStrArray = self.web_url!.components(separatedBy: "mb")
                                         let host = urlStrArray.first!
                                         
-                                        if (KEY_CODE == "xh" || KEY_CODE == "xhx" || KEY_CODE == "xhxx"){
+                                        if (KEY_CODE == "ndbp" || KEY_CODE == "ndbpp" || KEY_CODE == "ndbppp"){
                                             self.fastLogin_js7(acc: acc, pw: enPW, type: "gesture")
                                         }else{
                                             self.fastLogin(host: host, acc: acc, pwd: enPW, type: "gesture", currentURL: self.web_url!)
@@ -464,7 +474,7 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
                                     let urlStrArray = self.web_url!.components(separatedBy: "mb")
                                     let host = urlStrArray.first!
                                     
-                                    if (KEY_CODE == "xh" || KEY_CODE == "xhx" || KEY_CODE == "xhxx"){
+                                    if (KEY_CODE == "ndbp" || KEY_CODE == "ndbpp" || KEY_CODE == "ndbppp"){
                                         self.fastLogin_js7(acc: acc, pw: enPW, type: loginType)
                                     }else{
                                         self.fastLogin(host: host, acc: acc, pwd: enPW, type: loginType, currentURL: self.web_url!)
