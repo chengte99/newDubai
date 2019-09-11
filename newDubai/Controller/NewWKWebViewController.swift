@@ -61,6 +61,18 @@ class NewWKWebViewController: UIViewController, WKUIDelegate, UIGestureRecognize
                 self.close()
             }
         }
+        
+        if let dic = message.body as? [String: Any]{
+            
+            if let registerString = dic["url"] as? String{
+                if let url = URL(string: registerString){
+                    if UIApplication.shared.canOpenURL(url){
+                        //                        UIApplication.shared.openURL(url)
+                        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                    }
+                }
+            }
+        }
     }
     
     func newWKClose(){
