@@ -67,8 +67,11 @@ class NewWKWebViewController: UIViewController, WKUIDelegate, UIGestureRecognize
             if let registerString = dic["url"] as? String{
                 if let url = URL(string: registerString){
                     if UIApplication.shared.canOpenURL(url){
-                        //                        UIApplication.shared.openURL(url)
-                        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                        if #available(iOS 10.0, *) {
+                            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                        } else {
+                            UIApplication.shared.openURL(url)
+                        }
                     }
                 }
             }
