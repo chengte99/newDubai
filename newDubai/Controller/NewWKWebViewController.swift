@@ -583,6 +583,11 @@ class NewWKWebViewController: UIViewController, WKUIDelegate, UIGestureRecognize
         
         conf.processPool = self.processPool
         
+        let preferences = WKPreferences()
+        preferences.javaScriptCanOpenWindowsAutomatically = true
+        preferences.javaScriptEnabled = true
+        conf.preferences = preferences
+        
         //        self.wk = WKWebView(frame: self.view.bounds, configuration: conf)
         self.wk = WKWebView(frame: CGRect.zero, configuration: conf)
         wk.translatesAutoresizingMaskIntoConstraints = false

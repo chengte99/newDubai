@@ -13,6 +13,7 @@ class DeviceData {
     var space = ""
     var uuid = ""
     var deviceModel = ""
+    var udid = ""
     
     static let current = DeviceData()
     

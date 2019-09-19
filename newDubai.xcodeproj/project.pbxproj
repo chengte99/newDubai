@@ -121,8 +121,8 @@
 			children = (
 				7620A11422C5AD5A0047670D /* newDubai.entitlements */,
 				7620A0EC22C5A5D40047670D /* Model */,
-				7620A0EB22C5A5CA0047670D /* Manager */,
 				7620A0EA22C5A5AD0047670D /* Controller */,
+				7620A0EB22C5A5CA0047670D /* Manager */,
 				7620A0D822C5A0C60047670D /* AppDelegate.swift */,
 				7620A0DC22C5A0C60047670D /* Main.storyboard */,
 				7620A0DF22C5A0C90047670D /* Assets.xcassets */,
