@@ -30,8 +30,6 @@ class ViewController: UIViewController {
     let version = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String
     let buildVersion = Bundle.main.infoDictionary!["CFBundleVersion"] as! String
     let systemVersion = UIDevice.current.systemVersion
-    var patchVer = ""
-    var patchDesc = ""
     
     var timer = Timer()
     var retryTimes = 1
@@ -98,6 +96,9 @@ class ViewController: UIViewController {
         }
         
         DeviceData.current.uuid = AppKey().getUUID()
+        if let udid = UIDevice.current.identifierForVendor?.uuidString{
+            DeviceData.current.udid = udid
+        }
         //        DeviceData.current.space = "\(UIDevice().usedDiskSpaceInMB)/\(UIDevice().totalDiskSpaceInMB)"
         let space_percent = Float(UIDevice().usedDiskSpaceInBytes) / Float(UIDevice().totalDiskSpaceInBytes) * 100.0
         DeviceData.current.space = "\(Int(space_percent))%"
@@ -156,6 +157,8 @@ class ViewController: UIViewController {
         var uaSplit = userAgent.components(separatedBy: "Gecko)")
         
         switch versionSplit[0] {
+        case "13":
+            userAgent = "\(uaSplit[0])Gecko) Version/13.0\(uaSplit[1]) Safari/604.1 AppiOS:\(self.buildVersion)"
         case "12":
             userAgent = "\(uaSplit[0])Gecko) Version/12.0\(uaSplit[1]) Safari/604.1 AppiOS:\(self.buildVersion)"
         case "11":
@@ -190,18 +193,6 @@ class ViewController: UIViewController {
                 UserDefaults.standard.setValue(API_FormalSite_URL, forKey: "db_url")
             }
             UserDefaults.standard.synchronize()
-        }
-        
-        if let ver = UserDefaults.standard.string(forKey: "patchVersion"){
-            self.patchVer = ver
-        }else{
-            self.patchVer = "00"
-        }
-        
-        if let desc = UserDefaults.standard.string(forKey: "patchDesc"){
-            self.patchDesc = desc
-        }else{
-            self.patchDesc = "no path"
         }
     }
     
@@ -314,17 +305,17 @@ class ViewController: UIViewController {
     }
     
     func finishConnectText(){
-        self.myLabel.text = "Version: \(self.buildVersion).\(self.patchVer) \n连线完成"
+        self.myLabel.text = "Version: \(self.buildVersion) \n连线完成"
         self.myLabel.adjustsFontSizeToFitWidth = true
     }
     
     func showRetryText(){
-        self.myLabel.text = "Version: \(self.buildVersion).\(self.patchVer) \n伺服器连线中...\(self.retryTimes)"
+        self.myLabel.text = "Version: \(self.buildVersion) \n伺服器连线中...\(self.retryTimes)"
         self.myLabel.adjustsFontSizeToFitWidth = true
     }
     
     func webCheckLinkText(){
-        self.myLabel.text = "Version: \(self.buildVersion).\(self.patchVer) \n网站验证"
+        self.myLabel.text = "Version: \(self.buildVersion) \n网站验证"
         self.myLabel.adjustsFontSizeToFitWidth = true
     }
     

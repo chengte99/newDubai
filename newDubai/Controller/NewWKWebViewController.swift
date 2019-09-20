@@ -67,8 +67,11 @@ class NewWKWebViewController: UIViewController, WKUIDelegate, UIGestureRecognize
             if let registerString = dic["url"] as? String{
                 if let url = URL(string: registerString){
                     if UIApplication.shared.canOpenURL(url){
-                        //                        UIApplication.shared.openURL(url)
-                        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                        if #available(iOS 10.0, *) {
+                            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                        } else {
+                            UIApplication.shared.openURL(url)
+                        }
                     }
                 }
             }
@@ -579,6 +582,11 @@ class NewWKWebViewController: UIViewController, WKUIDelegate, UIGestureRecognize
         conf.allowsInlineMediaPlayback = true
         
         conf.processPool = self.processPool
+        
+        let preferences = WKPreferences()
+        preferences.javaScriptCanOpenWindowsAutomatically = true
+        preferences.javaScriptEnabled = true
+        conf.preferences = preferences
         
         //        self.wk = WKWebView(frame: self.view.bounds, configuration: conf)
         self.wk = WKWebView(frame: CGRect.zero, configuration: conf)
