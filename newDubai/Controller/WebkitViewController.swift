@@ -1019,6 +1019,7 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
     }
     
     fileprivate func addProgressView() {
+        let langDic = DeviceData.current.getDeviceLang()
         progressLabel = UILabel()
         progressLabel.translatesAutoresizingMaskIntoConstraints = false
         screenImg.addSubview(progressLabel)
@@ -1031,7 +1032,7 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
             NSLayoutConstraint(item: progressLabel, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 30.0).isActive = true
         }
         progressLabel.textAlignment = .center
-        progressLabel.text = "资源加载中"
+        progressLabel.text = langDic["resourceLoading"]
         progressLabel.textColor = .white
         
         progressView = UIProgressView()
@@ -1051,8 +1052,10 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if keyPath == "estimatedProgress"{
+            let langDic = DeviceData.current.getDeviceLang()
+            let text = langDic["resourceLoading"]!
             //            print("estimatedProgress = \(Int(self.wk.estimatedProgress * 100))")
-            self.progressLabel.text = "资源加载中 \(Int(self.wk.estimatedProgress * 100))%"
+            self.progressLabel.text = "\(text) \(Int(self.wk.estimatedProgress * 100))%"
             progressView.isHidden = self.wk.estimatedProgress == 1
             progressView.setProgress(Float(self.wk.estimatedProgress), animated: true)
         }
