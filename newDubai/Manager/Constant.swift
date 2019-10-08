@@ -20,5 +20,5 @@ let HardCodeURL = "https://www.db451.com/"
 let KEY_CODE = "ndbp"
 let ISDEV = "0"
 
-let USEFLOATING = false
+let USEFLOATING = true
 let TaipeiWebConf = true
