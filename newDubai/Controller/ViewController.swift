@@ -523,12 +523,19 @@ class ViewController: UIViewController {
             if let host = url.host{
                 //                print(" host = \(host)")
                 
+                var prefix = ""
                 if urlString.lowercased().hasPrefix("https://"){
-                    //                    newURLString = "https://\(host)/main/CheckLink/"
-                    newURLString = "https://\(host)/check_link/"
+                    prefix = "https"
+//                    newURLString = "https://\(host)/check_link/"
                 }else{
-                    //                    newURLString = "http://\(host)/main/CheckLink/"
-                    newURLString = "http://\(host)/check_link/"
+                    prefix = "http"
+//                    newURLString = "http://\(host)/check_link/"
+                }
+                
+                if let portNum = url.port{
+                    newURLString = "\(prefix)://\(host):\(portNum)/check_link/"
+                }else{
+                    newURLString = "\(prefix)://\(host)/check_link/"
                 }
                 
                 //                print(" newURLString = \(newURLString)")
