@@ -42,6 +42,16 @@ class ViewController: UIViewController {
     var dbDomainCount = 0
     var dbDomainFinal = ""
     
+    func HGLog<T>(_ message:T, file:String = #file, function:String = #function,
+               line:Int = #line) {
+        #if DEBUG
+            //获取文件名
+            let fileName = (file as NSString).lastPathComponent
+            //打印日志内容
+            print("\(fileName):\(line) \(function) | \(message)")
+        #endif
+    }
+    
     func repeatAction(){
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.printInfo), userInfo: nil, repeats: true)
     }

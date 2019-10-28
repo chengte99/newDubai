@@ -67,6 +67,16 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
     }
     //configure statusbar end
     
+    func HGLog<T>(_ message:T, file:String = #file, function:String = #function,
+               line:Int = #line) {
+        #if DEBUG
+            //获取文件名
+            let fileName = (file as NSString).lastPathComponent
+            //打印日志内容
+            print("\(fileName):\(line) \(function) | \(message)")
+        #endif
+    }
+    
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         print(message.body)
         /*
@@ -321,7 +331,7 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
                                     let urlStrArray = self.web_url!.components(separatedBy: "mb")
                                     let host = urlStrArray.first!
                                     
-                                    if (KEY_CODE == "ndbp" || KEY_CODE == "ndbpp" || KEY_CODE == "ndbppp"){
+                                    if (TaipeiWebConf){
                                         self.fastLogin_js7(acc: acc, pw: enPW, type: "touchID")
                                     }else{
                                         self.fastLogin(host: host, acc: acc, pwd: enPW, type: "touchID", currentURL: self.web_url!)
@@ -368,7 +378,7 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
                                         let urlStrArray = self.web_url!.components(separatedBy: "mb")
                                         let host = urlStrArray.first!
                                         
-                                        if (KEY_CODE == "ndbp" || KEY_CODE == "ndbpp" || KEY_CODE == "ndbppp"){
+                                        if (TaipeiWebConf){
                                             self.fastLogin_js7(acc: acc, pw: enPW, type: "gesture")
                                         }else{
                                             self.fastLogin(host: host, acc: acc, pwd: enPW, type: "gesture", currentURL: self.web_url!)
@@ -480,7 +490,7 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
                                     let urlStrArray = self.web_url!.components(separatedBy: "mb")
                                     let host = urlStrArray.first!
                                     
-                                    if (KEY_CODE == "ndbp" || KEY_CODE == "ndbpp" || KEY_CODE == "ndbppp"){
+                                    if (TaipeiWebConf){
                                         self.fastLogin_js7(acc: acc, pw: enPW, type: loginType)
                                     }else{
                                         self.fastLogin(host: host, acc: acc, pwd: enPW, type: loginType, currentURL: self.web_url!)
