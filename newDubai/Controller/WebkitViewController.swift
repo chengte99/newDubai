@@ -87,6 +87,7 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
          {isNative:1,url:'http://www.baidu.com',isHiddenTool:1,isHiddenReloadButton:1}
          {register:'http://www.baidu.com'}
          {title:'BBIN'}
+         {isOpenGame:true}
          */
         
         if let tag = message.body as? String{
@@ -99,6 +100,10 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
         if let dic = message.body as? [String: Any]{
             if let title = dic["title"] as? String{
                 WebData.shared.setBlankTitle(blankTitle: title)
+            }
+            
+            if let isOpenGame = dic["isOpenGame"] as? Bool{
+                WebData.shared.nowOpenGame = isOpenGame
             }
             
             if let registerString = dic["register"] as? String{
@@ -867,14 +872,17 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
                     if(blankURL.lowercased().contains("loading") || (!blankURL.lowercased().hasPrefix("http://")) && (!blankURL.lowercased().hasPrefix("https://"))){
                         decisionHandler(WKNavigationActionPolicy.cancel)
                     }else{
-                        if blankURL.contains("v66"){
-                            if let url = URL(string: blankURL){
-                                UIApplication.shared.openURL(url)
-                            }
-                        }else{
+                        if WebData.shared.nowOpenGame{
                             WebData.shared.setOther(string: blankURL)
                             performSegue(withIdentifier: "show", sender: self)
+                        }else{
+                            if let url = URL(string: blankURL){
+                                let svc = SFSafariViewController(url: url)
+                                svc.delegate = self
+                                present(svc, animated: true, completion: nil)
+                            }
                         }
+                        
                         decisionHandler(WKNavigationActionPolicy.cancel)
                     }
                 }
@@ -1107,6 +1115,8 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
         
         AppUtility.lockOrientation(.portrait, andRotateTo: .portrait)
         WebData.shared.setBlankTitle(blankTitle: "游戏大厅")
+        
+        WebData.shared.nowOpenGame = false
     }
     
     override func viewDidAppear(_ animated: Bool) {

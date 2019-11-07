@@ -18,6 +18,7 @@ class WebData: NSObject{
     @objc var refreshIsDisable = false
     @objc var backIsDisable = false
     var loginAcc = ""
+    var nowOpenGame = false
     
     var userAgent = ""
     var defaultUserAgent = ""

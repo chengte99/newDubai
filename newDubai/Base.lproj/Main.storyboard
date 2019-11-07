@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="newDubai" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="devDubai_Palace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,7 +53,7 @@
         <!--Webkit View Controller-->
         <scene sceneID="Zhh-aA-vE0">
             <objects>
-                <viewController id="jgM-Fx-wzB" customClass="WebkitViewController" customModule="newDubai" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jgM-Fx-wzB" customClass="WebkitViewController" customModule="devDubai_Palace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pGy-8G-Ajq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,7 +72,7 @@
         <!--NewWK Web View Controller-->
         <scene sceneID="zlP-zb-RZC">
             <objects>
-                <viewController id="CbO-Fn-C5N" customClass="NewWKWebViewController" customModule="newDubai" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CbO-Fn-C5N" customClass="NewWKWebViewController" customModule="devDubai_Palace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ccj-VV-rMU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,7 +90,7 @@
         <!--New Window View Controller-->
         <scene sceneID="5HL-Vv-MbI">
             <objects>
-                <viewController id="9qt-dV-lpA" customClass="NewWindowViewController" customModule="newDubai" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9qt-dV-lpA" customClass="NewWindowViewController" customModule="devDubai_Palace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iuz-Fy-NGv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

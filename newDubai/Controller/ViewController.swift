@@ -590,7 +590,9 @@ class ViewController: UIViewController {
                         if self.failCount == urlArrayCount{
                             print(" all url has been hacked")
                             //show alert
-                            self.showConnectFailAlert()
+                            DispatchQueue.main.async {
+                                self.showConnectFailAlert()
+                            }
                         }
                     }
                 }
@@ -601,10 +603,10 @@ class ViewController: UIViewController {
     func showConnectFailAlert() {
         let langDic = DeviceData.current.getDeviceLang()
         let alert = UIAlertController(title: langDic["checklinkFailed"], message: nil, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: langDic["confirm"], style: .default) { (action) in
-            exit(0)
-        }
-        alert.addAction(okAction)
+//        let okAction = UIAlertAction(title: langDic["confirm"], style: .default) { (action) in
+//            exit(0)
+//        }
+//        alert.addAction(okAction)
         present(alert, animated: true, completion: nil)
     }
     
