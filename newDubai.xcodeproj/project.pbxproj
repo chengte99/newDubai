@@ -485,7 +485,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = newDubai/newDubai.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.6.05;
+				CURRENT_PROJECT_VERSION = 1.7.01;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = C5235969FU;
 				ENABLE_BITCODE = NO;
@@ -495,6 +495,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.7.0;
 				PRODUCT_BUNDLE_IDENTIFIER = itstar.ios.newDubai;
 				PRODUCT_NAME = "Dubai Palace";
 				SWIFT_OBJC_BRIDGING_HEADER = "newDubai/newDubai-Bridging-Header.h";
@@ -512,7 +513,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = newDubai/newDubai.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.6.05;
+				CURRENT_PROJECT_VERSION = 1.7.01;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = C5235969FU;
 				ENABLE_BITCODE = NO;
@@ -522,6 +523,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.7.0;
 				PRODUCT_BUNDLE_IDENTIFIER = itstar.ios.newDubai;
 				PRODUCT_NAME = "Dubai Palace";
 				SWIFT_OBJC_BRIDGING_HEADER = "newDubai/newDubai-Bridging-Header.h";
