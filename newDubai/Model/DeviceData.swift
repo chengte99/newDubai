@@ -241,14 +241,26 @@ class DeviceData {
                 "confirm": "确认",
                 "cancel": "取消",
                 "touchDescription": "请按压您的指纹",
-                "exitMessage": "确定要离开吗？"
+                "exitMessage": "确定要离开吗？",
+                "verUpdate": "版本更新",
+                "checklinkFailed": "连线异常，如有任何问题请联系在线客服",
+                "connectionSuccess": "连线完成",
+                "serverConnection": "伺服器连线中",
+                "verifyWebsite": "网站验证",
+                "resourceLoading": "资源加载中",
             ]
         }else{
             langDic = [
                 "confirm": "Confirm",
                 "cancel": "Cancel",
                 "touchDescription": "Touch sensor",
-                "exitMessage": "Are you sure to leave?"
+                "exitMessage": "Are you sure to leave?",
+                "verUpdate": "New Version Update",
+                "checklinkFailed": "Connection Failed. Please contact online customer service.",
+                "connectionSuccess": "Connection completed",
+                "serverConnection": "Server connection",
+                "verifyWebsite": "Website verification",
+                "resourceLoading": "Resource loading",
             ]
         }
         

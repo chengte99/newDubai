@@ -35,7 +35,7 @@
 
 /* Begin PBXFileReference section */
 		15D427918185F7D68215A5F1 /* Pods-newDubai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newDubai.release.xcconfig"; path = "Target Support Files/Pods-newDubai/Pods-newDubai.release.xcconfig"; sourceTree = "<group>"; };
-		7620A0D522C5A0C60047670D /* newDubai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newDubai.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7620A0D522C5A0C60047670D /* Dubai Palace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dubai Palace.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7620A0D822C5A0C60047670D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7620A0DA22C5A0C60047670D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7620A0DD22C5A0C60047670D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 		7620A0D622C5A0C60047670D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7620A0D522C5A0C60047670D /* newDubai.app */,
+				7620A0D522C5A0C60047670D /* Dubai Palace.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,7 +196,7 @@
 			);
 			name = newDubai;
 			productName = newDubai;
-			productReference = 7620A0D522C5A0C60047670D /* newDubai.app */;
+			productReference = 7620A0D522C5A0C60047670D /* Dubai Palace.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -485,17 +485,19 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = newDubai/newDubai.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.7.01;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = C5235969FU;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = newDubai/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.7.0;
 				PRODUCT_BUNDLE_IDENTIFIER = itstar.ios.newDubai;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Dubai Palace";
 				SWIFT_OBJC_BRIDGING_HEADER = "newDubai/newDubai-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -511,17 +513,19 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = newDubai/newDubai.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.7.01;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = C5235969FU;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = newDubai/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.7.0;
 				PRODUCT_BUNDLE_IDENTIFIER = itstar.ios.newDubai;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Dubai Palace";
 				SWIFT_OBJC_BRIDGING_HEADER = "newDubai/newDubai-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

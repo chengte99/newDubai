@@ -67,6 +67,16 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
     }
     //configure statusbar end
     
+    func HGLog<T>(_ message:T, file:String = #file, function:String = #function,
+               line:Int = #line) {
+        #if DEBUG
+            //获取文件名
+            let fileName = (file as NSString).lastPathComponent
+            //打印日志内容
+            print("\(fileName):\(line) \(function) | \(message)")
+        #endif
+    }
+    
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         print(message.body)
         /*
@@ -77,6 +87,7 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
          {isNative:1,url:'http://www.baidu.com',isHiddenTool:1,isHiddenReloadButton:1}
          {register:'http://www.baidu.com'}
          {title:'BBIN'}
+         {isOpenGame:true}
          */
         
         if let tag = message.body as? String{
@@ -89,6 +100,10 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
         if let dic = message.body as? [String: Any]{
             if let title = dic["title"] as? String{
                 WebData.shared.setBlankTitle(blankTitle: title)
+            }
+            
+            if let isOpenGame = dic["isOpenGame"] as? Bool{
+                WebData.shared.nowOpenGame = isOpenGame
             }
             
             if let registerString = dic["register"] as? String{
@@ -321,7 +336,7 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
                                     let urlStrArray = self.web_url!.components(separatedBy: "mb")
                                     let host = urlStrArray.first!
                                     
-                                    if (KEY_CODE == "ndbp" || KEY_CODE == "ndbpp" || KEY_CODE == "ndbppp"){
+                                    if (TaipeiWebConf){
                                         self.fastLogin_js7(acc: acc, pw: enPW, type: "touchID")
                                     }else{
                                         self.fastLogin(host: host, acc: acc, pwd: enPW, type: "touchID", currentURL: self.web_url!)
@@ -368,7 +383,7 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
                                         let urlStrArray = self.web_url!.components(separatedBy: "mb")
                                         let host = urlStrArray.first!
                                         
-                                        if (KEY_CODE == "ndbp" || KEY_CODE == "ndbpp" || KEY_CODE == "ndbppp"){
+                                        if (TaipeiWebConf){
                                             self.fastLogin_js7(acc: acc, pw: enPW, type: "gesture")
                                         }else{
                                             self.fastLogin(host: host, acc: acc, pwd: enPW, type: "gesture", currentURL: self.web_url!)
@@ -480,7 +495,7 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
                                     let urlStrArray = self.web_url!.components(separatedBy: "mb")
                                     let host = urlStrArray.first!
                                     
-                                    if (KEY_CODE == "ndbp" || KEY_CODE == "ndbpp" || KEY_CODE == "ndbppp"){
+                                    if (TaipeiWebConf){
                                         self.fastLogin_js7(acc: acc, pw: enPW, type: loginType)
                                     }else{
                                         self.fastLogin(host: host, acc: acc, pwd: enPW, type: loginType, currentURL: self.web_url!)
@@ -857,14 +872,17 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
                     if(blankURL.lowercased().contains("loading") || (!blankURL.lowercased().hasPrefix("http://")) && (!blankURL.lowercased().hasPrefix("https://"))){
                         decisionHandler(WKNavigationActionPolicy.cancel)
                     }else{
-                        if blankURL.contains("v66"){
-                            if let url = URL(string: blankURL){
-                                UIApplication.shared.openURL(url)
-                            }
-                        }else{
+                        if WebData.shared.nowOpenGame{
                             WebData.shared.setOther(string: blankURL)
                             performSegue(withIdentifier: "show", sender: self)
+                        }else{
+                            if let url = URL(string: blankURL){
+                                let svc = SFSafariViewController(url: url)
+                                svc.delegate = self
+                                present(svc, animated: true, completion: nil)
+                            }
                         }
+                        
                         decisionHandler(WKNavigationActionPolicy.cancel)
                     }
                 }
@@ -1019,6 +1037,7 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
     }
     
     fileprivate func addProgressView() {
+        let langDic = DeviceData.current.getDeviceLang()
         progressLabel = UILabel()
         progressLabel.translatesAutoresizingMaskIntoConstraints = false
         screenImg.addSubview(progressLabel)
@@ -1031,7 +1050,7 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
             NSLayoutConstraint(item: progressLabel, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 30.0).isActive = true
         }
         progressLabel.textAlignment = .center
-        progressLabel.text = "资源加载中"
+        progressLabel.text = langDic["resourceLoading"]
         progressLabel.textColor = .white
         
         progressView = UIProgressView()
@@ -1051,8 +1070,10 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if keyPath == "estimatedProgress"{
+            let langDic = DeviceData.current.getDeviceLang()
+            let text = langDic["resourceLoading"]!
             //            print("estimatedProgress = \(Int(self.wk.estimatedProgress * 100))")
-            self.progressLabel.text = "资源加载中 \(Int(self.wk.estimatedProgress * 100))%"
+            self.progressLabel.text = "\(text) \(Int(self.wk.estimatedProgress * 100))%"
             progressView.isHidden = self.wk.estimatedProgress == 1
             progressView.setProgress(Float(self.wk.estimatedProgress), animated: true)
         }
@@ -1094,6 +1115,8 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
         
         AppUtility.lockOrientation(.portrait, andRotateTo: .portrait)
         WebData.shared.setBlankTitle(blankTitle: "游戏大厅")
+        
+        WebData.shared.nowOpenGame = false
     }
     
     override func viewDidAppear(_ animated: Bool) {

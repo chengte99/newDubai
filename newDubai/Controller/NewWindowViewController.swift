@@ -52,6 +52,16 @@ class NewWindowViewController: UIViewController, WKUIDelegate, UIGestureRecogniz
     }
     //configure statusbar end
     
+    func HGLog<T>(_ message:T, file:String = #file, function:String = #function,
+               line:Int = #line) {
+        #if DEBUG
+            //获取文件名
+            let fileName = (file as NSString).lastPathComponent
+            //打印日志内容
+            print("\(fileName):\(line) \(function) | \(message)")
+        #endif
+    }
+    
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         print(message.body)
         
