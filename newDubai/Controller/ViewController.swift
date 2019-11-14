@@ -42,6 +42,16 @@ class ViewController: UIViewController {
     var dbDomainCount = 0
     var dbDomainFinal = ""
     
+    func HGLog<T>(_ message:T, file:String = #file, function:String = #function,
+               line:Int = #line) {
+        #if DEBUG
+            //获取文件名
+            let fileName = (file as NSString).lastPathComponent
+            //打印日志内容
+            print("\(fileName):\(line) \(function) | \(message)")
+        #endif
+    }
+    
     func repeatAction(){
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.printInfo), userInfo: nil, repeats: true)
     }
@@ -305,17 +315,23 @@ class ViewController: UIViewController {
     }
     
     func finishConnectText(){
-        self.myLabel.text = "Version: \(self.buildVersion) \n连线完成"
+        let langDic = DeviceData.current.getDeviceLang()
+        let text = langDic["connectionSuccess"]!
+        self.myLabel.text = "Version: \(self.buildVersion) \n\(text)"
         self.myLabel.adjustsFontSizeToFitWidth = true
     }
     
     func showRetryText(){
-        self.myLabel.text = "Version: \(self.buildVersion) \n伺服器连线中...\(self.retryTimes)"
+        let langDic = DeviceData.current.getDeviceLang()
+        let text = langDic["serverConnection"]!
+        self.myLabel.text = "Version: \(self.buildVersion) \n\(text)...\(self.retryTimes)"
         self.myLabel.adjustsFontSizeToFitWidth = true
     }
     
     func webCheckLinkText(){
-        self.myLabel.text = "Version: \(self.buildVersion) \n网站验证"
+        let langDic = DeviceData.current.getDeviceLang()
+        let text = langDic["verifyWebsite"]!
+        self.myLabel.text = "Version: \(self.buildVersion) \n\(text)"
         self.myLabel.adjustsFontSizeToFitWidth = true
     }
     
@@ -345,8 +361,9 @@ class ViewController: UIViewController {
     fileprivate func goPresentSegue() {
         self.finishConnectText()
         if isDev == "1"{
+            let langDic = DeviceData.current.getDeviceLang()
             let alert = UIAlertController(title: "", message: "isDev", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "确认", style: .default, handler: { (action) in
+            let okAction = UIAlertAction(title: langDic["confirm"], style: .default, handler: { (action) in
                 //pass web_url to wkwebview
                 self.performSegue(withIdentifier: "goToWeb", sender: nil)
             })
@@ -360,10 +377,12 @@ class ViewController: UIViewController {
     
     func checkUpdate(){
         if feedback == -1{
+            let langDic = DeviceData.current.getDeviceLang()
             var message = ""
             
             if appUpdate_url.lowercased().hasPrefix("http://") || appUpdate_url.lowercased().hasPrefix("https://"){
-                message = "版本更新"
+//                message = "版本更新"
+                message = langDic["verUpdate"]!
             }
             else{
                 message = appUpdate_url
@@ -371,7 +390,7 @@ class ViewController: UIViewController {
             }
             
             let alert = UIAlertController(title: "", message: message, preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "确认", style: .default, handler: { (action) in
+            let okAction = UIAlertAction(title: langDic["confirm"], style: .default, handler: { (action) in
                 if self.appUpdate_url.lowercased().hasPrefix("http://") || self.appUpdate_url.lowercased().hasPrefix("https://"){
                     if let url = URL(string: self.appUpdate_url){
                         UIApplication.shared.openURL(url)
@@ -514,12 +533,19 @@ class ViewController: UIViewController {
             if let host = url.host{
                 //                print(" host = \(host)")
                 
+                var prefix = ""
                 if urlString.lowercased().hasPrefix("https://"){
-                    //                    newURLString = "https://\(host)/main/CheckLink/"
-                    newURLString = "https://\(host)/check_link/"
+                    prefix = "https"
+//                    newURLString = "https://\(host)/check_link/"
                 }else{
-                    //                    newURLString = "http://\(host)/main/CheckLink/"
-                    newURLString = "http://\(host)/check_link/"
+                    prefix = "http"
+//                    newURLString = "http://\(host)/check_link/"
+                }
+                
+                if let portNum = url.port{
+                    newURLString = "\(prefix)://\(host):\(portNum)/check_link/"
+                }else{
+                    newURLString = "\(prefix)://\(host)/check_link/"
                 }
                 
                 //                print(" newURLString = \(newURLString)")
@@ -564,7 +590,9 @@ class ViewController: UIViewController {
                         if self.failCount == urlArrayCount{
                             print(" all url has been hacked")
                             //show alert
-                            self.showConnectFailAlert()
+                            DispatchQueue.main.async {
+                                self.showConnectFailAlert()
+                            }
                         }
                     }
                 }
@@ -573,11 +601,12 @@ class ViewController: UIViewController {
     }
     
     func showConnectFailAlert() {
-        let alert = UIAlertController(title: "连线异常，如有任何问题请联系在线客服", message: nil, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "确认", style: .default) { (action) in
-            exit(0)
-        }
-        alert.addAction(okAction)
+        let langDic = DeviceData.current.getDeviceLang()
+        let alert = UIAlertController(title: langDic["checklinkFailed"], message: nil, preferredStyle: .alert)
+//        let okAction = UIAlertAction(title: langDic["confirm"], style: .default) { (action) in
+//            exit(0)
+//        }
+//        alert.addAction(okAction)
         present(alert, animated: true, completion: nil)
     }
     
