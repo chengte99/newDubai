@@ -48,7 +48,15 @@ class ViewController: UIViewController {
             //获取文件名
             let fileName = (file as NSString).lastPathComponent
             //打印日志内容
-            print("\(fileName):\(line) \(function) | \(message)")
+//            print("\(fileName):\(line) \(function) | \(message)")
+        
+            let now:Date = Date()
+            let dateFormat:DateFormatter = DateFormatter()
+            dateFormat.dateFormat = "yyyy年MM月dd日 HH:mm:ss"
+            dateFormat.timeZone = NSTimeZone.local
+            let dateString:String = dateFormat.string(from: now)
+        
+            print("\(fileName):\(line) \(dateString) | \(message)")
         #endif
     }
     
