@@ -492,7 +492,7 @@ class ViewController: UIViewController {
                 for item in urlArray{
                     queue.async {
                         //do get content
-                        self.checkWebContent(urlString: item, retimes: 2, urlArrayCount: urlArray.count)
+                        self.checkWebContent(urlString: item, retimes: 1, urlArrayCount: urlArray.count)
                     }
                 }
             }else{
@@ -500,7 +500,7 @@ class ViewController: UIViewController {
                 let queue = DispatchQueue(label: "queueForSingleURL", qos: DispatchQoS.utility)
                 queue.async {
                     //do get content
-                    self.checkWebContent(urlString: urlString, retimes: 2, urlArrayCount: 1)
+                    self.checkWebContent(urlString: urlString, retimes: 1, urlArrayCount: 1)
                 }
             }
         }
