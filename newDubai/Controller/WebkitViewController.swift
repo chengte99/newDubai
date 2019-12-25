@@ -138,6 +138,30 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
                 }
             }
             
+            // 518
+            if let urlString = dic["APIGameURL"] as? String{
+                if let title = dic["title"] as? String{
+                    if title == ""{
+                        WebData.shared.setBlankTitle(blankTitle: "游戏大厅")
+                    }else{
+                        WebData.shared.setBlankTitle(blankTitle: title)
+                    }
+                }
+                
+                if let onSafari = dic["onSafari"] as? Bool{
+                    if !onSafari{
+                        WebData.shared.setOther(string: urlString)
+                        performSegue(withIdentifier: "show", sender: self)
+                    }else{
+                        if let url = URL(string: urlString){
+                            let svc = SFSafariViewController(url: url)
+                            svc.delegate = self
+                            present(svc, animated: true, completion: nil)
+                        }
+                    }
+                }
+            }
+            
             if let pinCode = dic["ping_code"] as? String{
                 UserDefaults.standard.set(pinCode, forKey: "ping_code")
                 UserDefaults.standard.synchronize()
@@ -160,6 +184,7 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
                     print("ignore it")
                 }
             }
+            // 518 end
             
             if let logout = dic["isLogout"] as? Int{
                 if logout == 1{
@@ -1378,7 +1403,15 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
         self.wk.isHidden = true
         
         self.view.backgroundColor = UIColor.black
-        self.wk.backgroundColor = UIColor.black
+        if KEY_CODE == "518"{
+            self.wk.isOpaque = false
+            let imageView = UIImageView(frame: self.wk.frame)
+            imageView.image = UIImage(named: "background")
+            imageView.contentMode = UIView.ContentMode.scaleAspectFill
+            self.view.addSubview(imageView)
+        }else{
+            self.wk.backgroundColor = UIColor.black
+        }
         
         self.wk.scrollView.delegate = self
         self.wk.scrollView.bounces = false

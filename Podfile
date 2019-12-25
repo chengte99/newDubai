@@ -7,7 +7,7 @@ target 'newDubai' do
 
   # Pods for newDubai
   pod 'Alamofire'
-  pod 'SwiftyJSON'
+  pod 'SwiftyJSON', '~> 4.0'
   pod 'PPSPing', '~> 0.3.0'
   pod 'DeviceKit'
   pod 'CryptoSwift'
