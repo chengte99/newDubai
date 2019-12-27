@@ -256,11 +256,11 @@ class DeviceData {
                 "touchDescription": "Touch sensor",
                 "exitMessage": "Are you sure to leave?",
                 "verUpdate": "New Version Update",
-                "checklinkFailed": "Connection Failed. Please contact online customer service.",
+                "checklinkFailed": "Connection error. Please contact the customer service for assistance.",
                 "connectionSuccess": "Connection completed",
-                "serverConnection": "Server connection",
-                "verifyWebsite": "Website verification",
-                "resourceLoading": "Resource loading",
+                "serverConnection": "Connecting to the server",
+                "verifyWebsite": "Verifying website",
+                "resourceLoading": "Loading resources",
             ]
         }
         
