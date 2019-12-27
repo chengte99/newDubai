@@ -90,7 +90,7 @@ PODS:
   - PPSPing (0.3.0)
   - Protobuf (3.7.0)
   - SAMKeychain (1.5.3)
-  - SwiftyJSON (5.0.0)
+  - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -103,10 +103,10 @@ DEPENDENCIES:
   - JJFloatingActionButton
   - PPSPing (~> 0.3.0)
   - SAMKeychain
-  - SwiftyJSON
+  - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - Crashlytics
     - CryptoSwift
@@ -128,6 +128,7 @@ SPEC REPOS:
     - PPSPing
     - Protobuf
     - SAMKeychain
+  trunk:
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -152,8 +153,8 @@ SPEC CHECKSUMS:
   PPSPing: f275a44303d6e1ebbd07b90fe8d29831838e58a7
   Protobuf: 7a877b7f3e5964e3fce995e2eb323dbc6831bb5a
   SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
-  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 63a82295bd975c38adddd93cbefb955b2991d3c9
+PODFILE CHECKSUM: 356bce414cdf6e97ea63b3c5863800c7e6d07c45
 
-COCOAPODS: 1.7.0.beta.3
+COCOAPODS: 1.8.4
