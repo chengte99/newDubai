@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0661E37D40C68A04B67E129C /* Pods_Kimber188.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A187854FF987A617D1E4829 /* Pods_Kimber188.framework */; };
 		1F4C7BEAB2FE83AC266E9B22 /* Pods_newDubai.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CFA577B1F0EC6A9A6F4FD5 /* Pods_newDubai.framework */; };
 		2E781689CBEC876C092E9C8C /* Pods_newDubai_Dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2BE5120694671845C713A0A /* Pods_newDubai_Dev.framework */; };
 		7620A0D922C5A0C60047670D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0D822C5A0C60047670D /* AppDelegate.swift */; };
@@ -32,6 +33,99 @@
 		7620A11122C5A6F60047670D /* CacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10E22C5A6F60047670D /* CacheManager.m */; };
 		7620A11322C5AC740047670D /* OpenInFirefoxControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A11222C5AC740047670D /* OpenInFirefoxControllerSwift.swift */; };
 		7620A11622C5B0010047670D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7620A11522C5B0000047670D /* GoogleService-Info.plist */; };
+		885BF43423D81F8600EBF20B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 885BF43023D81F8600EBF20B /* GoogleService-Info.plist */; };
+		885BF43523D81F8600EBF20B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BF43223D81F8600EBF20B /* Constant.swift */; };
+		885BF43723D81FA300EBF20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885BF43623D81FA300EBF20B /* Assets.xcassets */; };
+		885BF43823D81FBC00EBF20B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 885BF43023D81F8600EBF20B /* GoogleService-Info.plist */; };
+		885BF43923D81FBD00EBF20B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 885BF43023D81F8600EBF20B /* GoogleService-Info.plist */; };
+		885BF43A23D81FBD00EBF20B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 885BF43023D81F8600EBF20B /* GoogleService-Info.plist */; };
+		885BF43B23D81FBF00EBF20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885BF43623D81FA300EBF20B /* Assets.xcassets */; };
+		885BF43C23D81FC000EBF20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885BF43623D81FA300EBF20B /* Assets.xcassets */; };
+		885BF43D23D81FC000EBF20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885BF43623D81FA300EBF20B /* Assets.xcassets */; };
+		885BF44023D81FF000EBF20B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BF43F23D81FF000EBF20B /* Constant.swift */; };
+		885BF44323D81FF600EBF20B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BF44223D81FF600EBF20B /* Constant.swift */; };
+		885BF44623D81FFC00EBF20B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BF44523D81FFC00EBF20B /* Constant.swift */; };
+		885BF44C23D8242700EBF20B /* CacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10E22C5A6F60047670D /* CacheManager.m */; };
+		885BF44D23D8242700EBF20B /* OpenInChromeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10C22C5A6F50047670D /* OpenInChromeController.m */; };
+		885BF44E23D8242700EBF20B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10A22C5A6F50047670D /* Reachability.m */; };
+		885BF44F23D8242700EBF20B /* CacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10E22C5A6F60047670D /* CacheManager.m */; };
+		885BF45023D8242700EBF20B /* OpenInChromeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10C22C5A6F50047670D /* OpenInChromeController.m */; };
+		885BF45123D8242700EBF20B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10A22C5A6F50047670D /* Reachability.m */; };
+		885BF45223D8242700EBF20B /* CacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10E22C5A6F60047670D /* CacheManager.m */; };
+		885BF45323D8242700EBF20B /* OpenInChromeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10C22C5A6F50047670D /* OpenInChromeController.m */; };
+		885BF45423D8242700EBF20B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10A22C5A6F50047670D /* Reachability.m */; };
+		885BF45523D8242800EBF20B /* CacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10E22C5A6F60047670D /* CacheManager.m */; };
+		885BF45623D8242800EBF20B /* OpenInChromeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10C22C5A6F50047670D /* OpenInChromeController.m */; };
+		885BF45723D8242800EBF20B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10A22C5A6F50047670D /* Reachability.m */; };
+		885BF45823D8243D00EBF20B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0DC22C5A0C60047670D /* Main.storyboard */; };
+		885BF45923D8243D00EBF20B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0E122C5A0C90047670D /* LaunchScreen.storyboard */; };
+		885BF45A23D8243E00EBF20B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0DC22C5A0C60047670D /* Main.storyboard */; };
+		885BF45B23D8243E00EBF20B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0E122C5A0C90047670D /* LaunchScreen.storyboard */; };
+		885BF45C23D8243E00EBF20B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0DC22C5A0C60047670D /* Main.storyboard */; };
+		885BF45D23D8243E00EBF20B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0E122C5A0C90047670D /* LaunchScreen.storyboard */; };
+		885BF45E23D8243F00EBF20B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0DC22C5A0C60047670D /* Main.storyboard */; };
+		885BF45F23D8243F00EBF20B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0E122C5A0C90047670D /* LaunchScreen.storyboard */; };
+		885BF46023D8244D00EBF20B /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F422C5A61D0047670D /* APIManager.swift */; };
+		885BF46123D8244D00EBF20B /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F822C5A63B0047670D /* AppUtility.swift */; };
+		885BF46223D8244D00EBF20B /* AppKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0FA22C5A6480047670D /* AppKey.swift */; };
+		885BF46323D8244D00EBF20B /* AppTouchID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0FC22C5A6540047670D /* AppTouchID.swift */; };
+		885BF46423D8244D00EBF20B /* AESHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0FE22C5A65F0047670D /* AESHelp.swift */; };
+		885BF46523D8244D00EBF20B /* TTJBDetect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10022C5A66E0047670D /* TTJBDetect.swift */; };
+		885BF46623D8244D00EBF20B /* OpenInFirefoxControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A11222C5AC740047670D /* OpenInFirefoxControllerSwift.swift */; };
+		885BF46723D8244D00EBF20B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0D822C5A0C60047670D /* AppDelegate.swift */; };
+		885BF46823D8244D00EBF20B /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F422C5A61D0047670D /* APIManager.swift */; };
+		885BF46923D8244D00EBF20B /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F822C5A63B0047670D /* AppUtility.swift */; };
+		885BF46A23D8244D00EBF20B /* AppKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0FA22C5A6480047670D /* AppKey.swift */; };
+		885BF46B23D8244D00EBF20B /* AppTouchID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0FC22C5A6540047670D /* AppTouchID.swift */; };
+		885BF46C23D8244D00EBF20B /* AESHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0FE22C5A65F0047670D /* AESHelp.swift */; };
+		885BF46D23D8244D00EBF20B /* TTJBDetect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10022C5A66E0047670D /* TTJBDetect.swift */; };
+		885BF46E23D8244D00EBF20B /* OpenInFirefoxControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A11222C5AC740047670D /* OpenInFirefoxControllerSwift.swift */; };
+		885BF46F23D8244D00EBF20B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0D822C5A0C60047670D /* AppDelegate.swift */; };
+		885BF47023D8244E00EBF20B /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F422C5A61D0047670D /* APIManager.swift */; };
+		885BF47123D8244E00EBF20B /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F822C5A63B0047670D /* AppUtility.swift */; };
+		885BF47223D8244E00EBF20B /* AppKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0FA22C5A6480047670D /* AppKey.swift */; };
+		885BF47323D8244E00EBF20B /* AppTouchID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0FC22C5A6540047670D /* AppTouchID.swift */; };
+		885BF47423D8244E00EBF20B /* AESHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0FE22C5A65F0047670D /* AESHelp.swift */; };
+		885BF47523D8244E00EBF20B /* TTJBDetect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10022C5A66E0047670D /* TTJBDetect.swift */; };
+		885BF47623D8244E00EBF20B /* OpenInFirefoxControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A11222C5AC740047670D /* OpenInFirefoxControllerSwift.swift */; };
+		885BF47723D8244E00EBF20B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0D822C5A0C60047670D /* AppDelegate.swift */; };
+		885BF47823D8244E00EBF20B /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F422C5A61D0047670D /* APIManager.swift */; };
+		885BF47923D8244E00EBF20B /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F822C5A63B0047670D /* AppUtility.swift */; };
+		885BF47A23D8244E00EBF20B /* AppKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0FA22C5A6480047670D /* AppKey.swift */; };
+		885BF47B23D8244E00EBF20B /* AppTouchID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0FC22C5A6540047670D /* AppTouchID.swift */; };
+		885BF47C23D8244E00EBF20B /* AESHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0FE22C5A65F0047670D /* AESHelp.swift */; };
+		885BF47D23D8244E00EBF20B /* TTJBDetect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10022C5A66E0047670D /* TTJBDetect.swift */; };
+		885BF47E23D8244E00EBF20B /* OpenInFirefoxControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A11222C5AC740047670D /* OpenInFirefoxControllerSwift.swift */; };
+		885BF47F23D8244E00EBF20B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0D822C5A0C60047670D /* AppDelegate.swift */; };
+		885BF48023D8245800EBF20B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0DA22C5A0C60047670D /* ViewController.swift */; };
+		885BF48123D8245800EBF20B /* WebkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10222C5A6950047670D /* WebkitViewController.swift */; };
+		885BF48223D8245800EBF20B /* NewWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10422C5A6AC0047670D /* NewWKWebViewController.swift */; };
+		885BF48323D8245800EBF20B /* NewWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10622C5A6BA0047670D /* NewWindowViewController.swift */; };
+		885BF48423D8245800EBF20B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0DA22C5A0C60047670D /* ViewController.swift */; };
+		885BF48523D8245800EBF20B /* WebkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10222C5A6950047670D /* WebkitViewController.swift */; };
+		885BF48623D8245800EBF20B /* NewWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10422C5A6AC0047670D /* NewWKWebViewController.swift */; };
+		885BF48723D8245800EBF20B /* NewWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10622C5A6BA0047670D /* NewWindowViewController.swift */; };
+		885BF48823D8245900EBF20B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0DA22C5A0C60047670D /* ViewController.swift */; };
+		885BF48923D8245900EBF20B /* WebkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10222C5A6950047670D /* WebkitViewController.swift */; };
+		885BF48A23D8245900EBF20B /* NewWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10422C5A6AC0047670D /* NewWKWebViewController.swift */; };
+		885BF48B23D8245900EBF20B /* NewWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10622C5A6BA0047670D /* NewWindowViewController.swift */; };
+		885BF48C23D8245900EBF20B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0DA22C5A0C60047670D /* ViewController.swift */; };
+		885BF48D23D8245900EBF20B /* WebkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10222C5A6950047670D /* WebkitViewController.swift */; };
+		885BF48E23D8245900EBF20B /* NewWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10422C5A6AC0047670D /* NewWKWebViewController.swift */; };
+		885BF48F23D8245900EBF20B /* NewWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10622C5A6BA0047670D /* NewWindowViewController.swift */; };
+		885BF49023D8245C00EBF20B /* WebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0ED22C5A5EC0047670D /* WebData.swift */; };
+		885BF49123D8245C00EBF20B /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0EF22C5A5F80047670D /* DeviceData.swift */; };
+		885BF49223D8245C00EBF20B /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* LogData.swift */; };
+		885BF49323D8245D00EBF20B /* WebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0ED22C5A5EC0047670D /* WebData.swift */; };
+		885BF49423D8245D00EBF20B /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0EF22C5A5F80047670D /* DeviceData.swift */; };
+		885BF49523D8245D00EBF20B /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* LogData.swift */; };
+		885BF49623D8245D00EBF20B /* WebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0ED22C5A5EC0047670D /* WebData.swift */; };
+		885BF49723D8245D00EBF20B /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0EF22C5A5F80047670D /* DeviceData.swift */; };
+		885BF49823D8245D00EBF20B /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* LogData.swift */; };
+		885BF49923D8245E00EBF20B /* WebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0ED22C5A5EC0047670D /* WebData.swift */; };
+		885BF49A23D8245E00EBF20B /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0EF22C5A5F80047670D /* DeviceData.swift */; };
+		885BF49B23D8245E00EBF20B /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* LogData.swift */; };
+		885BF49C23D8301500EBF20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0DF22C5A0C90047670D /* Assets.xcassets */; };
 		88ECAF5E23D04348004B58CE /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ECAF5D23D04348004B58CE /* Constant.swift */; };
 		88ECAF6123D04360004B58CE /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ECAF6023D04360004B58CE /* Constant.swift */; };
 		88ECAF6423D04366004B58CE /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ECAF6323D04366004B58CE /* Constant.swift */; };
@@ -51,7 +145,6 @@
 		88ECAF7323D04397004B58CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0E122C5A0C90047670D /* LaunchScreen.storyboard */; };
 		88ECAF7423D04397004B58CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0E122C5A0C90047670D /* LaunchScreen.storyboard */; };
 		88ECAF7523D0439A004B58CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0DF22C5A0C90047670D /* Assets.xcassets */; };
-		88ECAF7623D0439B004B58CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0DF22C5A0C90047670D /* Assets.xcassets */; };
 		88ECAF7723D0439B004B58CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0DF22C5A0C90047670D /* Assets.xcassets */; };
 		88ECAF7823D0439E004B58CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0DC22C5A0C60047670D /* Main.storyboard */; };
 		88ECAF7923D0439F004B58CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0DC22C5A0C60047670D /* Main.storyboard */; };
@@ -101,17 +194,26 @@
 		88ECAFA523D043B9004B58CE /* WebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0ED22C5A5EC0047670D /* WebData.swift */; };
 		88ECAFA623D043B9004B58CE /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0EF22C5A5F80047670D /* DeviceData.swift */; };
 		88ECAFA723D043B9004B58CE /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* LogData.swift */; };
+		A7A9BB4F6A90A5EE15B64CF6 /* Pods_Kimber188_Gbbt1_Dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1F300F3316A570E921E89C /* Pods_Kimber188_Gbbt1_Dev.framework */; };
 		B1F220D35AE20E329000D0C8 /* Pods_newDubai_Ndbppp_Dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDCE2D1B99BAB9C9075347D0 /* Pods_newDubai_Ndbppp_Dev.framework */; };
+		BCA83A51E19A3B1D0DC325DE /* Pods_Kimber188_Dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396AF67844471CCC2FFAD2D1 /* Pods_Kimber188_Dev.framework */; };
+		C70CCF11033D403B8316E56B /* Pods_Kimber188_Vnd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB245CDE684FB4321FC2D72 /* Pods_Kimber188_Vnd.framework */; };
 		E4C12AFBFD789700BD38D56B /* Pods_newDubai_Ndbpp_Dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49DFBBAFF0601751851CF4EB /* Pods_newDubai_Ndbpp_Dev.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E8D6DC3146F6C65C59F2BE2 /* Pods-newDubai-Ndbpp-Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newDubai-Ndbpp-Dev.debug.xcconfig"; path = "Target Support Files/Pods-newDubai-Ndbpp-Dev/Pods-newDubai-Ndbpp-Dev.debug.xcconfig"; sourceTree = "<group>"; };
+		113753F76B988084F85BE8C8 /* Pods-Kimber188-Vnd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimber188-Vnd.debug.xcconfig"; path = "Target Support Files/Pods-Kimber188-Vnd/Pods-Kimber188-Vnd.debug.xcconfig"; sourceTree = "<group>"; };
 		15D427918185F7D68215A5F1 /* Pods-newDubai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newDubai.release.xcconfig"; path = "Target Support Files/Pods-newDubai/Pods-newDubai.release.xcconfig"; sourceTree = "<group>"; };
+		2245F41C3D37136563F3EF89 /* Pods-Kimber188.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimber188.debug.xcconfig"; path = "Target Support Files/Pods-Kimber188/Pods-Kimber188.debug.xcconfig"; sourceTree = "<group>"; };
+		24B684275DA84035D7A42085 /* Pods-Kimber188.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimber188.release.xcconfig"; path = "Target Support Files/Pods-Kimber188/Pods-Kimber188.release.xcconfig"; sourceTree = "<group>"; };
+		396AF67844471CCC2FFAD2D1 /* Pods_Kimber188_Dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kimber188_Dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA8A6D8532082AE78C0ABF7 /* Pods-newDubai-Ndbppp-Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newDubai-Ndbppp-Dev.release.xcconfig"; path = "Target Support Files/Pods-newDubai-Ndbppp-Dev/Pods-newDubai-Ndbppp-Dev.release.xcconfig"; sourceTree = "<group>"; };
 		49DFBBAFF0601751851CF4EB /* Pods_newDubai_Ndbpp_Dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newDubai_Ndbpp_Dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC8AD58A5234BC36E708FFC /* Pods-newDubai-Ndbppp-Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newDubai-Ndbppp-Dev.debug.xcconfig"; path = "Target Support Files/Pods-newDubai-Ndbppp-Dev/Pods-newDubai-Ndbppp-Dev.debug.xcconfig"; sourceTree = "<group>"; };
+		4DB245CDE684FB4321FC2D72 /* Pods_Kimber188_Vnd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kimber188_Vnd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		505AEF9C3A057A630BF97DA5 /* Pods-newDubai-Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newDubai-Dev.debug.xcconfig"; path = "Target Support Files/Pods-newDubai-Dev/Pods-newDubai-Dev.debug.xcconfig"; sourceTree = "<group>"; };
+		5A187854FF987A617D1E4829 /* Pods_Kimber188.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kimber188.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7620A0D522C5A0C60047670D /* Dubai Palace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dubai Palace.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7620A0D822C5A0C60047670D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7620A0DA22C5A0C60047670D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -142,18 +244,35 @@
 		7620A11222C5AC740047670D /* OpenInFirefoxControllerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenInFirefoxControllerSwift.swift; sourceTree = "<group>"; };
 		7620A11422C5AD5A0047670D /* newDubai.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = newDubai.entitlements; sourceTree = "<group>"; };
 		7620A11522C5B0000047670D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7B1F300F3316A570E921E89C /* Pods_Kimber188_Gbbt1_Dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kimber188_Gbbt1_Dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C3C50BA49D735E296595B8A /* Pods-newDubai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newDubai.debug.xcconfig"; path = "Target Support Files/Pods-newDubai/Pods-newDubai.debug.xcconfig"; sourceTree = "<group>"; };
+		879EBE9E1999C62C898B27C2 /* Pods-Kimber188-Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimber188-Dev.debug.xcconfig"; path = "Target Support Files/Pods-Kimber188-Dev/Pods-Kimber188-Dev.debug.xcconfig"; sourceTree = "<group>"; };
+		885BF3D023D81BA800EBF20B /* SPORT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPORT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		885BF3E823D81CC200EBF20B /* SPORT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPORT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		885BF40023D81CDB00EBF20B /* devSPORT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = devSPORT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		885BF41823D81D1000EBF20B /* 台北開發用.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "台北開發用.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		885BF43023D81F8600EBF20B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		885BF43223D81F8600EBF20B /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		885BF43323D81F8600EBF20B /* Kimber188.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Kimber188.entitlements; sourceTree = "<group>"; };
+		885BF43623D81FA300EBF20B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		885BF43F23D81FF000EBF20B /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		885BF44223D81FF600EBF20B /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		885BF44523D81FFC00EBF20B /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		88ECAF1523D0410E004B58CE /* dev Dubai Palace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dev Dubai Palace.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88ECAF2D23D0416B004B58CE /* 台北開發用.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "台北開發用.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88ECAF4523D0417E004B58CE /* RD32.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RD32.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88ECAF5D23D04348004B58CE /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		88ECAF6023D04360004B58CE /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		88ECAF6323D04366004B58CE /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		ADD29F3A433302797FB89BB6 /* Pods-Kimber188-Gbbt1-Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimber188-Gbbt1-Dev.debug.xcconfig"; path = "Target Support Files/Pods-Kimber188-Gbbt1-Dev/Pods-Kimber188-Gbbt1-Dev.debug.xcconfig"; sourceTree = "<group>"; };
 		C3CFA577B1F0EC6A9A6F4FD5 /* Pods_newDubai.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newDubai.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD0A70550A370F464BD7FBF /* Pods-newDubai-Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newDubai-Dev.release.xcconfig"; path = "Target Support Files/Pods-newDubai-Dev/Pods-newDubai-Dev.release.xcconfig"; sourceTree = "<group>"; };
+		DCB44B3549C2BE402D6D3A51 /* Pods-Kimber188-Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimber188-Dev.release.xcconfig"; path = "Target Support Files/Pods-Kimber188-Dev/Pods-Kimber188-Dev.release.xcconfig"; sourceTree = "<group>"; };
 		DDCE2D1B99BAB9C9075347D0 /* Pods_newDubai_Ndbppp_Dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newDubai_Ndbppp_Dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2BE5120694671845C713A0A /* Pods_newDubai_Dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newDubai_Dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F04E0833A5F154E9BC8150CF /* Pods-Kimber188-Gbbt1-Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimber188-Gbbt1-Dev.release.xcconfig"; path = "Target Support Files/Pods-Kimber188-Gbbt1-Dev/Pods-Kimber188-Gbbt1-Dev.release.xcconfig"; sourceTree = "<group>"; };
 		F264A339A11EC4B056143852 /* Pods-newDubai-Ndbpp-Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newDubai-Ndbpp-Dev.release.xcconfig"; path = "Target Support Files/Pods-newDubai-Ndbpp-Dev/Pods-newDubai-Ndbpp-Dev.release.xcconfig"; sourceTree = "<group>"; };
+		F4CAD56C116BB49BC4E1F67B /* Pods-Kimber188-Vnd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimber188-Vnd.release.xcconfig"; path = "Target Support Files/Pods-Kimber188-Vnd/Pods-Kimber188-Vnd.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +281,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F4C7BEAB2FE83AC266E9B22 /* Pods_newDubai.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885BF3CD23D81BA800EBF20B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0661E37D40C68A04B67E129C /* Pods_Kimber188.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885BF3E523D81CC200EBF20B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C70CCF11033D403B8316E56B /* Pods_Kimber188_Vnd.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885BF3FD23D81CDB00EBF20B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA83A51E19A3B1D0DC325DE /* Pods_Kimber188_Dev.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885BF41523D81D1000EBF20B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7A9BB4F6A90A5EE15B64CF6 /* Pods_Kimber188_Gbbt1_Dev.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +354,14 @@
 				F264A339A11EC4B056143852 /* Pods-newDubai-Ndbpp-Dev.release.xcconfig */,
 				4CC8AD58A5234BC36E708FFC /* Pods-newDubai-Ndbppp-Dev.debug.xcconfig */,
 				3AA8A6D8532082AE78C0ABF7 /* Pods-newDubai-Ndbppp-Dev.release.xcconfig */,
+				2245F41C3D37136563F3EF89 /* Pods-Kimber188.debug.xcconfig */,
+				24B684275DA84035D7A42085 /* Pods-Kimber188.release.xcconfig */,
+				879EBE9E1999C62C898B27C2 /* Pods-Kimber188-Dev.debug.xcconfig */,
+				DCB44B3549C2BE402D6D3A51 /* Pods-Kimber188-Dev.release.xcconfig */,
+				ADD29F3A433302797FB89BB6 /* Pods-Kimber188-Gbbt1-Dev.debug.xcconfig */,
+				F04E0833A5F154E9BC8150CF /* Pods-Kimber188-Gbbt1-Dev.release.xcconfig */,
+				113753F76B988084F85BE8C8 /* Pods-Kimber188-Vnd.debug.xcconfig */,
+				F4CAD56C116BB49BC4E1F67B /* Pods-Kimber188-Vnd.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -214,6 +373,10 @@
 				E2BE5120694671845C713A0A /* Pods_newDubai_Dev.framework */,
 				49DFBBAFF0601751851CF4EB /* Pods_newDubai_Ndbpp_Dev.framework */,
 				DDCE2D1B99BAB9C9075347D0 /* Pods_newDubai_Ndbppp_Dev.framework */,
+				5A187854FF987A617D1E4829 /* Pods_Kimber188.framework */,
+				396AF67844471CCC2FFAD2D1 /* Pods_Kimber188_Dev.framework */,
+				7B1F300F3316A570E921E89C /* Pods_Kimber188_Gbbt1_Dev.framework */,
+				4DB245CDE684FB4321FC2D72 /* Pods_Kimber188_Vnd.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -225,6 +388,10 @@
 				88ECAF1623D0410E004B58CE /* newDubai-Dev */,
 				88ECAF2E23D0416B004B58CE /* newDubai-Ndbpp-Dev */,
 				88ECAF4623D0417E004B58CE /* newDubai-Ndbppp-Dev */,
+				885BF3D123D81BA800EBF20B /* Kimber188 */,
+				885BF3E923D81CC200EBF20B /* Kimber188-Vnd */,
+				885BF40123D81CDB00EBF20B /* Kimber188-Dev */,
+				885BF41923D81D1000EBF20B /* Kimber188-Gbbt1-Dev */,
 				7620A0D622C5A0C60047670D /* Products */,
 				127832B44E163AEDF1EA7246 /* Pods */,
 				15C14CD98DD3CE32B343E6BA /* Frameworks */,
@@ -238,6 +405,10 @@
 				88ECAF1523D0410E004B58CE /* dev Dubai Palace.app */,
 				88ECAF2D23D0416B004B58CE /* 台北開發用.app */,
 				88ECAF4523D0417E004B58CE /* RD32.app */,
+				885BF3D023D81BA800EBF20B /* SPORT.app */,
+				885BF3E823D81CC200EBF20B /* SPORT.app */,
+				885BF40023D81CDB00EBF20B /* devSPORT.app */,
+				885BF41823D81D1000EBF20B /* 台北開發用.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -300,6 +471,73 @@
 				7620A0F222C5A6070047670D /* LogData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		885BF3D123D81BA800EBF20B /* Kimber188 */ = {
+			isa = PBXGroup;
+			children = (
+				885BF43323D81F8600EBF20B /* Kimber188.entitlements */,
+				885BF43123D81F8600EBF20B /* Manager */,
+				885BF43623D81FA300EBF20B /* Assets.xcassets */,
+				885BF43023D81F8600EBF20B /* GoogleService-Info.plist */,
+			);
+			path = Kimber188;
+			sourceTree = "<group>";
+		};
+		885BF3E923D81CC200EBF20B /* Kimber188-Vnd */ = {
+			isa = PBXGroup;
+			children = (
+				885BF43E23D81FF000EBF20B /* Manager */,
+			);
+			path = "Kimber188-Vnd";
+			sourceTree = "<group>";
+		};
+		885BF40123D81CDB00EBF20B /* Kimber188-Dev */ = {
+			isa = PBXGroup;
+			children = (
+				885BF44123D81FF600EBF20B /* Manager */,
+			);
+			path = "Kimber188-Dev";
+			sourceTree = "<group>";
+		};
+		885BF41923D81D1000EBF20B /* Kimber188-Gbbt1-Dev */ = {
+			isa = PBXGroup;
+			children = (
+				885BF44423D81FFC00EBF20B /* Manager */,
+			);
+			path = "Kimber188-Gbbt1-Dev";
+			sourceTree = "<group>";
+		};
+		885BF43123D81F8600EBF20B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				885BF43223D81F8600EBF20B /* Constant.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		885BF43E23D81FF000EBF20B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				885BF43F23D81FF000EBF20B /* Constant.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		885BF44123D81FF600EBF20B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				885BF44223D81FF600EBF20B /* Constant.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		885BF44423D81FFC00EBF20B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				885BF44523D81FFC00EBF20B /* Constant.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		88ECAF1623D0410E004B58CE /* newDubai-Dev */ = {
@@ -371,6 +609,86 @@
 			name = newDubai;
 			productName = newDubai;
 			productReference = 7620A0D522C5A0C60047670D /* Dubai Palace.app */;
+			productType = "com.apple.product-type.application";
+		};
+		885BF3CF23D81BA800EBF20B /* Kimber188 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 885BF3E323D81BAB00EBF20B /* Build configuration list for PBXNativeTarget "Kimber188" */;
+			buildPhases = (
+				C770A601EAD478F4E22E9A51 /* [CP] Check Pods Manifest.lock */,
+				885BF3CC23D81BA800EBF20B /* Sources */,
+				885BF3CD23D81BA800EBF20B /* Frameworks */,
+				885BF3CE23D81BA800EBF20B /* Resources */,
+				F8C0474552FB752D91F6ED5D /* [CP] Embed Pods Frameworks */,
+				885BF44823D8226200EBF20B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kimber188;
+			productName = Kimber188;
+			productReference = 885BF3D023D81BA800EBF20B /* SPORT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		885BF3E723D81CC200EBF20B /* Kimber188-Vnd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 885BF3F923D81CC500EBF20B /* Build configuration list for PBXNativeTarget "Kimber188-Vnd" */;
+			buildPhases = (
+				08F1256DC32B29385E571F94 /* [CP] Check Pods Manifest.lock */,
+				885BF3E423D81CC200EBF20B /* Sources */,
+				885BF3E523D81CC200EBF20B /* Frameworks */,
+				885BF3E623D81CC200EBF20B /* Resources */,
+				54D2E8DBD676EBDBC510D117 /* [CP] Embed Pods Frameworks */,
+				885BF44923D8227100EBF20B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kimber188-Vnd";
+			productName = "Kimber188-Vnd";
+			productReference = 885BF3E823D81CC200EBF20B /* SPORT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		885BF3FF23D81CDB00EBF20B /* Kimber188-Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 885BF41123D81CDE00EBF20B /* Build configuration list for PBXNativeTarget "Kimber188-Dev" */;
+			buildPhases = (
+				5B88E0622C57CC0B092D3764 /* [CP] Check Pods Manifest.lock */,
+				885BF3FC23D81CDB00EBF20B /* Sources */,
+				885BF3FD23D81CDB00EBF20B /* Frameworks */,
+				885BF3FE23D81CDB00EBF20B /* Resources */,
+				26315A835197870A9FD0EE45 /* [CP] Embed Pods Frameworks */,
+				885BF44A23D8227500EBF20B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kimber188-Dev";
+			productName = "Kimber188-Dev";
+			productReference = 885BF40023D81CDB00EBF20B /* devSPORT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		885BF41723D81D1000EBF20B /* Kimber188-Gbbt1-Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 885BF42923D81D1300EBF20B /* Build configuration list for PBXNativeTarget "Kimber188-Gbbt1-Dev" */;
+			buildPhases = (
+				C76F0D3CDFAFB0D8A26F8F2A /* [CP] Check Pods Manifest.lock */,
+				885BF41423D81D1000EBF20B /* Sources */,
+				885BF41523D81D1000EBF20B /* Frameworks */,
+				885BF41623D81D1000EBF20B /* Resources */,
+				B95A6A76B76262EBDF76C4C9 /* [CP] Embed Pods Frameworks */,
+				885BF44B23D8227B00EBF20B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kimber188-Gbbt1-Dev";
+			productName = "Kimber188-Gbbt1-Dev";
+			productReference = 885BF41823D81D1000EBF20B /* 台北開發用.app */;
 			productType = "com.apple.product-type.application";
 		};
 		88ECAF1423D0410E004B58CE /* newDubai-Dev */ = {
@@ -452,6 +770,18 @@
 							};
 						};
 					};
+					885BF3CF23D81BA800EBF20B = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					885BF3E723D81CC200EBF20B = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					885BF3FF23D81CDB00EBF20B = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					885BF41723D81D1000EBF20B = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 					88ECAF1423D0410E004B58CE = {
 						CreatedOnToolsVersion = 11.3;
 					};
@@ -480,6 +810,10 @@
 				88ECAF1423D0410E004B58CE /* newDubai-Dev */,
 				88ECAF2C23D0416B004B58CE /* newDubai-Ndbpp-Dev */,
 				88ECAF4423D0417E004B58CE /* newDubai-Ndbppp-Dev */,
+				885BF3CF23D81BA800EBF20B /* Kimber188 */,
+				885BF3E723D81CC200EBF20B /* Kimber188-Vnd */,
+				885BF3FF23D81CDB00EBF20B /* Kimber188-Dev */,
+				885BF41723D81D1000EBF20B /* Kimber188-Gbbt1-Dev */,
 			);
 		};
 /* End PBXProject section */
@@ -493,6 +827,50 @@
 				7620A11622C5B0010047670D /* GoogleService-Info.plist in Resources */,
 				7620A0E022C5A0C90047670D /* Assets.xcassets in Resources */,
 				7620A0DE22C5A0C60047670D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885BF3CE23D81BA800EBF20B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				885BF45823D8243D00EBF20B /* Main.storyboard in Resources */,
+				885BF45923D8243D00EBF20B /* LaunchScreen.storyboard in Resources */,
+				885BF43723D81FA300EBF20B /* Assets.xcassets in Resources */,
+				885BF43423D81F8600EBF20B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885BF3E623D81CC200EBF20B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				885BF45A23D8243E00EBF20B /* Main.storyboard in Resources */,
+				885BF45B23D8243E00EBF20B /* LaunchScreen.storyboard in Resources */,
+				885BF43B23D81FBF00EBF20B /* Assets.xcassets in Resources */,
+				885BF43823D81FBC00EBF20B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885BF3FE23D81CDB00EBF20B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				885BF45C23D8243E00EBF20B /* Main.storyboard in Resources */,
+				885BF45D23D8243E00EBF20B /* LaunchScreen.storyboard in Resources */,
+				885BF43C23D81FC000EBF20B /* Assets.xcassets in Resources */,
+				885BF43923D81FBD00EBF20B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885BF41623D81D1000EBF20B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				885BF45E23D8243F00EBF20B /* Main.storyboard in Resources */,
+				885BF45F23D8243F00EBF20B /* LaunchScreen.storyboard in Resources */,
+				885BF43D23D81FC000EBF20B /* Assets.xcassets in Resources */,
+				885BF43A23D81FBD00EBF20B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,8 +890,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				88ECAF7023D04384004B58CE /* GoogleService-Info.plist in Resources */,
-				88ECAF7623D0439B004B58CE /* Assets.xcassets in Resources */,
 				88ECAF7323D04397004B58CE /* LaunchScreen.storyboard in Resources */,
+				885BF49C23D8301500EBF20B /* Assets.xcassets in Resources */,
 				88ECAF7923D0439F004B58CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -532,6 +910,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		08F1256DC32B29385E571F94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kimber188-Vnd-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2013FD2ACCD122098A23D432 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -548,6 +948,62 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-newDubai-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26315A835197870A9FD0EE45 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kimber188-Dev/Pods-Kimber188-Dev-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kimber188-Dev/Pods-Kimber188-Dev-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kimber188-Dev/Pods-Kimber188-Dev-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54D2E8DBD676EBDBC510D117 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kimber188-Vnd/Pods-Kimber188-Vnd-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kimber188-Vnd/Pods-Kimber188-Vnd-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kimber188-Vnd/Pods-Kimber188-Vnd-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B88E0622C57CC0B092D3764 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kimber188-Dev-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -609,6 +1065,74 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-newDubai-Ndbppp-Dev/Pods-newDubai-Ndbppp-Dev-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		885BF44823D8226200EBF20B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/Fabric/run\"\n";
+		};
+		885BF44923D8227100EBF20B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/Fabric/run\"\n";
+		};
+		885BF44A23D8227500EBF20B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/Fabric/run\"\n";
+		};
+		885BF44B23D8227B00EBF20B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/Fabric/run\"\n";
 		};
 		88ECAF5923D042CD004B58CE /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -695,6 +1219,67 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-newDubai-Ndbpp-Dev/Pods-newDubai-Ndbpp-Dev-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B95A6A76B76262EBDF76C4C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kimber188-Gbbt1-Dev/Pods-Kimber188-Gbbt1-Dev-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kimber188-Gbbt1-Dev/Pods-Kimber188-Gbbt1-Dev-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kimber188-Gbbt1-Dev/Pods-Kimber188-Gbbt1-Dev-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C76F0D3CDFAFB0D8A26F8F2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kimber188-Gbbt1-Dev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C770A601EAD478F4E22E9A51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kimber188-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E57952118FB1C0C9DF031566 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -756,6 +1341,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-newDubai/Pods-newDubai-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F8C0474552FB752D91F6ED5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kimber188/Pods-Kimber188-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kimber188/Pods-Kimber188-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kimber188/Pods-Kimber188-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -782,6 +1384,110 @@
 				7620A0DB22C5A0C60047670D /* ViewController.swift in Sources */,
 				7620A0F322C5A6070047670D /* LogData.swift in Sources */,
 				7620A0D922C5A0C60047670D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885BF3CC23D81BA800EBF20B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				885BF46723D8244D00EBF20B /* AppDelegate.swift in Sources */,
+				885BF46523D8244D00EBF20B /* TTJBDetect.swift in Sources */,
+				885BF49223D8245C00EBF20B /* LogData.swift in Sources */,
+				885BF44C23D8242700EBF20B /* CacheManager.m in Sources */,
+				885BF46423D8244D00EBF20B /* AESHelp.swift in Sources */,
+				885BF48223D8245800EBF20B /* NewWKWebViewController.swift in Sources */,
+				885BF43523D81F8600EBF20B /* Constant.swift in Sources */,
+				885BF46223D8244D00EBF20B /* AppKey.swift in Sources */,
+				885BF48123D8245800EBF20B /* WebkitViewController.swift in Sources */,
+				885BF46623D8244D00EBF20B /* OpenInFirefoxControllerSwift.swift in Sources */,
+				885BF48323D8245800EBF20B /* NewWindowViewController.swift in Sources */,
+				885BF46123D8244D00EBF20B /* AppUtility.swift in Sources */,
+				885BF49023D8245C00EBF20B /* WebData.swift in Sources */,
+				885BF48023D8245800EBF20B /* ViewController.swift in Sources */,
+				885BF46323D8244D00EBF20B /* AppTouchID.swift in Sources */,
+				885BF46023D8244D00EBF20B /* APIManager.swift in Sources */,
+				885BF44E23D8242700EBF20B /* Reachability.m in Sources */,
+				885BF44D23D8242700EBF20B /* OpenInChromeController.m in Sources */,
+				885BF49123D8245C00EBF20B /* DeviceData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885BF3E423D81CC200EBF20B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				885BF46F23D8244D00EBF20B /* AppDelegate.swift in Sources */,
+				885BF46D23D8244D00EBF20B /* TTJBDetect.swift in Sources */,
+				885BF49523D8245D00EBF20B /* LogData.swift in Sources */,
+				885BF44F23D8242700EBF20B /* CacheManager.m in Sources */,
+				885BF46C23D8244D00EBF20B /* AESHelp.swift in Sources */,
+				885BF48623D8245800EBF20B /* NewWKWebViewController.swift in Sources */,
+				885BF44023D81FF000EBF20B /* Constant.swift in Sources */,
+				885BF46A23D8244D00EBF20B /* AppKey.swift in Sources */,
+				885BF48523D8245800EBF20B /* WebkitViewController.swift in Sources */,
+				885BF46E23D8244D00EBF20B /* OpenInFirefoxControllerSwift.swift in Sources */,
+				885BF48723D8245800EBF20B /* NewWindowViewController.swift in Sources */,
+				885BF46923D8244D00EBF20B /* AppUtility.swift in Sources */,
+				885BF49323D8245D00EBF20B /* WebData.swift in Sources */,
+				885BF48423D8245800EBF20B /* ViewController.swift in Sources */,
+				885BF46B23D8244D00EBF20B /* AppTouchID.swift in Sources */,
+				885BF46823D8244D00EBF20B /* APIManager.swift in Sources */,
+				885BF45123D8242700EBF20B /* Reachability.m in Sources */,
+				885BF45023D8242700EBF20B /* OpenInChromeController.m in Sources */,
+				885BF49423D8245D00EBF20B /* DeviceData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885BF3FC23D81CDB00EBF20B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				885BF47723D8244E00EBF20B /* AppDelegate.swift in Sources */,
+				885BF47523D8244E00EBF20B /* TTJBDetect.swift in Sources */,
+				885BF49823D8245D00EBF20B /* LogData.swift in Sources */,
+				885BF45223D8242700EBF20B /* CacheManager.m in Sources */,
+				885BF47423D8244E00EBF20B /* AESHelp.swift in Sources */,
+				885BF48A23D8245900EBF20B /* NewWKWebViewController.swift in Sources */,
+				885BF44323D81FF600EBF20B /* Constant.swift in Sources */,
+				885BF47223D8244E00EBF20B /* AppKey.swift in Sources */,
+				885BF48923D8245900EBF20B /* WebkitViewController.swift in Sources */,
+				885BF47623D8244E00EBF20B /* OpenInFirefoxControllerSwift.swift in Sources */,
+				885BF48B23D8245900EBF20B /* NewWindowViewController.swift in Sources */,
+				885BF47123D8244E00EBF20B /* AppUtility.swift in Sources */,
+				885BF49623D8245D00EBF20B /* WebData.swift in Sources */,
+				885BF48823D8245900EBF20B /* ViewController.swift in Sources */,
+				885BF47323D8244E00EBF20B /* AppTouchID.swift in Sources */,
+				885BF47023D8244E00EBF20B /* APIManager.swift in Sources */,
+				885BF45423D8242700EBF20B /* Reachability.m in Sources */,
+				885BF45323D8242700EBF20B /* OpenInChromeController.m in Sources */,
+				885BF49723D8245D00EBF20B /* DeviceData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885BF41423D81D1000EBF20B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				885BF47F23D8244E00EBF20B /* AppDelegate.swift in Sources */,
+				885BF47D23D8244E00EBF20B /* TTJBDetect.swift in Sources */,
+				885BF49B23D8245E00EBF20B /* LogData.swift in Sources */,
+				885BF45523D8242800EBF20B /* CacheManager.m in Sources */,
+				885BF47C23D8244E00EBF20B /* AESHelp.swift in Sources */,
+				885BF48E23D8245900EBF20B /* NewWKWebViewController.swift in Sources */,
+				885BF44623D81FFC00EBF20B /* Constant.swift in Sources */,
+				885BF47A23D8244E00EBF20B /* AppKey.swift in Sources */,
+				885BF48D23D8245900EBF20B /* WebkitViewController.swift in Sources */,
+				885BF47E23D8244E00EBF20B /* OpenInFirefoxControllerSwift.swift in Sources */,
+				885BF48F23D8245900EBF20B /* NewWindowViewController.swift in Sources */,
+				885BF47923D8244E00EBF20B /* AppUtility.swift in Sources */,
+				885BF49923D8245E00EBF20B /* WebData.swift in Sources */,
+				885BF48C23D8245900EBF20B /* ViewController.swift in Sources */,
+				885BF47B23D8244E00EBF20B /* AppTouchID.swift in Sources */,
+				885BF47823D8244E00EBF20B /* APIManager.swift in Sources */,
+				885BF45723D8242800EBF20B /* Reachability.m in Sources */,
+				885BF45623D8242800EBF20B /* OpenInChromeController.m in Sources */,
+				885BF49A23D8245E00EBF20B /* DeviceData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -936,7 +1642,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -991,7 +1697,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1009,7 +1715,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = newDubai/newDubai.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.7.02;
+				CURRENT_PROJECT_VERSION = 1.7.03;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = C5235969FU;
 				ENABLE_BITCODE = NO;
@@ -1037,7 +1743,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = newDubai/newDubai.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.7.02;
+				CURRENT_PROJECT_VERSION = 1.7.03;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = C5235969FU;
 				ENABLE_BITCODE = NO;
@@ -1050,6 +1756,202 @@
 				MARKETING_VERSION = 1.7.0;
 				PRODUCT_BUNDLE_IDENTIFIER = itstar.ios.newDubai;
 				PRODUCT_NAME = "Dubai Palace";
+				SWIFT_OBJC_BRIDGING_HEADER = "newDubai/newDubai-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		885BF3E123D81BAB00EBF20B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2245F41C3D37136563F3EF89 /* Pods-Kimber188.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kimber188/Kimber188.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.7.03;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = C5235969FU;
+				INFOPLIST_FILE = newDubai/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itstar.ios.Kimber188;
+				PRODUCT_NAME = SPORT;
+				SWIFT_OBJC_BRIDGING_HEADER = "newDubai/newDubai-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		885BF3E223D81BAB00EBF20B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24B684275DA84035D7A42085 /* Pods-Kimber188.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kimber188/Kimber188.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.7.03;
+				DEVELOPMENT_TEAM = C5235969FU;
+				INFOPLIST_FILE = newDubai/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itstar.ios.Kimber188;
+				PRODUCT_NAME = SPORT;
+				SWIFT_OBJC_BRIDGING_HEADER = "newDubai/newDubai-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		885BF3FA23D81CC500EBF20B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 113753F76B988084F85BE8C8 /* Pods-Kimber188-Vnd.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kimber188/Kimber188.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.7.03;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = C5235969FU;
+				INFOPLIST_FILE = newDubai/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itstar.ios.Kimber188.vnd;
+				PRODUCT_NAME = SPORT;
+				SWIFT_OBJC_BRIDGING_HEADER = "newDubai/newDubai-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		885BF3FB23D81CC500EBF20B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4CAD56C116BB49BC4E1F67B /* Pods-Kimber188-Vnd.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kimber188/Kimber188.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.7.03;
+				DEVELOPMENT_TEAM = C5235969FU;
+				INFOPLIST_FILE = newDubai/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itstar.ios.Kimber188.vnd;
+				PRODUCT_NAME = SPORT;
+				SWIFT_OBJC_BRIDGING_HEADER = "newDubai/newDubai-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		885BF41223D81CDE00EBF20B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 879EBE9E1999C62C898B27C2 /* Pods-Kimber188-Dev.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kimber188/Kimber188.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.7.03;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = C5235969FU;
+				INFOPLIST_FILE = newDubai/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itstar.ios.Kimber188.dev;
+				PRODUCT_NAME = devSPORT;
+				SWIFT_OBJC_BRIDGING_HEADER = "newDubai/newDubai-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		885BF41323D81CDE00EBF20B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCB44B3549C2BE402D6D3A51 /* Pods-Kimber188-Dev.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kimber188/Kimber188.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.7.03;
+				DEVELOPMENT_TEAM = C5235969FU;
+				INFOPLIST_FILE = newDubai/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itstar.ios.Kimber188.dev;
+				PRODUCT_NAME = devSPORT;
+				SWIFT_OBJC_BRIDGING_HEADER = "newDubai/newDubai-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		885BF42A23D81D1300EBF20B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADD29F3A433302797FB89BB6 /* Pods-Kimber188-Gbbt1-Dev.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kimber188/Kimber188.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.7.03;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = C5235969FU;
+				INFOPLIST_FILE = newDubai/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itstar.ios.Kimber188.gbbt1.dev;
+				PRODUCT_NAME = "台北開發用";
+				SWIFT_OBJC_BRIDGING_HEADER = "newDubai/newDubai-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		885BF42B23D81D1300EBF20B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F04E0833A5F154E9BC8150CF /* Pods-Kimber188-Gbbt1-Dev.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kimber188/Kimber188.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.7.03;
+				DEVELOPMENT_TEAM = C5235969FU;
+				INFOPLIST_FILE = newDubai/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itstar.ios.Kimber188.gbbt1.dev;
+				PRODUCT_NAME = "台北開發用";
 				SWIFT_OBJC_BRIDGING_HEADER = "newDubai/newDubai-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1112,7 +2014,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = newDubai/newDubai.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.7.02;
+				CURRENT_PROJECT_VERSION = 1.7.03;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = C5235969FU;
 				INFOPLIST_FILE = newDubai/Info.plist;
@@ -1137,7 +2039,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = newDubai/newDubai.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.7.02;
+				CURRENT_PROJECT_VERSION = 1.7.03;
 				DEVELOPMENT_TEAM = C5235969FU;
 				INFOPLIST_FILE = newDubai/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1161,7 +2063,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = newDubai/newDubai.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.7.02;
+				CURRENT_PROJECT_VERSION = 1.7.03;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = C5235969FU;
 				INFOPLIST_FILE = newDubai/Info.plist;
@@ -1186,7 +2088,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = newDubai/newDubai.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.7.02;
+				CURRENT_PROJECT_VERSION = 1.7.03;
 				DEVELOPMENT_TEAM = C5235969FU;
 				INFOPLIST_FILE = newDubai/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1220,6 +2122,42 @@
 			buildConfigurations = (
 				7620A0E822C5A0C90047670D /* Debug */,
 				7620A0E922C5A0C90047670D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		885BF3E323D81BAB00EBF20B /* Build configuration list for PBXNativeTarget "Kimber188" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				885BF3E123D81BAB00EBF20B /* Debug */,
+				885BF3E223D81BAB00EBF20B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		885BF3F923D81CC500EBF20B /* Build configuration list for PBXNativeTarget "Kimber188-Vnd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				885BF3FA23D81CC500EBF20B /* Debug */,
+				885BF3FB23D81CC500EBF20B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		885BF41123D81CDE00EBF20B /* Build configuration list for PBXNativeTarget "Kimber188-Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				885BF41223D81CDE00EBF20B /* Debug */,
+				885BF41323D81CDE00EBF20B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		885BF42923D81D1300EBF20B /* Build configuration list for PBXNativeTarget "Kimber188-Gbbt1-Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				885BF42A23D81D1300EBF20B /* Debug */,
+				885BF42B23D81D1300EBF20B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

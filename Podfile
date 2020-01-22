@@ -34,3 +34,19 @@ end
 target 'newDubai-Ndbppp-Dev' do
     my_pods
 end
+
+target 'Kimber188' do
+    my_pods
+end
+
+target 'Kimber188-Vnd' do
+    my_pods
+end
+
+target 'Kimber188-Dev' do
+    my_pods
+end
+
+target 'Kimber188-Gbbt1-Dev' do
+    my_pods
+end
