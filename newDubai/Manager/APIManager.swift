@@ -10,24 +10,24 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-class APIManager{
-    
+class APIManager {
+
     static let shared = APIManager()
-    
+
     var alamofireManager: SessionManager?
-    
-    func setupManager(){
+
+    func setupManager() {
         let conf = URLSessionConfiguration.default
         conf.timeoutIntervalForResource = 8
         conf.timeoutIntervalForRequest = 8
         alamofireManager = Alamofire.SessionManager(configuration: conf)
     }
-    
-    func jUpdateAPI(urlStringDB: String, uuid: String, completionHandler: @escaping (JSON?) -> Void){
+
+    func jUpdateAPI(urlStringDB: String, uuid: String, completionHandler: @escaping (JSON?) -> Void) {
         let buildVersion = Bundle.main.infoDictionary!["CFBundleVersion"] as! String
-        
+
         let urlString = "\(urlStringDB)/mob_controller/judgeUpdate.php"
-        
+
         let params: [String: Any] = [
             "app_version": buildVersion,
             "OS": "1",
@@ -35,8 +35,8 @@ class APIManager{
             "IsDev": ISDEV,
             "device_id": uuid
         ]
-        
-        if let url = URL(string: urlString){
+
+        if let url = URL(string: urlString) {
             //            Alamofire.request(url, method: .post, parameters: params, encoding: URLEncoding(), headers: nil).responseJSON { (response) in
             //                switch response.result{
             //                case .success(let value):
@@ -48,9 +48,9 @@ class APIManager{
             //                    break
             //                }
             //            }
-            
+
             alamofireManager?.request(url, method: .post, parameters: params, encoding: URLEncoding(), headers: nil).responseJSON { (response) in
-                switch response.result{
+                switch response.result {
                 case .success(let value):
                     let jsonData = JSON(value)
                     completionHandler(jsonData)
@@ -61,7 +61,7 @@ class APIManager{
                 }
             }
         }
-        
+
         //        if let url = URL(string: urlString){
         //            alamofireManager?.request(url, method: .post, parameters: params, encoding: URLEncoding(), headers: nil).response(completionHandler: { (response) in
         //
@@ -69,12 +69,12 @@ class APIManager{
         //            })
         //        }
     }
-    
-    func getConnectionIP(urlString: String, CompletionHandler: @escaping (String?) -> Void){
-        if let url = URL(string: urlString){
+
+    func getConnectionIP(urlString: String, CompletionHandler: @escaping (String?) -> Void) {
+        if let url = URL(string: urlString) {
             Alamofire.request(url, method: .get, parameters: nil, encoding: URLEncoding(), headers: nil).responseString(completionHandler: { (response) in
                 //                print(response)
-                switch response.result{
+                switch response.result {
                 case .success(let value):
                     CompletionHandler(value)
                     break
@@ -85,10 +85,10 @@ class APIManager{
             })
         }
     }
-    
-    func postAppThreadAPI(domain: String, deviceID: String, startTime: String, endTime: String, requestURL: String, response: String, sessID: String, logID: String, status: String, userAgent: String, cpu: String, memUsed: String, memory: String, space: String, radioTech: String, carrierName: String, deviceModel: String, completionHandler: @escaping (JSON?) -> Void){
+
+    func postAppThreadAPI(domain: String, deviceID: String, startTime: String, endTime: String, requestURL: String, response: String, sessID: String, logID: String, status: String, userAgent: String, cpu: String, memUsed: String, memory: String, space: String, radioTech: String, carrierName: String, deviceModel: String, completionHandler: @escaping (JSON?) -> Void) {
         let urlString = "\(domain)/app_log/apl_insertweilog.php"
-        
+
         let content: [String: Any] = [
             "datas": [
                 "appapp": KEY_CODE,
@@ -112,15 +112,15 @@ class APIManager{
                 "device_name": deviceModel
             ]
         ]
-        
+
         let params: [String: Any] = [
             "crlMode": "app_log",
             "content": JSON(content)
         ]
-        
-        if let url = URL(string: urlString){
+
+        if let url = URL(string: urlString) {
             Alamofire.request(url, method: .post, parameters: params, encoding: URLEncoding(), headers: nil).responseJSON { (res) in
-                switch res.result{
+                switch res.result {
                 case .success(let value):
                     let jsonData = JSON(value)
                     //                    print(jsonData)
@@ -134,23 +134,23 @@ class APIManager{
             }
         }
     }
-    
-    func postAccountAsync(domain: String, sessID: String, account: String, completionHandler: @escaping (JSON?) -> Void){
+
+    func postAccountAsync(domain: String, sessID: String, account: String, completionHandler: @escaping (JSON?) -> Void) {
         let urlString = "\(domain)/app_log/apl_insertweilog.php"
-        
+
         let content = [
             "sess_id": sessID,
             "web_acc": account
         ]
-        
+
         let params: [String: Any] = [
             "crlMode": "update_account",
             "content": JSON(content)
         ]
-        
-        if let url = URL(string: urlString){
+
+        if let url = URL(string: urlString) {
             Alamofire.request(url, method: .post, parameters: params, encoding: URLEncoding(), headers: nil).responseJSON { (response) in
-                switch response.result{
+                switch response.result {
                 case .success(let value):
                     let jsonData = JSON(value)
                     //                    print(jsonData)
@@ -164,19 +164,19 @@ class APIManager{
             }
         }
     }
-    
-    func fastLoginAPI(host: String, account: String, password: String, type: String, completionHandler: @escaping (JSON?) -> Void){
+
+    func fastLoginAPI(host: String, account: String, password: String, type: String, completionHandler: @escaping (JSON?) -> Void) {
         let urlString = "\(host)app/getMemLoginToken"
-        
+
         let params: [String: Any] = [
             "acc": account,
             "pwd": password,
             "type": type
         ]
-        
-        if let url = URL(string: urlString){
+
+        if let url = URL(string: urlString) {
             Alamofire.request(url, method: .post, parameters: params, encoding: URLEncoding(), headers: nil).responseJSON { (res) in
-                switch res.result{
+                switch res.result {
                 case .success(let value):
                     let jsonData = JSON(value)
                     //                    print(jsonData)

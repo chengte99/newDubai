@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F4C7BEAB2FE83AC266E9B22 /* Pods_newDubai.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CFA577B1F0EC6A9A6F4FD5 /* Pods_newDubai.framework */; };
+		2E781689CBEC876C092E9C8C /* Pods_newDubai_Dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2BE5120694671845C713A0A /* Pods_newDubai_Dev.framework */; };
 		7620A0D922C5A0C60047670D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0D822C5A0C60047670D /* AppDelegate.swift */; };
 		7620A0DB22C5A0C60047670D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0DA22C5A0C60047670D /* ViewController.swift */; };
 		7620A0DE22C5A0C60047670D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0DC22C5A0C60047670D /* Main.storyboard */; };
@@ -31,10 +32,86 @@
 		7620A11122C5A6F60047670D /* CacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10E22C5A6F60047670D /* CacheManager.m */; };
 		7620A11322C5AC740047670D /* OpenInFirefoxControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A11222C5AC740047670D /* OpenInFirefoxControllerSwift.swift */; };
 		7620A11622C5B0010047670D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7620A11522C5B0000047670D /* GoogleService-Info.plist */; };
+		88ECAF5E23D04348004B58CE /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ECAF5D23D04348004B58CE /* Constant.swift */; };
+		88ECAF6123D04360004B58CE /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ECAF6023D04360004B58CE /* Constant.swift */; };
+		88ECAF6423D04366004B58CE /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ECAF6323D04366004B58CE /* Constant.swift */; };
+		88ECAF6523D04378004B58CE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10A22C5A6F50047670D /* Reachability.m */; };
+		88ECAF6623D04378004B58CE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10A22C5A6F50047670D /* Reachability.m */; };
+		88ECAF6723D04378004B58CE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10A22C5A6F50047670D /* Reachability.m */; };
+		88ECAF6823D0437F004B58CE /* CacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10E22C5A6F60047670D /* CacheManager.m */; };
+		88ECAF6923D0437F004B58CE /* OpenInChromeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10C22C5A6F50047670D /* OpenInChromeController.m */; };
+		88ECAF6A23D0437F004B58CE /* CacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10E22C5A6F60047670D /* CacheManager.m */; };
+		88ECAF6B23D0437F004B58CE /* OpenInChromeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10C22C5A6F50047670D /* OpenInChromeController.m */; };
+		88ECAF6C23D04380004B58CE /* CacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10E22C5A6F60047670D /* CacheManager.m */; };
+		88ECAF6D23D04380004B58CE /* OpenInChromeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10C22C5A6F50047670D /* OpenInChromeController.m */; };
+		88ECAF6E23D04382004B58CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7620A11522C5B0000047670D /* GoogleService-Info.plist */; };
+		88ECAF6F23D04383004B58CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7620A11522C5B0000047670D /* GoogleService-Info.plist */; };
+		88ECAF7023D04384004B58CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7620A11522C5B0000047670D /* GoogleService-Info.plist */; };
+		88ECAF7123D04395004B58CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0E122C5A0C90047670D /* LaunchScreen.storyboard */; };
+		88ECAF7323D04397004B58CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0E122C5A0C90047670D /* LaunchScreen.storyboard */; };
+		88ECAF7423D04397004B58CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0E122C5A0C90047670D /* LaunchScreen.storyboard */; };
+		88ECAF7523D0439A004B58CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0DF22C5A0C90047670D /* Assets.xcassets */; };
+		88ECAF7623D0439B004B58CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0DF22C5A0C90047670D /* Assets.xcassets */; };
+		88ECAF7723D0439B004B58CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0DF22C5A0C90047670D /* Assets.xcassets */; };
+		88ECAF7823D0439E004B58CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0DC22C5A0C60047670D /* Main.storyboard */; };
+		88ECAF7923D0439F004B58CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0DC22C5A0C60047670D /* Main.storyboard */; };
+		88ECAF7A23D0439F004B58CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0DC22C5A0C60047670D /* Main.storyboard */; };
+		88ECAF7B23D043A4004B58CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0D822C5A0C60047670D /* AppDelegate.swift */; };
+		88ECAF7C23D043A4004B58CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0D822C5A0C60047670D /* AppDelegate.swift */; };
+		88ECAF7D23D043A4004B58CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0D822C5A0C60047670D /* AppDelegate.swift */; };
+		88ECAF7E23D043AB004B58CE /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F422C5A61D0047670D /* APIManager.swift */; };
+		88ECAF7F23D043AB004B58CE /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F822C5A63B0047670D /* AppUtility.swift */; };
+		88ECAF8023D043AB004B58CE /* AppKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0FA22C5A6480047670D /* AppKey.swift */; };
+		88ECAF8123D043AB004B58CE /* AppTouchID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0FC22C5A6540047670D /* AppTouchID.swift */; };
+		88ECAF8223D043AB004B58CE /* AESHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0FE22C5A65F0047670D /* AESHelp.swift */; };
+		88ECAF8323D043AB004B58CE /* TTJBDetect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10022C5A66E0047670D /* TTJBDetect.swift */; };
+		88ECAF8423D043AB004B58CE /* OpenInFirefoxControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A11222C5AC740047670D /* OpenInFirefoxControllerSwift.swift */; };
+		88ECAF8523D043AC004B58CE /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F422C5A61D0047670D /* APIManager.swift */; };
+		88ECAF8623D043AC004B58CE /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F822C5A63B0047670D /* AppUtility.swift */; };
+		88ECAF8723D043AC004B58CE /* AppKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0FA22C5A6480047670D /* AppKey.swift */; };
+		88ECAF8823D043AC004B58CE /* AppTouchID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0FC22C5A6540047670D /* AppTouchID.swift */; };
+		88ECAF8923D043AC004B58CE /* AESHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0FE22C5A65F0047670D /* AESHelp.swift */; };
+		88ECAF8A23D043AC004B58CE /* TTJBDetect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10022C5A66E0047670D /* TTJBDetect.swift */; };
+		88ECAF8B23D043AC004B58CE /* OpenInFirefoxControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A11222C5AC740047670D /* OpenInFirefoxControllerSwift.swift */; };
+		88ECAF8C23D043AC004B58CE /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F422C5A61D0047670D /* APIManager.swift */; };
+		88ECAF8D23D043AC004B58CE /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F822C5A63B0047670D /* AppUtility.swift */; };
+		88ECAF8E23D043AC004B58CE /* AppKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0FA22C5A6480047670D /* AppKey.swift */; };
+		88ECAF8F23D043AC004B58CE /* AppTouchID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0FC22C5A6540047670D /* AppTouchID.swift */; };
+		88ECAF9023D043AC004B58CE /* AESHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0FE22C5A65F0047670D /* AESHelp.swift */; };
+		88ECAF9123D043AC004B58CE /* TTJBDetect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10022C5A66E0047670D /* TTJBDetect.swift */; };
+		88ECAF9223D043AC004B58CE /* OpenInFirefoxControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A11222C5AC740047670D /* OpenInFirefoxControllerSwift.swift */; };
+		88ECAF9323D043B2004B58CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0DA22C5A0C60047670D /* ViewController.swift */; };
+		88ECAF9423D043B2004B58CE /* WebkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10222C5A6950047670D /* WebkitViewController.swift */; };
+		88ECAF9523D043B2004B58CE /* NewWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10422C5A6AC0047670D /* NewWKWebViewController.swift */; };
+		88ECAF9623D043B2004B58CE /* NewWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10622C5A6BA0047670D /* NewWindowViewController.swift */; };
+		88ECAF9723D043B3004B58CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0DA22C5A0C60047670D /* ViewController.swift */; };
+		88ECAF9823D043B3004B58CE /* WebkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10222C5A6950047670D /* WebkitViewController.swift */; };
+		88ECAF9923D043B3004B58CE /* NewWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10422C5A6AC0047670D /* NewWKWebViewController.swift */; };
+		88ECAF9A23D043B3004B58CE /* NewWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10622C5A6BA0047670D /* NewWindowViewController.swift */; };
+		88ECAF9B23D043B3004B58CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0DA22C5A0C60047670D /* ViewController.swift */; };
+		88ECAF9C23D043B3004B58CE /* WebkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10222C5A6950047670D /* WebkitViewController.swift */; };
+		88ECAF9D23D043B3004B58CE /* NewWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10422C5A6AC0047670D /* NewWKWebViewController.swift */; };
+		88ECAF9E23D043B3004B58CE /* NewWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10622C5A6BA0047670D /* NewWindowViewController.swift */; };
+		88ECAF9F23D043B8004B58CE /* WebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0ED22C5A5EC0047670D /* WebData.swift */; };
+		88ECAFA023D043B8004B58CE /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0EF22C5A5F80047670D /* DeviceData.swift */; };
+		88ECAFA123D043B8004B58CE /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* LogData.swift */; };
+		88ECAFA223D043B8004B58CE /* WebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0ED22C5A5EC0047670D /* WebData.swift */; };
+		88ECAFA323D043B8004B58CE /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0EF22C5A5F80047670D /* DeviceData.swift */; };
+		88ECAFA423D043B8004B58CE /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* LogData.swift */; };
+		88ECAFA523D043B9004B58CE /* WebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0ED22C5A5EC0047670D /* WebData.swift */; };
+		88ECAFA623D043B9004B58CE /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0EF22C5A5F80047670D /* DeviceData.swift */; };
+		88ECAFA723D043B9004B58CE /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* LogData.swift */; };
+		B1F220D35AE20E329000D0C8 /* Pods_newDubai_Ndbppp_Dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDCE2D1B99BAB9C9075347D0 /* Pods_newDubai_Ndbppp_Dev.framework */; };
+		E4C12AFBFD789700BD38D56B /* Pods_newDubai_Ndbpp_Dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49DFBBAFF0601751851CF4EB /* Pods_newDubai_Ndbpp_Dev.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E8D6DC3146F6C65C59F2BE2 /* Pods-newDubai-Ndbpp-Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newDubai-Ndbpp-Dev.debug.xcconfig"; path = "Target Support Files/Pods-newDubai-Ndbpp-Dev/Pods-newDubai-Ndbpp-Dev.debug.xcconfig"; sourceTree = "<group>"; };
 		15D427918185F7D68215A5F1 /* Pods-newDubai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newDubai.release.xcconfig"; path = "Target Support Files/Pods-newDubai/Pods-newDubai.release.xcconfig"; sourceTree = "<group>"; };
+		3AA8A6D8532082AE78C0ABF7 /* Pods-newDubai-Ndbppp-Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newDubai-Ndbppp-Dev.release.xcconfig"; path = "Target Support Files/Pods-newDubai-Ndbppp-Dev/Pods-newDubai-Ndbppp-Dev.release.xcconfig"; sourceTree = "<group>"; };
+		49DFBBAFF0601751851CF4EB /* Pods_newDubai_Ndbpp_Dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newDubai_Ndbpp_Dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CC8AD58A5234BC36E708FFC /* Pods-newDubai-Ndbppp-Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newDubai-Ndbppp-Dev.debug.xcconfig"; path = "Target Support Files/Pods-newDubai-Ndbppp-Dev/Pods-newDubai-Ndbppp-Dev.debug.xcconfig"; sourceTree = "<group>"; };
+		505AEF9C3A057A630BF97DA5 /* Pods-newDubai-Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newDubai-Dev.debug.xcconfig"; path = "Target Support Files/Pods-newDubai-Dev/Pods-newDubai-Dev.debug.xcconfig"; sourceTree = "<group>"; };
 		7620A0D522C5A0C60047670D /* Dubai Palace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dubai Palace.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7620A0D822C5A0C60047670D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7620A0DA22C5A0C60047670D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,7 +143,17 @@
 		7620A11422C5AD5A0047670D /* newDubai.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = newDubai.entitlements; sourceTree = "<group>"; };
 		7620A11522C5B0000047670D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7C3C50BA49D735E296595B8A /* Pods-newDubai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newDubai.debug.xcconfig"; path = "Target Support Files/Pods-newDubai/Pods-newDubai.debug.xcconfig"; sourceTree = "<group>"; };
+		88ECAF1523D0410E004B58CE /* dev Dubai Palace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dev Dubai Palace.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88ECAF2D23D0416B004B58CE /* 台北開發用.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "台北開發用.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88ECAF4523D0417E004B58CE /* RD32.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RD32.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88ECAF5D23D04348004B58CE /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		88ECAF6023D04360004B58CE /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		88ECAF6323D04366004B58CE /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		C3CFA577B1F0EC6A9A6F4FD5 /* Pods_newDubai.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newDubai.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDD0A70550A370F464BD7FBF /* Pods-newDubai-Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newDubai-Dev.release.xcconfig"; path = "Target Support Files/Pods-newDubai-Dev/Pods-newDubai-Dev.release.xcconfig"; sourceTree = "<group>"; };
+		DDCE2D1B99BAB9C9075347D0 /* Pods_newDubai_Ndbppp_Dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newDubai_Ndbppp_Dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2BE5120694671845C713A0A /* Pods_newDubai_Dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newDubai_Dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F264A339A11EC4B056143852 /* Pods-newDubai-Ndbpp-Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newDubai-Ndbpp-Dev.release.xcconfig"; path = "Target Support Files/Pods-newDubai-Ndbpp-Dev/Pods-newDubai-Ndbpp-Dev.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +165,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		88ECAF1223D0410E004B58CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E781689CBEC876C092E9C8C /* Pods_newDubai_Dev.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88ECAF2A23D0416B004B58CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4C12AFBFD789700BD38D56B /* Pods_newDubai_Ndbpp_Dev.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88ECAF4223D0417E004B58CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1F220D35AE20E329000D0C8 /* Pods_newDubai_Ndbppp_Dev.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -86,6 +197,12 @@
 			children = (
 				7C3C50BA49D735E296595B8A /* Pods-newDubai.debug.xcconfig */,
 				15D427918185F7D68215A5F1 /* Pods-newDubai.release.xcconfig */,
+				505AEF9C3A057A630BF97DA5 /* Pods-newDubai-Dev.debug.xcconfig */,
+				CDD0A70550A370F464BD7FBF /* Pods-newDubai-Dev.release.xcconfig */,
+				0E8D6DC3146F6C65C59F2BE2 /* Pods-newDubai-Ndbpp-Dev.debug.xcconfig */,
+				F264A339A11EC4B056143852 /* Pods-newDubai-Ndbpp-Dev.release.xcconfig */,
+				4CC8AD58A5234BC36E708FFC /* Pods-newDubai-Ndbppp-Dev.debug.xcconfig */,
+				3AA8A6D8532082AE78C0ABF7 /* Pods-newDubai-Ndbppp-Dev.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -94,6 +211,9 @@
 			isa = PBXGroup;
 			children = (
 				C3CFA577B1F0EC6A9A6F4FD5 /* Pods_newDubai.framework */,
+				E2BE5120694671845C713A0A /* Pods_newDubai_Dev.framework */,
+				49DFBBAFF0601751851CF4EB /* Pods_newDubai_Ndbpp_Dev.framework */,
+				DDCE2D1B99BAB9C9075347D0 /* Pods_newDubai_Ndbppp_Dev.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -102,6 +222,9 @@
 			isa = PBXGroup;
 			children = (
 				7620A0D722C5A0C60047670D /* newDubai */,
+				88ECAF1623D0410E004B58CE /* newDubai-Dev */,
+				88ECAF2E23D0416B004B58CE /* newDubai-Ndbpp-Dev */,
+				88ECAF4623D0417E004B58CE /* newDubai-Ndbppp-Dev */,
 				7620A0D622C5A0C60047670D /* Products */,
 				127832B44E163AEDF1EA7246 /* Pods */,
 				15C14CD98DD3CE32B343E6BA /* Frameworks */,
@@ -112,6 +235,9 @@
 			isa = PBXGroup;
 			children = (
 				7620A0D522C5A0C60047670D /* Dubai Palace.app */,
+				88ECAF1523D0410E004B58CE /* dev Dubai Palace.app */,
+				88ECAF2D23D0416B004B58CE /* 台北開發用.app */,
+				88ECAF4523D0417E004B58CE /* RD32.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,6 +302,54 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		88ECAF1623D0410E004B58CE /* newDubai-Dev */ = {
+			isa = PBXGroup;
+			children = (
+				88ECAF5C23D04348004B58CE /* Manager */,
+			);
+			path = "newDubai-Dev";
+			sourceTree = "<group>";
+		};
+		88ECAF2E23D0416B004B58CE /* newDubai-Ndbpp-Dev */ = {
+			isa = PBXGroup;
+			children = (
+				88ECAF5F23D04360004B58CE /* Manager */,
+			);
+			path = "newDubai-Ndbpp-Dev";
+			sourceTree = "<group>";
+		};
+		88ECAF4623D0417E004B58CE /* newDubai-Ndbppp-Dev */ = {
+			isa = PBXGroup;
+			children = (
+				88ECAF6223D04366004B58CE /* Manager */,
+			);
+			path = "newDubai-Ndbppp-Dev";
+			sourceTree = "<group>";
+		};
+		88ECAF5C23D04348004B58CE /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				88ECAF5D23D04348004B58CE /* Constant.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		88ECAF5F23D04360004B58CE /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				88ECAF6023D04360004B58CE /* Constant.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		88ECAF6223D04366004B58CE /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				88ECAF6323D04366004B58CE /* Constant.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -199,13 +373,73 @@
 			productReference = 7620A0D522C5A0C60047670D /* Dubai Palace.app */;
 			productType = "com.apple.product-type.application";
 		};
+		88ECAF1423D0410E004B58CE /* newDubai-Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88ECAF2623D04111004B58CE /* Build configuration list for PBXNativeTarget "newDubai-Dev" */;
+			buildPhases = (
+				776080A18268DBD7727D3C20 /* [CP] Check Pods Manifest.lock */,
+				88ECAF1123D0410E004B58CE /* Sources */,
+				88ECAF1223D0410E004B58CE /* Frameworks */,
+				88ECAF1323D0410E004B58CE /* Resources */,
+				9064DD589CFCD11061950BDD /* [CP] Embed Pods Frameworks */,
+				88ECAF5923D042CD004B58CE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "newDubai-Dev";
+			productName = "newDubai-Dev";
+			productReference = 88ECAF1523D0410E004B58CE /* dev Dubai Palace.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88ECAF2C23D0416B004B58CE /* newDubai-Ndbpp-Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88ECAF3E23D0416D004B58CE /* Build configuration list for PBXNativeTarget "newDubai-Ndbpp-Dev" */;
+			buildPhases = (
+				E79F79501F3B98CA7E9D2CF6 /* [CP] Check Pods Manifest.lock */,
+				88ECAF2923D0416B004B58CE /* Sources */,
+				88ECAF2A23D0416B004B58CE /* Frameworks */,
+				88ECAF2B23D0416B004B58CE /* Resources */,
+				B79E8301C401E2510F875072 /* [CP] Embed Pods Frameworks */,
+				88ECAF5A23D042D4004B58CE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "newDubai-Ndbpp-Dev";
+			productName = "newDubai-Ndbpp-Dev";
+			productReference = 88ECAF2D23D0416B004B58CE /* 台北開發用.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88ECAF4423D0417E004B58CE /* newDubai-Ndbppp-Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88ECAF5623D04180004B58CE /* Build configuration list for PBXNativeTarget "newDubai-Ndbppp-Dev" */;
+			buildPhases = (
+				E57952118FB1C0C9DF031566 /* [CP] Check Pods Manifest.lock */,
+				88ECAF4123D0417E004B58CE /* Sources */,
+				88ECAF4223D0417E004B58CE /* Frameworks */,
+				88ECAF4323D0417E004B58CE /* Resources */,
+				8842D291050EFA9DA80CE23A /* [CP] Embed Pods Frameworks */,
+				88ECAF5B23D042D9004B58CE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "newDubai-Ndbppp-Dev";
+			productName = "newDubai-Ndbppp-Dev";
+			productReference = 88ECAF4523D0417E004B58CE /* RD32.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		7620A0CD22C5A0C60047670D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "\U0010KevinLin";
 				TargetAttributes = {
@@ -217,6 +451,15 @@
 								enabled = 1;
 							};
 						};
+					};
+					88ECAF1423D0410E004B58CE = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					88ECAF2C23D0416B004B58CE = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					88ECAF4423D0417E004B58CE = {
+						CreatedOnToolsVersion = 11.3;
 					};
 				};
 			};
@@ -234,6 +477,9 @@
 			projectRoot = "";
 			targets = (
 				7620A0D422C5A0C60047670D /* newDubai */,
+				88ECAF1423D0410E004B58CE /* newDubai-Dev */,
+				88ECAF2C23D0416B004B58CE /* newDubai-Ndbpp-Dev */,
+				88ECAF4423D0417E004B58CE /* newDubai-Ndbppp-Dev */,
 			);
 		};
 /* End PBXProject section */
@@ -247,6 +493,39 @@
 				7620A11622C5B0010047670D /* GoogleService-Info.plist in Resources */,
 				7620A0E022C5A0C90047670D /* Assets.xcassets in Resources */,
 				7620A0DE22C5A0C60047670D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88ECAF1323D0410E004B58CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88ECAF6E23D04382004B58CE /* GoogleService-Info.plist in Resources */,
+				88ECAF7523D0439A004B58CE /* Assets.xcassets in Resources */,
+				88ECAF7123D04395004B58CE /* LaunchScreen.storyboard in Resources */,
+				88ECAF7823D0439E004B58CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88ECAF2B23D0416B004B58CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88ECAF7023D04384004B58CE /* GoogleService-Info.plist in Resources */,
+				88ECAF7623D0439B004B58CE /* Assets.xcassets in Resources */,
+				88ECAF7323D04397004B58CE /* LaunchScreen.storyboard in Resources */,
+				88ECAF7923D0439F004B58CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88ECAF4323D0417E004B58CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88ECAF6F23D04383004B58CE /* GoogleService-Info.plist in Resources */,
+				88ECAF7723D0439B004B58CE /* Assets.xcassets in Resources */,
+				88ECAF7423D04397004B58CE /* LaunchScreen.storyboard in Resources */,
+				88ECAF7A23D0439F004B58CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +562,6 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
 			);
 			outputFileListPaths = (
 			);
@@ -292,6 +570,174 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/Fabric/run\"\n";
+		};
+		776080A18268DBD7727D3C20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-newDubai-Dev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8842D291050EFA9DA80CE23A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-newDubai-Ndbppp-Dev/Pods-newDubai-Ndbppp-Dev-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-newDubai-Ndbppp-Dev/Pods-newDubai-Ndbppp-Dev-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-newDubai-Ndbppp-Dev/Pods-newDubai-Ndbppp-Dev-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88ECAF5923D042CD004B58CE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/Fabric/run\"\n";
+		};
+		88ECAF5A23D042D4004B58CE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/Fabric/run\"\n";
+		};
+		88ECAF5B23D042D9004B58CE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/Fabric/run\"\n";
+		};
+		9064DD589CFCD11061950BDD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-newDubai-Dev/Pods-newDubai-Dev-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-newDubai-Dev/Pods-newDubai-Dev-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-newDubai-Dev/Pods-newDubai-Dev-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B79E8301C401E2510F875072 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-newDubai-Ndbpp-Dev/Pods-newDubai-Ndbpp-Dev-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-newDubai-Ndbpp-Dev/Pods-newDubai-Ndbpp-Dev-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-newDubai-Ndbpp-Dev/Pods-newDubai-Ndbpp-Dev-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E57952118FB1C0C9DF031566 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-newDubai-Ndbppp-Dev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E79F79501F3B98CA7E9D2CF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-newDubai-Ndbpp-Dev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 		F2EC6E10EAB985DCE2F74750 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -336,6 +782,84 @@
 				7620A0DB22C5A0C60047670D /* ViewController.swift in Sources */,
 				7620A0F322C5A6070047670D /* LogData.swift in Sources */,
 				7620A0D922C5A0C60047670D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88ECAF1123D0410E004B58CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88ECAF7F23D043AB004B58CE /* AppUtility.swift in Sources */,
+				88ECAF8023D043AB004B58CE /* AppKey.swift in Sources */,
+				88ECAFA723D043B9004B58CE /* LogData.swift in Sources */,
+				88ECAF7E23D043AB004B58CE /* APIManager.swift in Sources */,
+				88ECAF8123D043AB004B58CE /* AppTouchID.swift in Sources */,
+				88ECAF9D23D043B3004B58CE /* NewWKWebViewController.swift in Sources */,
+				88ECAF6523D04378004B58CE /* Reachability.m in Sources */,
+				88ECAF6823D0437F004B58CE /* CacheManager.m in Sources */,
+				88ECAF9C23D043B3004B58CE /* WebkitViewController.swift in Sources */,
+				88ECAF8223D043AB004B58CE /* AESHelp.swift in Sources */,
+				88ECAF9E23D043B3004B58CE /* NewWindowViewController.swift in Sources */,
+				88ECAF8323D043AB004B58CE /* TTJBDetect.swift in Sources */,
+				88ECAFA523D043B9004B58CE /* WebData.swift in Sources */,
+				88ECAF9B23D043B3004B58CE /* ViewController.swift in Sources */,
+				88ECAF6923D0437F004B58CE /* OpenInChromeController.m in Sources */,
+				88ECAF7B23D043A4004B58CE /* AppDelegate.swift in Sources */,
+				88ECAF8423D043AB004B58CE /* OpenInFirefoxControllerSwift.swift in Sources */,
+				88ECAF5E23D04348004B58CE /* Constant.swift in Sources */,
+				88ECAFA623D043B9004B58CE /* DeviceData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88ECAF2923D0416B004B58CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88ECAF8D23D043AC004B58CE /* AppUtility.swift in Sources */,
+				88ECAF8E23D043AC004B58CE /* AppKey.swift in Sources */,
+				88ECAFA123D043B8004B58CE /* LogData.swift in Sources */,
+				88ECAF8C23D043AC004B58CE /* APIManager.swift in Sources */,
+				88ECAF8F23D043AC004B58CE /* AppTouchID.swift in Sources */,
+				88ECAF9523D043B2004B58CE /* NewWKWebViewController.swift in Sources */,
+				88ECAF6623D04378004B58CE /* Reachability.m in Sources */,
+				88ECAF6A23D0437F004B58CE /* CacheManager.m in Sources */,
+				88ECAF9423D043B2004B58CE /* WebkitViewController.swift in Sources */,
+				88ECAF9023D043AC004B58CE /* AESHelp.swift in Sources */,
+				88ECAF9623D043B2004B58CE /* NewWindowViewController.swift in Sources */,
+				88ECAF9123D043AC004B58CE /* TTJBDetect.swift in Sources */,
+				88ECAF9F23D043B8004B58CE /* WebData.swift in Sources */,
+				88ECAF9323D043B2004B58CE /* ViewController.swift in Sources */,
+				88ECAF6B23D0437F004B58CE /* OpenInChromeController.m in Sources */,
+				88ECAF7C23D043A4004B58CE /* AppDelegate.swift in Sources */,
+				88ECAF9223D043AC004B58CE /* OpenInFirefoxControllerSwift.swift in Sources */,
+				88ECAF6123D04360004B58CE /* Constant.swift in Sources */,
+				88ECAFA023D043B8004B58CE /* DeviceData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88ECAF4123D0417E004B58CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88ECAF8623D043AC004B58CE /* AppUtility.swift in Sources */,
+				88ECAF8723D043AC004B58CE /* AppKey.swift in Sources */,
+				88ECAFA423D043B8004B58CE /* LogData.swift in Sources */,
+				88ECAF8523D043AC004B58CE /* APIManager.swift in Sources */,
+				88ECAF8823D043AC004B58CE /* AppTouchID.swift in Sources */,
+				88ECAF9923D043B3004B58CE /* NewWKWebViewController.swift in Sources */,
+				88ECAF6723D04378004B58CE /* Reachability.m in Sources */,
+				88ECAF6C23D04380004B58CE /* CacheManager.m in Sources */,
+				88ECAF9823D043B3004B58CE /* WebkitViewController.swift in Sources */,
+				88ECAF8923D043AC004B58CE /* AESHelp.swift in Sources */,
+				88ECAF9A23D043B3004B58CE /* NewWindowViewController.swift in Sources */,
+				88ECAF8A23D043AC004B58CE /* TTJBDetect.swift in Sources */,
+				88ECAFA223D043B8004B58CE /* WebData.swift in Sources */,
+				88ECAF9723D043B3004B58CE /* ViewController.swift in Sources */,
+				88ECAF6D23D04380004B58CE /* OpenInChromeController.m in Sources */,
+				88ECAF7D23D043A4004B58CE /* AppDelegate.swift in Sources */,
+				88ECAF8B23D043AC004B58CE /* OpenInFirefoxControllerSwift.swift in Sources */,
+				88ECAF6423D04366004B58CE /* Constant.swift in Sources */,
+				88ECAFA323D043B8004B58CE /* DeviceData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +1056,153 @@
 			};
 			name = Release;
 		};
+		88ECAF2723D04111004B58CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 505AEF9C3A057A630BF97DA5 /* Pods-newDubai-Dev.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = newDubai/newDubai.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.7.03;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = C5235969FU;
+				INFOPLIST_FILE = newDubai/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itstar.ios.newDubai.dev;
+				PRODUCT_NAME = "dev Dubai Palace";
+				SWIFT_OBJC_BRIDGING_HEADER = "newDubai/newDubai-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		88ECAF2823D04111004B58CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDD0A70550A370F464BD7FBF /* Pods-newDubai-Dev.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = newDubai/newDubai.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.7.03;
+				DEVELOPMENT_TEAM = C5235969FU;
+				INFOPLIST_FILE = newDubai/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itstar.ios.newDubai.dev;
+				PRODUCT_NAME = "dev Dubai Palace";
+				SWIFT_OBJC_BRIDGING_HEADER = "newDubai/newDubai-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		88ECAF3F23D0416D004B58CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E8D6DC3146F6C65C59F2BE2 /* Pods-newDubai-Ndbpp-Dev.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = newDubai/newDubai.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.7.02;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = C5235969FU;
+				INFOPLIST_FILE = newDubai/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itstar.ios.newDubai.ndbpp.dev;
+				PRODUCT_NAME = "台北開發用";
+				SWIFT_OBJC_BRIDGING_HEADER = "newDubai/newDubai-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		88ECAF4023D0416D004B58CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F264A339A11EC4B056143852 /* Pods-newDubai-Ndbpp-Dev.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = newDubai/newDubai.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.7.02;
+				DEVELOPMENT_TEAM = C5235969FU;
+				INFOPLIST_FILE = newDubai/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itstar.ios.newDubai.ndbpp.dev;
+				PRODUCT_NAME = "台北開發用";
+				SWIFT_OBJC_BRIDGING_HEADER = "newDubai/newDubai-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		88ECAF5723D04180004B58CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CC8AD58A5234BC36E708FFC /* Pods-newDubai-Ndbppp-Dev.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = newDubai/newDubai.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.7.02;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = C5235969FU;
+				INFOPLIST_FILE = newDubai/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itstar.ios.newDubai.ndbppp.dev;
+				PRODUCT_NAME = RD32;
+				SWIFT_OBJC_BRIDGING_HEADER = "newDubai/newDubai-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		88ECAF5823D04180004B58CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA8A6D8532082AE78C0ABF7 /* Pods-newDubai-Ndbppp-Dev.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = newDubai/newDubai.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.7.02;
+				DEVELOPMENT_TEAM = C5235969FU;
+				INFOPLIST_FILE = newDubai/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itstar.ios.newDubai.ndbppp.dev;
+				PRODUCT_NAME = RD32;
+				SWIFT_OBJC_BRIDGING_HEADER = "newDubai/newDubai-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -549,6 +1220,33 @@
 			buildConfigurations = (
 				7620A0E822C5A0C90047670D /* Debug */,
 				7620A0E922C5A0C90047670D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88ECAF2623D04111004B58CE /* Build configuration list for PBXNativeTarget "newDubai-Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88ECAF2723D04111004B58CE /* Debug */,
+				88ECAF2823D04111004B58CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88ECAF3E23D0416D004B58CE /* Build configuration list for PBXNativeTarget "newDubai-Ndbpp-Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88ECAF3F23D0416D004B58CE /* Debug */,
+				88ECAF4023D0416D004B58CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88ECAF5623D04180004B58CE /* Build configuration list for PBXNativeTarget "newDubai-Ndbppp-Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88ECAF5723D04180004B58CE /* Debug */,
+				88ECAF5823D04180004B58CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

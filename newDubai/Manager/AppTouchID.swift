@@ -9,68 +9,68 @@
 import Foundation
 import LocalAuthentication
 
-class AppTouchID{
+class AppTouchID {
     //    static let shared = AppTouchID()
-    
+
     let context = LAContext()
     //    context.localizedFallbackTitle = "Use Passcode"
     var err: NSError?
     //    let reasonString = "Biometrics Login"
     var reasonString = ""
-    
-    func authenticateUser(completionHandler: @escaping (Int) -> Void){
+
+    func authenticateUser(completionHandler: @escaping (Int) -> Void) {
         var customCode = 0
         context.localizedFallbackTitle = ""
-        
+
         let langDic = DeviceData.current.getDeviceLang()
         reasonString = langDic["touchDescription"] as! String
-        
-        if context.canEvaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, error: &err){
+
+        if context.canEvaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, error: &err) {
             context.evaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, localizedReason: reasonString) { (success, error) in
-                if success{
+                if success {
                     print("call touchID success")
                     completionHandler(customCode)
-                }else{
-                    if let error = error{
+                } else {
+                    if let error = error {
                         customCode = self.evaluateAuthenticationPolicyMessageForLA(errorCode: error._code)
                         //                        print(self.evaluateAuthenticationPolicyMessageForLA(errorCode: error._code))
                     }
                     completionHandler(customCode)
                 }
             }
-        }else{
-            if let error = err{
+        } else {
+            if let error = err {
                 customCode = self.evaluateAuthenticationPolicyMessageForLA(errorCode: error.code)
                 //                print(self.evaluateAuthenticationPolicyMessageForLA(errorCode: error.code))
             }
             completionHandler(customCode)
         }
     }
-    
-    func checkBiometrics() -> Int{
+
+    func checkBiometrics() -> Int {
         var customCode = 0
         //假設有支援
         UserDefaults.standard.set(true, forKey: "isSupportTouchID")
-        
-        if context.canEvaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, error: &err){
+
+        if context.canEvaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, error: &err) {
             print("have touchID&FaceID")
             //有設置
             //            UserDefaults.standard.set(true, forKey: "isSupportTouchID")
             UserDefaults.standard.set(true, forKey: "hasTouchID")
-        }else{
-            if let error = err{
+        } else {
+            if let error = err {
                 customCode = self.evaluateAuthenticationPolicyMessageForLA(errorCode: error.code)
                 //                print(self.evaluateAuthenticationPolicyMessageForLA(errorCode: error.code))
             }
         }
-        
+
         return customCode
     }
-    
+
     func evaluateAuthenticationPolicyMessageForLA(errorCode: Int) -> Int {
         var message = ""
         var customCode = 0
-        
+
         switch errorCode {
         case LAError.authenticationFailed.rawValue:
             //辨識錯誤
@@ -97,17 +97,17 @@ class AppTouchID{
         default:
             customCode = evaluatePolicyFailErrorMessageForLA(errorCode: errorCode)
         }
-        
+
         print(message)
-        
+
         return customCode
     }
-    
+
     func evaluatePolicyFailErrorMessageForLA(errorCode: Int) -> Int {
         var message = ""
         var customCode = 0
-        
-        if #available(iOS 11.0, macOS 10.13, *){
+
+        if #available(iOS 11.0, macOS 10.13, *) {
             switch errorCode {
             case LAError.biometryLockout.rawValue:
                 //辨識次數過多，已鎖住
@@ -128,7 +128,7 @@ class AppTouchID{
             default:
                 message = "Did not find error code on LAError object"
             }
-        }else{
+        } else {
             switch errorCode {
             case LAError.touchIDLockout.rawValue:
                 message = "Too many failed attempts."
@@ -151,7 +151,7 @@ class AppTouchID{
         }
         //        UserDefaults.standard.synchronize()
         print(message)
-        
+
         return customCode;
     }
 }

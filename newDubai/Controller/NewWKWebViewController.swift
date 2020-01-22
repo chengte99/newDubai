@@ -13,13 +13,13 @@ import JJFloatingActionButton
 
 class NewWKWebViewController: UIViewController, WKUIDelegate, UIGestureRecognizerDelegate, WKNavigationDelegate, SFSafariViewControllerDelegate, WKScriptMessageHandler {
     fileprivate let actionButton = JJFloatingActionButton()
-    
+
     var wk: WKWebView!
     var web_url: String?
     var progressView: UIProgressView!
     let processPool = WKProcessPool()
     let statusBarHeight = UIApplication.shared.statusBarFrame.height
-    
+
     //configure statusbar
     var _statusBarStyle: UIStatusBarStyle = .lightContent
     var statusBarStyle: UIStatusBarStyle {
@@ -31,11 +31,11 @@ class NewWKWebViewController: UIViewController, WKUIDelegate, UIGestureRecognize
             setNeedsStatusBarAppearanceUpdate()
         }
     }
-    
+
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return statusBarStyle
     }
-    
+
     var _isStatusBarHidden: Bool = false
     var isStatusBarHidden: Bool {
         get {
@@ -46,45 +46,45 @@ class NewWKWebViewController: UIViewController, WKUIDelegate, UIGestureRecognize
             setNeedsStatusBarAppearanceUpdate()
         }
     }
-    
+
     override var prefersStatusBarHidden: Bool {
         return isStatusBarHidden
     }
     //configure statusbar end
-    
-    func HGLog<T>(_ message:T, file:String = #file, function:String = #function,
-                   line:Int = #line) {
-            #if DEBUG
-                //获取文件名
-                let fileName = (file as NSString).lastPathComponent
-                //打印日志内容
-    //            print("\(fileName):\(line) \(function) | \(message)")
-            
-                let now:Date = Date()
-                let dateFormat:DateFormatter = DateFormatter()
-                dateFormat.dateFormat = "yyyy年MM月dd日 HH:mm:ss"
-                dateFormat.timeZone = NSTimeZone.local
-                let dateString:String = dateFormat.string(from: now)
-            
-                print("\(fileName):\(line) \(dateString) | \(message)")
-            #endif
-        }
-    
+
+    func HGLog<T>(_ message: T, file: String = #file, function: String = #function,
+        line: Int = #line) {
+        #if DEBUG
+            //获取文件名
+            let fileName = (file as NSString).lastPathComponent
+            //打印日志内容
+            //            print("\(fileName):\(line) \(function) | \(message)")
+
+            let now: Date = Date()
+            let dateFormat: DateFormatter = DateFormatter()
+            dateFormat.dateFormat = "yyyy年MM月dd日 HH:mm:ss"
+            dateFormat.timeZone = NSTimeZone.local
+            let dateString: String = dateFormat.string(from: now)
+
+            print("\(fileName):\(line) \(dateString) | \(message)")
+        #endif
+    }
+
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         print(message.body)
-        
-        if let tag = message.body as? String{
-            if tag == "windowClose"{
+
+        if let tag = message.body as? String {
+            if tag == "windowClose" {
                 print("window.close()")
                 self.close()
             }
         }
-        
-        if let dic = message.body as? [String: Any]{
-            
-            if let registerString = dic["url"] as? String{
-                if let url = URL(string: registerString){
-                    if UIApplication.shared.canOpenURL(url){
+
+        if let dic = message.body as? [String: Any] {
+
+            if let registerString = dic["url"] as? String {
+                if let url = URL(string: registerString) {
+                    if UIApplication.shared.canOpenURL(url) {
                         if #available(iOS 10.0, *) {
                             UIApplication.shared.open(url, options: [:], completionHandler: nil)
                         } else {
@@ -95,26 +95,26 @@ class NewWKWebViewController: UIViewController, WKUIDelegate, UIGestureRecognize
             }
         }
     }
-    
-    func newWKClose(){
-        if self.newWK != nil{
+
+    func newWKClose() {
+        if self.newWK != nil {
             self.newWK.stopLoading()
             self.newWK.removeFromSuperview()
             self.newWK = nil
         }
     }
-    
-    func callLogout(){
+
+    func callLogout() {
         print("#### callLogout")
-        if #available(iOS 9.0, *){
+        if #available(iOS 9.0, *) {
             let websiteDataTypes = NSSet(array: [WKWebsiteDataTypeDiskCache, WKWebsiteDataTypeMemoryCache])
             let date = NSDate(timeIntervalSince1970: 0)
-            
-            WKWebsiteDataStore.default().removeData(ofTypes: websiteDataTypes as! Set<String>, modifiedSince: date as Date, completionHandler:{ })
-        }else{
+
+            WKWebsiteDataStore.default().removeData(ofTypes: websiteDataTypes as! Set<String>, modifiedSince: date as Date, completionHandler: { })
+        } else {
             var libraryPath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.libraryDirectory, FileManager.SearchPathDomainMask.userDomainMask, false).first!
             libraryPath += "/Cookies"
-            
+
             do {
                 try FileManager.default.removeItem(atPath: libraryPath)
             } catch {
@@ -123,49 +123,49 @@ class NewWKWebViewController: UIViewController, WKUIDelegate, UIGestureRecognize
             URLCache.shared.removeAllCachedResponses()
         }
     }
-    
-    func callReload(){
+
+    func callReload() {
         print("#### callReload")
-        if let urlString = self.web_url{
-            if let url = URL(string: urlString){
+        if let urlString = self.web_url {
+            if let url = URL(string: urlString) {
                 let request = URLRequest(url: url, cachePolicy: URLRequest.CachePolicy.useProtocolCachePolicy, timeoutInterval: 60)
                 self.wk.load(request)
             }
         }
     }
-    
+
     @objc func toBack() {
         if self.wk.canGoBack {
             self.wk.goBack()
         }
     }
-    
+
     @objc func toForward() {
         if self.wk.canGoForward {
             self.wk.goForward()
         }
     }
-    
+
     @objc func toSafari() {
-        if let urlString = self.wk.url?.absoluteString{
-            if let url = URL(string: urlString){
+        if let urlString = self.wk.url?.absoluteString {
+            if let url = URL(string: urlString) {
                 UIApplication.shared.openURL(url)
             }
         }
     }
-    
+
     func setNavigationBarAndToolBarItems() {
         let backBarButtonItem = UIBarButtonItem(image: UIImage(named: "icons8-back_filled"), style: UIBarButtonItem.Style.plain, target: self, action: #selector(self.back))
         let closeBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.stop, target: self, action: #selector(self.close))
-        
+
         self.navigationItem.setLeftBarButtonItems([backBarButtonItem], animated: true)
-        if !WebData.shared.isHiddenReloadButton{
+        if !WebData.shared.isHiddenReloadButton {
             let reloadBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(self.refresh))
             self.navigationItem.setRightBarButtonItems([closeBarButtonItem, reloadBarButtonItem], animated: true)
-        }else{
+        } else {
             self.navigationItem.setRightBarButtonItems([closeBarButtonItem], animated: true)
         }
-        
+
         //set toolbar
         let backBtn = UIBarButtonItem(image: UIImage(named: "icons8-back_filled"), style: UIBarButtonItem.Style.plain, target: self, action: #selector(NewWKWebViewController.toBack))
         let forwardBtn = UIBarButtonItem(image: UIImage(named: "icons8-forward_filled"), style: UIBarButtonItem.Style.plain, target: self, action: #selector(NewWKWebViewController.toForward))
@@ -174,13 +174,13 @@ class NewWKWebViewController: UIViewController, WKUIDelegate, UIGestureRecognize
         let flexibleSpaceBtn = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         self.setToolbarItems([backBtn, flexibleSpaceBtn, forwardBtn, flexibleSpaceBtn, fixedSpaceBtn, flexibleSpaceBtn, safariBtn], animated: true)
     }
-    
-    func configureActionButton(){
+
+    func configureActionButton() {
         actionButton.overlayView.backgroundColor = UIColor(hue: 0.31, saturation: 0.37, brightness: 0.10, alpha: 0.30)
         actionButton.buttonImage = #imageLiteral(resourceName: "icons8-menu")
         actionButton.buttonColor = .white
         actionButton.buttonImageColor = .white
-        
+
         //        actionButton.itemAnimationConfiguration = .circularSlideIn(withRadius: 90)
         actionButton.itemAnimationConfiguration = .circularPopUp(withRadius: 90)
         actionButton.buttonAnimationConfiguration = .rotation(toAngle: .pi)
@@ -188,36 +188,36 @@ class NewWKWebViewController: UIViewController, WKUIDelegate, UIGestureRecognize
         //        actionButton.buttonAnimationConfiguration.opening.duration = 0.8
         //        actionButton.buttonAnimationConfiguration.closing.duration = 0.6
     }
-    
-    func addFloatingActionButton(){
+
+    func addFloatingActionButton() {
         configureActionButton()
-        
+
         actionButton.addItem(image: UIImage(named: "icons8-refresh")) { item in
             self.refresh()
         }
-        
+
         actionButton.addItem(image: UIImage(named: "icons8-reply_arrow")) { item in
             self.back()
         }
-        
+
         actionButton.addItem(image: UIImage(named: "icons8-home")) { item in
             self.close()
         }
-        
-        if(WebData.shared.refreshIsDisable){
+
+        if(WebData.shared.refreshIsDisable) {
             actionButton.items[0].isEnabled = false
             actionButton.items[0].buttonColor = UIColor.gray
             actionButton.items[0].buttonImageColor = UIColor.gray
         }
-        if(WebData.shared.backIsDisable){
+        if(WebData.shared.backIsDisable) {
             actionButton.items[1].isEnabled = false
             actionButton.items[1].buttonColor = UIColor.gray
             actionButton.items[1].buttonImageColor = UIColor.gray
         }
-        
+
         //        actionButton.display(inViewController: self)
         view.addSubview(actionButton)
-        
+
         actionButton.translatesAutoresizingMaskIntoConstraints = false
         actionButton.widthAnchor.constraint(equalToConstant: 50).isActive = true
         actionButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
@@ -229,73 +229,73 @@ class NewWKWebViewController: UIViewController, WKUIDelegate, UIGestureRecognize
             actionButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         }
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         self.edgesForExtendedLayout = []
-        
-        if let urlString = WebData.shared.otherWeb_url{
+
+        if let urlString = WebData.shared.otherWeb_url {
             self.web_url = urlString
         }
-        
+
         setNavigationBarAndToolBarItems()
-        
+
         setWKWebview()
-        
+
         addProgressView()
-        
-        if USEFLOATING{
+
+        if USEFLOATING {
             addFloatingActionButton()
-        }else{
+        } else {
             setSwipeMethod()
         }
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        if let title = WebData.shared.blankTitle{
+
+        if let title = WebData.shared.blankTitle {
             self.navigationItem.title = title
         }
-        
-        if USEFLOATING{
+
+        if USEFLOATING {
             isStatusBarHidden = true
             self.navigationController?.setNavigationBarHidden(true, animated: true)
             self.navigationController?.setToolbarHidden(true, animated: true)
-        }else{
+        } else {
             self.navigationController?.setNavigationBarHidden(false, animated: true)
-            
-            if WebData.shared.isHiddenToolBar{
+
+            if WebData.shared.isHiddenToolBar {
                 self.navigationController?.setToolbarHidden(true, animated: true)
-            }else{
+            } else {
                 self.navigationController?.setToolbarHidden(false, animated: true)
             }
-            
+
             statusBarStyle = .lightContent
-            
-            if (UIDevice.current.orientation == .landscapeLeft || UIDevice.current.orientation == .landscapeRight){
+
+            if (UIDevice.current.orientation == .landscapeLeft || UIDevice.current.orientation == .landscapeRight) {
                 self.navigationController?.setNavigationBarHidden(true, animated: true)
                 isStatusBarHidden = true
             }
         }
     }
-    
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         //        print("### NewWKWebkitViewController viewDidAppear")
-        
-        if TaipeiWebConf{
+
+        if TaipeiWebConf {
             self.newWKClose()
         }
     }
-    
+
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        
+
         statusBarStyle = .default
     }
-    
+
     fileprivate func addProgressView() {
         self.progressView = UIProgressView()
         self.wk.addSubview(progressView)
@@ -303,19 +303,19 @@ class NewWKWebViewController: UIViewController, WKUIDelegate, UIGestureRecognize
         NSLayoutConstraint(item: self.progressView, attribute: .top, relatedBy: .equal, toItem: self.wk, attribute: .top, multiplier: 1.0, constant: 0).isActive = true
         NSLayoutConstraint(item: self.progressView, attribute: .leading, relatedBy: .equal, toItem: self.wk, attribute: .leading, multiplier: 1.0, constant: 0).isActive = true
         NSLayoutConstraint(item: self.progressView, attribute: .trailing, relatedBy: .equal, toItem: self.wk, attribute: .trailing, multiplier: 1.0, constant: 0).isActive = true
-        
+
         self.progressView.progressTintColor = .white
         self.progressView.trackTintColor = .clear
         self.wk.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)
     }
-    
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        if keyPath == "estimatedProgress"{
+
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey: Any]?, context: UnsafeMutableRawPointer?) {
+        if keyPath == "estimatedProgress" {
             self.progressView.isHidden = self.wk.estimatedProgress == 1
             self.progressView.setProgress(Float(self.wk.estimatedProgress), animated: true)
         }
     }
-    
+
     func setSwipeMethod() {
         let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(NewWKWebViewController.swipe))
         swipeUp.delegate = self
@@ -328,149 +328,149 @@ class NewWKWebViewController: UIViewController, WKUIDelegate, UIGestureRecognize
         swipeDown.numberOfTouchesRequired = 1
         self.wk.addGestureRecognizer(swipeDown)
     }
-    
+
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
     }
-    
-    @objc func swipe(recognizer: UISwipeGestureRecognizer){
+
+    @objc func swipe(recognizer: UISwipeGestureRecognizer) {
         //        if UIDevice.current.orientation != .portrait{
         //            // do nothing
         //            print("UIDevice.current.orientation != .portrait")
         //        }
-        if UIApplication.shared.statusBarOrientation != .portrait{
+        if UIApplication.shared.statusBarOrientation != .portrait {
             // do nothing
             print("UIApplication.shared.statusBarOrientation != .portrait")
-        }else{
-            if recognizer.direction == .up{
+        } else {
+            if recognizer.direction == .up {
                 print("......swipe up")
                 self.navigationController?.setNavigationBarHidden(true, animated: true)
                 self.navigationController?.setToolbarHidden(true, animated: true)
                 isStatusBarHidden = true
-                
-            }else{
+
+            } else {
                 print("......swipe down")
                 self.navigationController?.setNavigationBarHidden(false, animated: true)
-                if WebData.shared.isHiddenToolBar{
+                if WebData.shared.isHiddenToolBar {
                     self.navigationController?.setToolbarHidden(true, animated: true)
-                }else{
+                } else {
                     self.navigationController?.setToolbarHidden(false, animated: true)
                 }
                 isStatusBarHidden = false
             }
-            
+
             //            self.wk.frame = UIScreen.main.bounds
             //            self.wk.frame = self.view.bounds
         }
     }
-    
+
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        if (UIDevice.current.orientation == .landscapeLeft || UIDevice.current.orientation == .landscapeRight){
+        if (UIDevice.current.orientation == .landscapeLeft || UIDevice.current.orientation == .landscapeRight) {
             print("UIDevice.current.orientation == .landscapeLeft || UIDevice.current.orientation == .landscapeRight")
             self.navigationController?.setNavigationBarHidden(true, animated: true)
             //            self.navigationController?.setToolbarHidden(true, animated: true)
-            
+
             isStatusBarHidden = true
-            
-        }else{
+
+        } else {
             print("UIDevice.current.orientation != .landscapeLeft && UIDevice.current.orientation != .landscapeRight")
             //            self.navigationController?.setNavigationBarHidden(false, animated: true)
             //            self.navigationController?.setToolbarHidden(false, animated: true)
         }
-        
+
         //        self.wk.frame = UIScreen.main.bounds
     }
-    
+
     //new
     var newWK: WKWebView!
     var newWKIsOpened = false
     func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
-        
-        if self.newWK == nil{
+
+        if self.newWK == nil {
             self.newWK = WKWebView(frame: UIScreen.main.bounds, configuration: configuration)
             self.newWK.uiDelegate = self
             self.newWK.navigationDelegate = self
             self.newWKIsOpened = true
         }
-        
-        if let myTargetFrame = navigationAction.targetFrame{
-            if !myTargetFrame.isMainFrame{
+
+        if let myTargetFrame = navigationAction.targetFrame {
+            if !myTargetFrame.isMainFrame {
                 print("myTargetFrame.isMainFrame is false")
-            }else{
+            } else {
                 print("myTargetFrame.isMainFrame is true")
             }
-        }else{
+        } else {
             print("navigationAction.targetFrame = nil")
         }
-        
+
         return self.newWK
         //        return nil
     }
-    
+
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-        
+
         //        print("###2 sourceFrame = \(navigationAction.sourceFrame)")
         //        print("#### targetFrame = \(navigationAction.targetFrame)")
-        if webView == self.newWK{
+        if webView == self.newWK {
             print("$$$$ 2 newWK navigationAction.request.url = \(navigationAction.request.url!)")
-            if let blankURL = navigationAction.request.url?.absoluteString{
-                if(blankURL.lowercased().contains("loading") || (!blankURL.lowercased().hasPrefix("http://")) && (!blankURL.lowercased().hasPrefix("https://"))){
+            if let blankURL = navigationAction.request.url?.absoluteString {
+                if(blankURL.lowercased().contains("loading") || (!blankURL.lowercased().hasPrefix("http://")) && (!blankURL.lowercased().hasPrefix("https://"))) {
                     decisionHandler(WKNavigationActionPolicy.cancel)
-                }else{
-                    if blankURL.contains("v66"){
-                        if let url = URL(string: blankURL){
+                } else {
+                    if blankURL.contains("v66") {
+                        if let url = URL(string: blankURL) {
                             UIApplication.shared.openURL(url)
                         }
-                    }else{
+                    } else {
                         WebData.shared.setNewWindow(string: blankURL)
                         performSegue(withIdentifier: "showNewWindow", sender: self)
                     }
                     decisionHandler(WKNavigationActionPolicy.cancel)
                 }
             }
-        }else{
+        } else {
             print("#### 2 webView navigationAction.request.url = \(navigationAction.request.url!)")
-            
-            if let blankURL = navigationAction.request.url?.absoluteString{
-                if (!blankURL.lowercased().hasPrefix("http://")) && (!blankURL.lowercased().hasPrefix("https://")){
-                    
+
+            if let blankURL = navigationAction.request.url?.absoluteString {
+                if (!blankURL.lowercased().hasPrefix("http://")) && (!blankURL.lowercased().hasPrefix("https://")) {
+
                     //                    let scheme1 = "itmss"
                     //                    let scheme2 = "itms-services"
-                    if let scheme = navigationAction.request.url!.scheme{
-                        if scheme != "http" && scheme != "https"{
+                    if let scheme = navigationAction.request.url!.scheme {
+                        if scheme != "http" && scheme != "https" {
                             //                            if UIApplication.shared.canOpenURL(navigationAction.request.url!){
                             print("open app")
                             UIApplication.shared.openURL(navigationAction.request.url!)
                             //                            }
                         }
                     }
-                    
+
                     decisionHandler(WKNavigationActionPolicy.cancel)
-                }else{
+                } else {
                     decisionHandler(WKNavigationActionPolicy.allow)
                 }
             }
         }
     }
     //new end
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showNewWindow"{
-            if let dvc = segue.destination as? NewWindowViewController{
+        if segue.identifier == "showNewWindow" {
+            if let dvc = segue.destination as? NewWindowViewController {
                 dvc.processPool = self.processPool
             }
         }
     }
-    
-    @objc func back(){
+
+    @objc func back() {
         if self.wk.canGoBack {
             self.wk.goBack()
-        }else{
+        } else {
             self.close()
         }
     }
-    
-    @objc func close(){
+
+    @objc func close() {
         let langDic = DeviceData.current.getDeviceLang()
         let alert = UIAlertController(title: nil, message: langDic["exitMessage"], preferredStyle: .alert)
         let okAction = UIAlertAction(title: langDic["confirm"], style: .default) { (action) in
@@ -480,7 +480,7 @@ class NewWKWebViewController: UIViewController, WKUIDelegate, UIGestureRecognize
             self.wk.stopLoading()
             self.wk.removeFromSuperview()
             self.wk = nil
-            if self.newWK != nil{
+            if self.newWK != nil {
                 self.newWK.stopLoading()
                 self.newWK.removeFromSuperview()
                 self.newWK = nil
@@ -494,37 +494,37 @@ class NewWKWebViewController: UIViewController, WKUIDelegate, UIGestureRecognize
         alert.addAction(cancelAction)
         present(alert, animated: true, completion: nil)
     }
-    
-    @objc func refresh(){
+
+    @objc func refresh() {
         self.wk.reload()
     }
-    
-    @objc dynamic func closeGestureScreen() -> String{
+
+    @objc dynamic func closeGestureScreen() -> String {
         return "setInterval(chkScreen, 1e3); function chkScreen() {var apContainer = document.querySelector(\"#alphaContainer\"); var touchIntro = document.querySelector(\"#touchIntro\"); var fullscreen = document.querySelector(\"#fullscreen\"); if( apContainer ) {apContainer.style.display =\"none\";} if( touchIntro ) {touchIntro.style.display =\"none\";} if( fullscreen ) {fullscreen.style.display =\"none\";}}"
     }
-    
+
     //WK delegate method
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         print("##### Finish !!!")
         self.progressView.setProgress(0.0, animated: false)
-        
+
         //加入關閉遮罩監聽
         self.wk.evaluateJavaScript(closeGestureScreen(), completionHandler: { (any, error) in
-            if error == nil{
+        if error == nil {
                 print("do js success")
             }
         })
     }
-    
+
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
         print("##### Start !!!")
     }
-    
+
     func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
         print("##### Fail !!!")
     }
     //end
-    
+
     //JavaScript handle start
     func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
         let langDic = DeviceData.current.getDeviceLang()
@@ -535,7 +535,7 @@ class NewWKWebViewController: UIViewController, WKUIDelegate, UIGestureRecognize
         alert.addAction(okAction)
         present(alert, animated: true, completion: nil)
     }
-    
+
     func webView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (Bool) -> Void) {
         let langDic = DeviceData.current.getDeviceLang()
         let alert = UIAlertController(title: message, message: nil, preferredStyle: .alert)
@@ -549,7 +549,7 @@ class NewWKWebViewController: UIViewController, WKUIDelegate, UIGestureRecognize
         alert.addAction(cancelAction)
         present(alert, animated: true, completion: nil)
     }
-    
+
     func webView(_ webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (String?) -> Void) {
         let langDic = DeviceData.current.getDeviceLang()
         let alert = UIAlertController(title: prompt, message: nil, preferredStyle: .alert)
@@ -568,92 +568,92 @@ class NewWKWebViewController: UIViewController, WKUIDelegate, UIGestureRecognize
         present(alert, animated: true, completion: nil)
     }
     //javaScript handle end
-    
-    @objc dynamic func isNeedChangeUserAgent(url: String) -> Bool{
-        if !url.contains("jbb_xfball") && !url.contains("jbb/sport"){
+
+    @objc dynamic func isNeedChangeUserAgent(url: String) -> Bool {
+        if !url.contains("jbb_xfball") && !url.contains("jbb/sport") {
             return true
-        }else{
+        } else {
             return false
         }
     }
-    
+
     fileprivate func setWKWebview() {
         let wkUserController = WKUserContentController()
-        
+
         let touchCalloutJS = "document.documentElement.style.webkitTouchCallout='none';"
         // 不执行前端弹出列表的JS代码
-        
+
         let wkUserScript2 = WKUserScript(source: touchCalloutJS, injectionTime: WKUserScriptInjectionTime.atDocumentEnd, forMainFrameOnly: true)
-        
+
         wkUserController.addUserScript(wkUserScript2)
-        
+
         let windowCloseJS = "(function (){var _close = window.close;window.close = function () {webkit.messageHandlers.CallApp.postMessage('windowClose');_close();};})();"
         // 前端執行windo.close()時替換代碼
-        
+
         let wkUserScript3 = WKUserScript(source: windowCloseJS, injectionTime: WKUserScriptInjectionTime.atDocumentEnd, forMainFrameOnly: true)
-        
+
         wkUserController.addUserScript(wkUserScript3)
         //add scriptMessageHandler
         wkUserController.add(self, name: "CallApp")
         let conf = WKWebViewConfiguration()
         conf.userContentController = wkUserController
         conf.allowsInlineMediaPlayback = true
-        
+
         conf.processPool = self.processPool
-        
+
         let preferences = WKPreferences()
         preferences.javaScriptCanOpenWindowsAutomatically = true
         preferences.javaScriptEnabled = true
         conf.preferences = preferences
-        
+
         //        self.wk = WKWebView(frame: self.view.bounds, configuration: conf)
         self.wk = WKWebView(frame: CGRect.zero, configuration: conf)
         wk.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(self.wk)
-        
-        if #available(iOS 11, *){
+
+        if #available(iOS 11, *) {
             //            NSLayoutConstraint.activate([wk.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor), wk.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)])
             NSLayoutConstraint.activate([wk.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor)])
-            
+
             NSLayoutConstraint(item: wk, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1.0, constant: 0).isActive = true
-            
+
             NSLayoutConstraint.activate([wk.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor), wk.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor)])
-        }else{
+        } else {
             NSLayoutConstraint(item: wk, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1.0, constant: statusBarHeight).isActive = true
             NSLayoutConstraint(item: wk, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1.0, constant: 0).isActive = true
             NSLayoutConstraint(item: wk, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1.0, constant: 0).isActive = true
             NSLayoutConstraint(item: wk, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1.0, constant: 0).isActive = true
         }
-        
-        if let url = self.web_url{
-            if isNeedChangeUserAgent(url: url){
+
+        if let url = self.web_url {
+            if isNeedChangeUserAgent(url: url) {
                 self.wk.customUserAgent = WebData.shared.userAgent
             }
         }
-        
+
         self.wk.navigationDelegate = self
         self.wk.uiDelegate = self
-        
+
         self.view.backgroundColor = .black
         self.wk.backgroundColor = .black
-        
+
         //        self.wk.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        
-        if let urlString = web_url{
-            if let url = URL(string: urlString){
+
+        if let urlString = web_url {
+            if let url = URL(string: urlString) {
                 let request = URLRequest(url: url, cachePolicy: URLRequest.CachePolicy.useProtocolCachePolicy, timeoutInterval: 60)
                 self.wk.load(request)
                 //                self.view.addSubview(self.wk)
             }
         }
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
+
+
     /*
      // MARK: - Navigation
      
@@ -663,5 +663,5 @@ class NewWKWebViewController: UIViewController, WKUIDelegate, UIGestureRecognize
      // Pass the selected object to the new view controller.
      }
      */
-    
+
 }
