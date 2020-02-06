@@ -1004,6 +1004,7 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
     func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
         print("Fail!!!")
 
+        /* 連線異常 Ping Alert 暫時用不到了
         self.failString = "\n\n\(error.localizedDescription)\n"
 
         let reachability = Reachability(hostName: "www.apple.com")
@@ -1032,6 +1033,15 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
                 self.showAlert(result: self.failString)
             }
         }
+         */
+        
+        let langDic = DeviceData.current.getDeviceLang()
+        
+        let alert = UIAlertController(title: langDic["webDidLoadFail"], message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: langDic["retry"], style: .default, handler: { _ in
+            self.wk.reload()
+        }))
+        present(alert, animated: true, completion: nil)
     }
 
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {

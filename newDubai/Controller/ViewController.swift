@@ -82,7 +82,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         //test only
         //        let newPW = "\(Date().timeStamp)*kevintest99"
         //        let enStr = AESHelp.shared.aes_en(str: newPW)

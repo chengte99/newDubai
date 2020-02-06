@@ -12,7 +12,8 @@ import SafariServices
 import JJFloatingActionButton
 
 class NewWKWebViewController: UIViewController, WKUIDelegate, UIGestureRecognizerDelegate, WKNavigationDelegate, SFSafariViewControllerDelegate, WKScriptMessageHandler {
-    fileprivate let actionButton = JJFloatingActionButton()
+    
+    fileprivate var actionButton: JJFloatingActionButton!
 
     var wk: WKWebView!
     var web_url: String?
@@ -175,11 +176,29 @@ class NewWKWebViewController: UIViewController, WKUIDelegate, UIGestureRecognize
         self.setToolbarItems([backBtn, flexibleSpaceBtn, forwardBtn, flexibleSpaceBtn, fixedSpaceBtn, flexibleSpaceBtn, safariBtn], animated: true)
     }
 
+    // MARK: - JJFloatingActionButton
+
+    @objc func panActionButton(_ pan: UIPanGestureRecognizer) {
+        if pan.state == .began {
+
+        }
+        else if pan.state == .ended || pan.state == .failed || pan.state == .cancelled {
+
+        }
+        else {
+            let location = pan.location(in: view) // get pan location
+            let safeH: CGFloat = 78
+            actionButton.center.y = min(view.frame.height - safeH, max(safeH, location.y)) // set button to where finger is
+        }
+    }
+    
     func configureActionButton() {
+        actionButton = JJFloatingActionButton(frame: CGRect(x: view.frame.width - 25, y: view.frame.height * 0.5, width: 50, height: 50))
         actionButton.overlayView.backgroundColor = UIColor(hue: 0.31, saturation: 0.37, brightness: 0.10, alpha: 0.30)
         actionButton.buttonImage = #imageLiteral(resourceName: "icons8-menu")
         actionButton.buttonColor = .white
         actionButton.buttonImageColor = .white
+        actionButton.translatesAutoresizingMaskIntoConstraints = true
 
         //        actionButton.itemAnimationConfiguration = .circularSlideIn(withRadius: 90)
         actionButton.itemAnimationConfiguration = .circularPopUp(withRadius: 90)
@@ -187,6 +206,10 @@ class NewWKWebViewController: UIViewController, WKUIDelegate, UIGestureRecognize
         //        actionButton.buttonAnimationConfiguration = .transition(toImage: #imageLiteral(resourceName: "right"))
         //        actionButton.buttonAnimationConfiguration.opening.duration = 0.8
         //        actionButton.buttonAnimationConfiguration.closing.duration = 0.6
+        
+        // 拖曳
+        let pan = UIPanGestureRecognizer(target: self, action: #selector(panActionButton(_:)))
+        actionButton.addGestureRecognizer(pan)
     }
 
     func addFloatingActionButton() {
@@ -204,31 +227,21 @@ class NewWKWebViewController: UIViewController, WKUIDelegate, UIGestureRecognize
             self.close()
         }
 
-        if(WebData.shared.refreshIsDisable) {
+        if WebData.shared.refreshIsDisable {
             actionButton.items[0].isEnabled = false
             actionButton.items[0].buttonColor = UIColor.gray
             actionButton.items[0].buttonImageColor = UIColor.gray
         }
-        if(WebData.shared.backIsDisable) {
+        if WebData.shared.backIsDisable {
             actionButton.items[1].isEnabled = false
             actionButton.items[1].buttonColor = UIColor.gray
             actionButton.items[1].buttonImageColor = UIColor.gray
         }
-
-        //        actionButton.display(inViewController: self)
+        
         view.addSubview(actionButton)
-
-        actionButton.translatesAutoresizingMaskIntoConstraints = false
-        actionButton.widthAnchor.constraint(equalToConstant: 50).isActive = true
-        actionButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        if #available(iOS 11.0, *) {
-            actionButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: 30).isActive = true
-            actionButton.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor).isActive = true
-        } else {
-            actionButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 25).isActive = true
-            actionButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        }
     }
+    
+    // MARK: - UIViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -365,20 +378,33 @@ class NewWKWebViewController: UIViewController, WKUIDelegate, UIGestureRecognize
     }
 
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        if (UIDevice.current.orientation == .landscapeLeft || UIDevice.current.orientation == .landscapeRight) {
-            print("UIDevice.current.orientation == .landscapeLeft || UIDevice.current.orientation == .landscapeRight")
+        print(#function, UIDevice.current.orientation.rawValue)
+        
+        switch UIDevice.current.orientation {
+        case .landscapeLeft:
             self.navigationController?.setNavigationBarHidden(true, animated: true)
-            //            self.navigationController?.setToolbarHidden(true, animated: true)
-
             isStatusBarHidden = true
-
-        } else {
-            print("UIDevice.current.orientation != .landscapeLeft && UIDevice.current.orientation != .landscapeRight")
-            //            self.navigationController?.setNavigationBarHidden(false, animated: true)
-            //            self.navigationController?.setToolbarHidden(false, animated: true)
+            
+            // 轉向，菜單按鈕回到右側中間
+            actionButton.center.x = size.width - UIDevice.safeAreaInsetsBottom
+            actionButton.center.y = size.height * 0.5
+            
+        case .landscapeRight:
+            self.navigationController?.setNavigationBarHidden(true, animated: true)
+            isStatusBarHidden = true
+            
+            // 轉向，菜單按鈕回到右側中間
+            actionButton.center.x = size.width - UIDevice.safeAreaInsetsTop
+            actionButton.center.y = size.height * 0.5
+            
+        case .portrait, .portraitUpsideDown:
+            // 轉向，菜單按鈕回到右側中間
+            actionButton.center.x = size.width
+            actionButton.center.y = size.height * 0.5
+            
+        default:
+            break
         }
-
-        //        self.wk.frame = UIScreen.main.bounds
     }
 
     //new

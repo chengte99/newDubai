@@ -126,6 +126,14 @@
 		885BF49A23D8245E00EBF20B /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0EF22C5A5F80047670D /* DeviceData.swift */; };
 		885BF49B23D8245E00EBF20B /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* LogData.swift */; };
 		885BF49C23D8301500EBF20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0DF22C5A0C90047670D /* Assets.xcassets */; };
+		88E5803723EC1152007E0ADB /* MyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E5803623EC1151007E0ADB /* MyExtension.swift */; };
+		88E5803823EC1152007E0ADB /* MyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E5803623EC1151007E0ADB /* MyExtension.swift */; };
+		88E5803923EC1152007E0ADB /* MyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E5803623EC1151007E0ADB /* MyExtension.swift */; };
+		88E5803A23EC1152007E0ADB /* MyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E5803623EC1151007E0ADB /* MyExtension.swift */; };
+		88E5803B23EC1152007E0ADB /* MyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E5803623EC1151007E0ADB /* MyExtension.swift */; };
+		88E5803C23EC1152007E0ADB /* MyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E5803623EC1151007E0ADB /* MyExtension.swift */; };
+		88E5803D23EC1152007E0ADB /* MyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E5803623EC1151007E0ADB /* MyExtension.swift */; };
+		88E5803E23EC1152007E0ADB /* MyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E5803623EC1151007E0ADB /* MyExtension.swift */; };
 		88ECAF5E23D04348004B58CE /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ECAF5D23D04348004B58CE /* Constant.swift */; };
 		88ECAF6123D04360004B58CE /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ECAF6023D04360004B58CE /* Constant.swift */; };
 		88ECAF6423D04366004B58CE /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ECAF6323D04366004B58CE /* Constant.swift */; };
@@ -258,6 +266,7 @@
 		885BF43F23D81FF000EBF20B /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		885BF44223D81FF600EBF20B /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		885BF44523D81FFC00EBF20B /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		88E5803623EC1151007E0ADB /* MyExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyExtension.swift; sourceTree = "<group>"; };
 		88ECAF1523D0410E004B58CE /* dev Dubai Palace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dev Dubai Palace.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88ECAF2D23D0416B004B58CE /* 台北開發用.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "台北開發用.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88ECAF4523D0417E004B58CE /* RD32.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RD32.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -459,6 +468,7 @@
 				7620A0FE22C5A65F0047670D /* AESHelp.swift */,
 				7620A10022C5A66E0047670D /* TTJBDetect.swift */,
 				7620A11222C5AC740047670D /* OpenInFirefoxControllerSwift.swift */,
+				88E5803623EC1151007E0ADB /* MyExtension.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -1384,6 +1394,7 @@
 				7620A0DB22C5A0C60047670D /* ViewController.swift in Sources */,
 				7620A0F322C5A6070047670D /* LogData.swift in Sources */,
 				7620A0D922C5A0C60047670D /* AppDelegate.swift in Sources */,
+				88E5803723EC1152007E0ADB /* MyExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1410,6 +1421,7 @@
 				885BF44E23D8242700EBF20B /* Reachability.m in Sources */,
 				885BF44D23D8242700EBF20B /* OpenInChromeController.m in Sources */,
 				885BF49123D8245C00EBF20B /* DeviceData.swift in Sources */,
+				88E5803B23EC1152007E0ADB /* MyExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1436,6 +1448,7 @@
 				885BF45123D8242700EBF20B /* Reachability.m in Sources */,
 				885BF45023D8242700EBF20B /* OpenInChromeController.m in Sources */,
 				885BF49423D8245D00EBF20B /* DeviceData.swift in Sources */,
+				88E5803C23EC1152007E0ADB /* MyExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1462,6 +1475,7 @@
 				885BF45423D8242700EBF20B /* Reachability.m in Sources */,
 				885BF45323D8242700EBF20B /* OpenInChromeController.m in Sources */,
 				885BF49723D8245D00EBF20B /* DeviceData.swift in Sources */,
+				88E5803D23EC1152007E0ADB /* MyExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1488,6 +1502,7 @@
 				885BF45723D8242800EBF20B /* Reachability.m in Sources */,
 				885BF45623D8242800EBF20B /* OpenInChromeController.m in Sources */,
 				885BF49A23D8245E00EBF20B /* DeviceData.swift in Sources */,
+				88E5803E23EC1152007E0ADB /* MyExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1514,6 +1529,7 @@
 				88ECAF8423D043AB004B58CE /* OpenInFirefoxControllerSwift.swift in Sources */,
 				88ECAF5E23D04348004B58CE /* Constant.swift in Sources */,
 				88ECAFA623D043B9004B58CE /* DeviceData.swift in Sources */,
+				88E5803823EC1152007E0ADB /* MyExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1540,6 +1556,7 @@
 				88ECAF9223D043AC004B58CE /* OpenInFirefoxControllerSwift.swift in Sources */,
 				88ECAF6123D04360004B58CE /* Constant.swift in Sources */,
 				88ECAFA023D043B8004B58CE /* DeviceData.swift in Sources */,
+				88E5803923EC1152007E0ADB /* MyExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1566,6 +1583,7 @@
 				88ECAF8B23D043AC004B58CE /* OpenInFirefoxControllerSwift.swift in Sources */,
 				88ECAF6423D04366004B58CE /* Constant.swift in Sources */,
 				88ECAFA323D043B8004B58CE /* DeviceData.swift in Sources */,
+				88E5803A23EC1152007E0ADB /* MyExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

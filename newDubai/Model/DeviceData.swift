@@ -248,6 +248,8 @@ class DeviceData {
                 "serverConnection": "伺服器连线中",
                 "verifyWebsite": "网站验证",
                 "resourceLoading": "资源加载中",
+                "webDidLoadFail": "页面载入异常",
+                "retry": "重试",
             ]
         } else {
             langDic = [
@@ -261,6 +263,8 @@ class DeviceData {
                 "serverConnection": "Connecting to the server",
                 "verifyWebsite": "Verifying website",
                 "resourceLoading": "Loading resources",
+                "webDidLoadFail": "Page loading exception",
+                "retry": "Retry",
             ]
         }
 

@@ -17,6 +17,7 @@ class WebData: NSObject {
     @objc var openNewWindow: String?
     @objc var refreshIsDisable = false
     @objc var backIsDisable = false
+    
     var loginAcc = ""
     var nowOpenGame = false
 
