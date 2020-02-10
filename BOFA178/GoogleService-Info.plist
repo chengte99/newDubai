@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>510794920944-384vm7t8mgkbsahv7tl0hf637d41b554.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.510794920944-384vm7t8mgkbsahv7tl0hf637d41b554</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAcz4rJNOzLrNE5fTk0JCkyzvlt1vJZYPA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>510794920944</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>itstar.ios.BF178</string>
+	<key>PROJECT_ID</key>
+	<string>owener-operated-platform</string>
+	<key>STORAGE_BUCKET</key>
+	<string>owener-operated-platform.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:510794920944:ios:3fc6928da92f9d77c3a335</string>
+	<key>DATABASE_URL</key>
+	<string>https://owener-operated-platform.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1007503349850-3ju4v7e60j5lg6jvi0c7dopjcaftrqmh.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1007503349850-3ju4v7e60j5lg6jvi0c7dopjcaftrqmh</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCDqumtiraGE87m1K9zcpdNTmHLO2xE-KM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1007503349850</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>itstar.ios.CITYOFDREAMS</string>
+	<key>PROJECT_ID</key>
+	<string>app-newdubai</string>
+	<key>STORAGE_BUCKET</key>
+	<string>app-newdubai.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1007503349850:ios:892653502bc0d0e6</string>
+	<key>DATABASE_URL</key>
+	<string>https://app-newdubai.firebaseio.com</string>
+</dict>
+</plist>

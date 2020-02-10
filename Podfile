@@ -50,3 +50,35 @@ end
 target 'Kimber188-Gbbt1-Dev' do
     my_pods
 end
+
+target 'BOFA178' do
+    my_pods
+end
+
+target 'BOFA178-Dev' do
+    my_pods
+end
+
+target 'BOFA178-Bft1-Dev' do
+    my_pods
+end
+
+target 'BOFA178-Bft2-Dev' do
+    my_pods
+end
+
+target 'CITYOFDREAMS' do
+    my_pods
+end
+
+target 'CITYOFDREAMS-Dev' do
+    my_pods
+end
+
+target 'CITYOFDREAMS-Xhx-Dev' do
+    my_pods
+end
+
+target 'CITYOFDREAMS-Xhxx-Dev' do
+    my_pods
+end
