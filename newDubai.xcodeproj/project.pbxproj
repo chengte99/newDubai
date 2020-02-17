@@ -19,7 +19,7 @@
 		7620A0E322C5A0C90047670D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0E122C5A0C90047670D /* LaunchScreen.storyboard */; };
 		7620A0EE22C5A5EC0047670D /* WebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0ED22C5A5EC0047670D /* WebData.swift */; };
 		7620A0F022C5A5F80047670D /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0EF22C5A5F80047670D /* DeviceData.swift */; };
-		7620A0F322C5A6070047670D /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* LogData.swift */; };
+		7620A0F322C5A6070047670D /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* AppData.swift */; };
 		7620A0F522C5A61D0047670D /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F422C5A61D0047670D /* APIManager.swift */; };
 		7620A0F722C5A6280047670D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F622C5A6280047670D /* Constant.swift */; };
 		7620A0F922C5A63B0047670D /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F822C5A63B0047670D /* AppUtility.swift */; };
@@ -118,17 +118,33 @@
 		885BF48F23D8245900EBF20B /* NewWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10622C5A6BA0047670D /* NewWindowViewController.swift */; };
 		885BF49023D8245C00EBF20B /* WebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0ED22C5A5EC0047670D /* WebData.swift */; };
 		885BF49123D8245C00EBF20B /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0EF22C5A5F80047670D /* DeviceData.swift */; };
-		885BF49223D8245C00EBF20B /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* LogData.swift */; };
+		885BF49223D8245C00EBF20B /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* AppData.swift */; };
 		885BF49323D8245D00EBF20B /* WebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0ED22C5A5EC0047670D /* WebData.swift */; };
 		885BF49423D8245D00EBF20B /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0EF22C5A5F80047670D /* DeviceData.swift */; };
-		885BF49523D8245D00EBF20B /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* LogData.swift */; };
+		885BF49523D8245D00EBF20B /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* AppData.swift */; };
 		885BF49623D8245D00EBF20B /* WebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0ED22C5A5EC0047670D /* WebData.swift */; };
 		885BF49723D8245D00EBF20B /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0EF22C5A5F80047670D /* DeviceData.swift */; };
-		885BF49823D8245D00EBF20B /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* LogData.swift */; };
+		885BF49823D8245D00EBF20B /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* AppData.swift */; };
 		885BF49923D8245E00EBF20B /* WebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0ED22C5A5EC0047670D /* WebData.swift */; };
 		885BF49A23D8245E00EBF20B /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0EF22C5A5F80047670D /* DeviceData.swift */; };
-		885BF49B23D8245E00EBF20B /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* LogData.swift */; };
+		885BF49B23D8245E00EBF20B /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* AppData.swift */; };
 		885BF49C23D8301500EBF20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0DF22C5A0C90047670D /* Assets.xcassets */; };
+		885D2A1F23FA7A5E00A1E733 /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885D2A1E23FA7A5E00A1E733 /* LogData.swift */; };
+		885D2A2023FA7A5E00A1E733 /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885D2A1E23FA7A5E00A1E733 /* LogData.swift */; };
+		885D2A2123FA7A5E00A1E733 /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885D2A1E23FA7A5E00A1E733 /* LogData.swift */; };
+		885D2A2223FA7A5E00A1E733 /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885D2A1E23FA7A5E00A1E733 /* LogData.swift */; };
+		885D2A2323FA7A5E00A1E733 /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885D2A1E23FA7A5E00A1E733 /* LogData.swift */; };
+		885D2A2423FA7A5E00A1E733 /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885D2A1E23FA7A5E00A1E733 /* LogData.swift */; };
+		885D2A2523FA7A5E00A1E733 /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885D2A1E23FA7A5E00A1E733 /* LogData.swift */; };
+		885D2A2623FA7A5E00A1E733 /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885D2A1E23FA7A5E00A1E733 /* LogData.swift */; };
+		885D2A2723FA7A5E00A1E733 /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885D2A1E23FA7A5E00A1E733 /* LogData.swift */; };
+		885D2A2823FA7A5E00A1E733 /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885D2A1E23FA7A5E00A1E733 /* LogData.swift */; };
+		885D2A2923FA7A5E00A1E733 /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885D2A1E23FA7A5E00A1E733 /* LogData.swift */; };
+		885D2A2A23FA7A5E00A1E733 /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885D2A1E23FA7A5E00A1E733 /* LogData.swift */; };
+		885D2A2B23FA7A5E00A1E733 /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885D2A1E23FA7A5E00A1E733 /* LogData.swift */; };
+		885D2A2C23FA7A5E00A1E733 /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885D2A1E23FA7A5E00A1E733 /* LogData.swift */; };
+		885D2A2D23FA7A5E00A1E733 /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885D2A1E23FA7A5E00A1E733 /* LogData.swift */; };
+		885D2A2E23FA7A5E00A1E733 /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885D2A1E23FA7A5E00A1E733 /* LogData.swift */; };
 		88E5803723EC1152007E0ADB /* MyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E5803623EC1151007E0ADB /* MyExtension.swift */; };
 		88E5803823EC1152007E0ADB /* MyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E5803623EC1151007E0ADB /* MyExtension.swift */; };
 		88E5803923EC1152007E0ADB /* MyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E5803623EC1151007E0ADB /* MyExtension.swift */; };
@@ -203,7 +219,7 @@
 		88E5817D23ED6600007E0ADB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7620A0E122C5A0C90047670D /* LaunchScreen.storyboard */; };
 		88E5817E23ED6617007E0ADB /* WebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0ED22C5A5EC0047670D /* WebData.swift */; };
 		88E5817F23ED6617007E0ADB /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0EF22C5A5F80047670D /* DeviceData.swift */; };
-		88E5818023ED6617007E0ADB /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* LogData.swift */; };
+		88E5818023ED6617007E0ADB /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* AppData.swift */; };
 		88E5818123ED6617007E0ADB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0DA22C5A0C60047670D /* ViewController.swift */; };
 		88E5818223ED6617007E0ADB /* WebkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10222C5A6950047670D /* WebkitViewController.swift */; };
 		88E5818323ED6617007E0ADB /* NewWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10422C5A6AC0047670D /* NewWKWebViewController.swift */; };
@@ -219,7 +235,7 @@
 		88E5818D23ED6617007E0ADB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0D822C5A0C60047670D /* AppDelegate.swift */; };
 		88E5818E23ED6617007E0ADB /* WebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0ED22C5A5EC0047670D /* WebData.swift */; };
 		88E5818F23ED6617007E0ADB /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0EF22C5A5F80047670D /* DeviceData.swift */; };
-		88E5819023ED6617007E0ADB /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* LogData.swift */; };
+		88E5819023ED6617007E0ADB /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* AppData.swift */; };
 		88E5819123ED6617007E0ADB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0DA22C5A0C60047670D /* ViewController.swift */; };
 		88E5819223ED6617007E0ADB /* WebkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10222C5A6950047670D /* WebkitViewController.swift */; };
 		88E5819323ED6617007E0ADB /* NewWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10422C5A6AC0047670D /* NewWKWebViewController.swift */; };
@@ -235,7 +251,7 @@
 		88E5819D23ED6617007E0ADB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0D822C5A0C60047670D /* AppDelegate.swift */; };
 		88E5819E23ED6618007E0ADB /* WebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0ED22C5A5EC0047670D /* WebData.swift */; };
 		88E5819F23ED6618007E0ADB /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0EF22C5A5F80047670D /* DeviceData.swift */; };
-		88E581A023ED6618007E0ADB /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* LogData.swift */; };
+		88E581A023ED6618007E0ADB /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* AppData.swift */; };
 		88E581A123ED6618007E0ADB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0DA22C5A0C60047670D /* ViewController.swift */; };
 		88E581A223ED6618007E0ADB /* WebkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10222C5A6950047670D /* WebkitViewController.swift */; };
 		88E581A323ED6618007E0ADB /* NewWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10422C5A6AC0047670D /* NewWKWebViewController.swift */; };
@@ -251,7 +267,7 @@
 		88E581AD23ED6618007E0ADB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0D822C5A0C60047670D /* AppDelegate.swift */; };
 		88E581AE23ED6618007E0ADB /* WebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0ED22C5A5EC0047670D /* WebData.swift */; };
 		88E581AF23ED6618007E0ADB /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0EF22C5A5F80047670D /* DeviceData.swift */; };
-		88E581B023ED6618007E0ADB /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* LogData.swift */; };
+		88E581B023ED6618007E0ADB /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* AppData.swift */; };
 		88E581B123ED6618007E0ADB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0DA22C5A0C60047670D /* ViewController.swift */; };
 		88E581B223ED6618007E0ADB /* WebkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10222C5A6950047670D /* WebkitViewController.swift */; };
 		88E581B323ED6618007E0ADB /* NewWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10422C5A6AC0047670D /* NewWKWebViewController.swift */; };
@@ -267,7 +283,7 @@
 		88E581BD23ED6618007E0ADB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0D822C5A0C60047670D /* AppDelegate.swift */; };
 		88E581BE23ED6619007E0ADB /* WebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0ED22C5A5EC0047670D /* WebData.swift */; };
 		88E581BF23ED6619007E0ADB /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0EF22C5A5F80047670D /* DeviceData.swift */; };
-		88E581C023ED6619007E0ADB /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* LogData.swift */; };
+		88E581C023ED6619007E0ADB /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* AppData.swift */; };
 		88E581C123ED6619007E0ADB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0DA22C5A0C60047670D /* ViewController.swift */; };
 		88E581C223ED6619007E0ADB /* WebkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10222C5A6950047670D /* WebkitViewController.swift */; };
 		88E581C323ED6619007E0ADB /* NewWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10422C5A6AC0047670D /* NewWKWebViewController.swift */; };
@@ -283,7 +299,7 @@
 		88E581CD23ED6619007E0ADB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0D822C5A0C60047670D /* AppDelegate.swift */; };
 		88E581CE23ED6619007E0ADB /* WebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0ED22C5A5EC0047670D /* WebData.swift */; };
 		88E581CF23ED6619007E0ADB /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0EF22C5A5F80047670D /* DeviceData.swift */; };
-		88E581D023ED6619007E0ADB /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* LogData.swift */; };
+		88E581D023ED6619007E0ADB /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* AppData.swift */; };
 		88E581D123ED6619007E0ADB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0DA22C5A0C60047670D /* ViewController.swift */; };
 		88E581D223ED6619007E0ADB /* WebkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10222C5A6950047670D /* WebkitViewController.swift */; };
 		88E581D323ED6619007E0ADB /* NewWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10422C5A6AC0047670D /* NewWKWebViewController.swift */; };
@@ -299,7 +315,7 @@
 		88E581DD23ED6619007E0ADB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0D822C5A0C60047670D /* AppDelegate.swift */; };
 		88E581DE23ED661A007E0ADB /* WebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0ED22C5A5EC0047670D /* WebData.swift */; };
 		88E581DF23ED661A007E0ADB /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0EF22C5A5F80047670D /* DeviceData.swift */; };
-		88E581E023ED661A007E0ADB /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* LogData.swift */; };
+		88E581E023ED661A007E0ADB /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* AppData.swift */; };
 		88E581E123ED661A007E0ADB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0DA22C5A0C60047670D /* ViewController.swift */; };
 		88E581E223ED661A007E0ADB /* WebkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10222C5A6950047670D /* WebkitViewController.swift */; };
 		88E581E323ED661A007E0ADB /* NewWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10422C5A6AC0047670D /* NewWKWebViewController.swift */; };
@@ -315,7 +331,7 @@
 		88E581ED23ED661A007E0ADB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0D822C5A0C60047670D /* AppDelegate.swift */; };
 		88E581EE23ED661A007E0ADB /* WebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0ED22C5A5EC0047670D /* WebData.swift */; };
 		88E581EF23ED661A007E0ADB /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0EF22C5A5F80047670D /* DeviceData.swift */; };
-		88E581F023ED661A007E0ADB /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* LogData.swift */; };
+		88E581F023ED661A007E0ADB /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* AppData.swift */; };
 		88E581F123ED661A007E0ADB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0DA22C5A0C60047670D /* ViewController.swift */; };
 		88E581F223ED661A007E0ADB /* WebkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10222C5A6950047670D /* WebkitViewController.swift */; };
 		88E581F323ED661A007E0ADB /* NewWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10422C5A6AC0047670D /* NewWKWebViewController.swift */; };
@@ -390,13 +406,13 @@
 		88ECAF9E23D043B3004B58CE /* NewWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A10622C5A6BA0047670D /* NewWindowViewController.swift */; };
 		88ECAF9F23D043B8004B58CE /* WebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0ED22C5A5EC0047670D /* WebData.swift */; };
 		88ECAFA023D043B8004B58CE /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0EF22C5A5F80047670D /* DeviceData.swift */; };
-		88ECAFA123D043B8004B58CE /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* LogData.swift */; };
+		88ECAFA123D043B8004B58CE /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* AppData.swift */; };
 		88ECAFA223D043B8004B58CE /* WebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0ED22C5A5EC0047670D /* WebData.swift */; };
 		88ECAFA323D043B8004B58CE /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0EF22C5A5F80047670D /* DeviceData.swift */; };
-		88ECAFA423D043B8004B58CE /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* LogData.swift */; };
+		88ECAFA423D043B8004B58CE /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* AppData.swift */; };
 		88ECAFA523D043B9004B58CE /* WebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0ED22C5A5EC0047670D /* WebData.swift */; };
 		88ECAFA623D043B9004B58CE /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0EF22C5A5F80047670D /* DeviceData.swift */; };
-		88ECAFA723D043B9004B58CE /* LogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* LogData.swift */; };
+		88ECAFA723D043B9004B58CE /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620A0F222C5A6070047670D /* AppData.swift */; };
 		A7A9BB4F6A90A5EE15B64CF6 /* Pods_Kimber188_Gbbt1_Dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1F300F3316A570E921E89C /* Pods_Kimber188_Gbbt1_Dev.framework */; };
 		B1F220D35AE20E329000D0C8 /* Pods_newDubai_Ndbppp_Dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDCE2D1B99BAB9C9075347D0 /* Pods_newDubai_Ndbppp_Dev.framework */; };
 		BCA83A51E19A3B1D0DC325DE /* Pods_Kimber188_Dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396AF67844471CCC2FFAD2D1 /* Pods_Kimber188_Dev.framework */; };
@@ -447,7 +463,7 @@
 		7620A0E422C5A0C90047670D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7620A0ED22C5A5EC0047670D /* WebData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebData.swift; sourceTree = "<group>"; };
 		7620A0EF22C5A5F80047670D /* DeviceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceData.swift; sourceTree = "<group>"; };
-		7620A0F222C5A6070047670D /* LogData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogData.swift; sourceTree = "<group>"; };
+		7620A0F222C5A6070047670D /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		7620A0F422C5A61D0047670D /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		7620A0F622C5A6280047670D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		7620A0F822C5A63B0047670D /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
@@ -474,7 +490,7 @@
 		879EBE9E1999C62C898B27C2 /* Pods-Kimber188-Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimber188-Dev.debug.xcconfig"; path = "Target Support Files/Pods-Kimber188-Dev/Pods-Kimber188-Dev.debug.xcconfig"; sourceTree = "<group>"; };
 		885BF3D023D81BA800EBF20B /* SPORT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPORT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		885BF3E823D81CC200EBF20B /* SPORT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPORT.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		885BF40023D81CDB00EBF20B /* devSPORT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = devSPORT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		885BF40023D81CDB00EBF20B /* dev SPORT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dev SPORT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		885BF41823D81D1000EBF20B /* 台北開發用.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "台北開發用.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		885BF43023D81F8600EBF20B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		885BF43223D81F8600EBF20B /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -483,6 +499,8 @@
 		885BF43F23D81FF000EBF20B /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		885BF44223D81FF600EBF20B /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		885BF44523D81FFC00EBF20B /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		885D2A1E23FA7A5E00A1E733 /* LogData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogData.swift; sourceTree = "<group>"; };
+		88DB50882403ACD80028CC71 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88E5803623EC1151007E0ADB /* MyExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyExtension.swift; sourceTree = "<group>"; };
 		88E5804323ED362B007E0ADB /* BOFA178.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOFA178.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88E5807323ED4976007E0ADB /* dev BOFA178.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dev BOFA178.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -758,7 +776,7 @@
 				88ECAF4523D0417E004B58CE /* RD32.app */,
 				885BF3D023D81BA800EBF20B /* SPORT.app */,
 				885BF3E823D81CC200EBF20B /* SPORT.app */,
-				885BF40023D81CDB00EBF20B /* devSPORT.app */,
+				885BF40023D81CDB00EBF20B /* dev SPORT.app */,
 				885BF41823D81D1000EBF20B /* 台北開發用.app */,
 				88E5804323ED362B007E0ADB /* BOFA178.app */,
 				88E5807323ED4976007E0ADB /* dev BOFA178.app */,
@@ -828,7 +846,8 @@
 			children = (
 				7620A0ED22C5A5EC0047670D /* WebData.swift */,
 				7620A0EF22C5A5F80047670D /* DeviceData.swift */,
-				7620A0F222C5A6070047670D /* LogData.swift */,
+				885D2A1E23FA7A5E00A1E733 /* LogData.swift */,
+				7620A0F222C5A6070047670D /* AppData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -906,6 +925,7 @@
 				88E5811723ED4C7D007E0ADB /* BOFA178.entitlements */,
 				88E5811F23ED5AEC007E0ADB /* Manager */,
 				88E5812F23ED5D22007E0ADB /* Assets.xcassets */,
+				88DB50882403ACD80028CC71 /* Info.plist */,
 				88E5812E23ED5D22007E0ADB /* GoogleService-Info.plist */,
 			);
 			path = BOFA178;
@@ -1162,7 +1182,7 @@
 			);
 			name = "Kimber188-Dev";
 			productName = "Kimber188-Dev";
-			productReference = 885BF40023D81CDB00EBF20B /* devSPORT.app */;
+			productReference = 885BF40023D81CDB00EBF20B /* dev SPORT.app */;
 			productType = "com.apple.product-type.application";
 		};
 		885BF41723D81D1000EBF20B /* Kimber188-Gbbt1-Dev */ = {
@@ -2604,9 +2624,10 @@
 				7620A10122C5A66E0047670D /* TTJBDetect.swift in Sources */,
 				7620A11022C5A6F60047670D /* OpenInChromeController.m in Sources */,
 				7620A0DB22C5A0C60047670D /* ViewController.swift in Sources */,
-				7620A0F322C5A6070047670D /* LogData.swift in Sources */,
+				7620A0F322C5A6070047670D /* AppData.swift in Sources */,
 				7620A0D922C5A0C60047670D /* AppDelegate.swift in Sources */,
 				88E5803723EC1152007E0ADB /* MyExtension.swift in Sources */,
+				885D2A1F23FA7A5E00A1E733 /* LogData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2616,7 +2637,7 @@
 			files = (
 				885BF46723D8244D00EBF20B /* AppDelegate.swift in Sources */,
 				885BF46523D8244D00EBF20B /* TTJBDetect.swift in Sources */,
-				885BF49223D8245C00EBF20B /* LogData.swift in Sources */,
+				885BF49223D8245C00EBF20B /* AppData.swift in Sources */,
 				885BF44C23D8242700EBF20B /* CacheManager.m in Sources */,
 				885BF46423D8244D00EBF20B /* AESHelp.swift in Sources */,
 				885BF48223D8245800EBF20B /* NewWKWebViewController.swift in Sources */,
@@ -2634,6 +2655,7 @@
 				885BF44D23D8242700EBF20B /* OpenInChromeController.m in Sources */,
 				885BF49123D8245C00EBF20B /* DeviceData.swift in Sources */,
 				88E5803B23EC1152007E0ADB /* MyExtension.swift in Sources */,
+				885D2A2323FA7A5E00A1E733 /* LogData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2643,7 +2665,7 @@
 			files = (
 				885BF46F23D8244D00EBF20B /* AppDelegate.swift in Sources */,
 				885BF46D23D8244D00EBF20B /* TTJBDetect.swift in Sources */,
-				885BF49523D8245D00EBF20B /* LogData.swift in Sources */,
+				885BF49523D8245D00EBF20B /* AppData.swift in Sources */,
 				885BF44F23D8242700EBF20B /* CacheManager.m in Sources */,
 				885BF46C23D8244D00EBF20B /* AESHelp.swift in Sources */,
 				885BF48623D8245800EBF20B /* NewWKWebViewController.swift in Sources */,
@@ -2661,6 +2683,7 @@
 				885BF45023D8242700EBF20B /* OpenInChromeController.m in Sources */,
 				885BF49423D8245D00EBF20B /* DeviceData.swift in Sources */,
 				88E5803C23EC1152007E0ADB /* MyExtension.swift in Sources */,
+				885D2A2423FA7A5E00A1E733 /* LogData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2670,7 +2693,7 @@
 			files = (
 				885BF47723D8244E00EBF20B /* AppDelegate.swift in Sources */,
 				885BF47523D8244E00EBF20B /* TTJBDetect.swift in Sources */,
-				885BF49823D8245D00EBF20B /* LogData.swift in Sources */,
+				885BF49823D8245D00EBF20B /* AppData.swift in Sources */,
 				885BF45223D8242700EBF20B /* CacheManager.m in Sources */,
 				885BF47423D8244E00EBF20B /* AESHelp.swift in Sources */,
 				885BF48A23D8245900EBF20B /* NewWKWebViewController.swift in Sources */,
@@ -2688,6 +2711,7 @@
 				885BF45323D8242700EBF20B /* OpenInChromeController.m in Sources */,
 				885BF49723D8245D00EBF20B /* DeviceData.swift in Sources */,
 				88E5803D23EC1152007E0ADB /* MyExtension.swift in Sources */,
+				885D2A2523FA7A5E00A1E733 /* LogData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2697,7 +2721,7 @@
 			files = (
 				885BF47F23D8244E00EBF20B /* AppDelegate.swift in Sources */,
 				885BF47D23D8244E00EBF20B /* TTJBDetect.swift in Sources */,
-				885BF49B23D8245E00EBF20B /* LogData.swift in Sources */,
+				885BF49B23D8245E00EBF20B /* AppData.swift in Sources */,
 				885BF45523D8242800EBF20B /* CacheManager.m in Sources */,
 				885BF47C23D8244E00EBF20B /* AESHelp.swift in Sources */,
 				885BF48E23D8245900EBF20B /* NewWKWebViewController.swift in Sources */,
@@ -2715,6 +2739,7 @@
 				885BF45623D8242800EBF20B /* OpenInChromeController.m in Sources */,
 				885BF49A23D8245E00EBF20B /* DeviceData.swift in Sources */,
 				88E5803E23EC1152007E0ADB /* MyExtension.swift in Sources */,
+				885D2A2623FA7A5E00A1E733 /* LogData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2724,7 +2749,7 @@
 			files = (
 				88E5818523ED6617007E0ADB /* APIManager.swift in Sources */,
 				88E5818A23ED6617007E0ADB /* TTJBDetect.swift in Sources */,
-				88E5818023ED6617007E0ADB /* LogData.swift in Sources */,
+				88E5818023ED6617007E0ADB /* AppData.swift in Sources */,
 				88E5815623ED65EE007E0ADB /* CacheManager.m in Sources */,
 				88E5812123ED5AED007E0ADB /* Constant.swift in Sources */,
 				88E5818423ED6617007E0ADB /* NewWindowViewController.swift in Sources */,
@@ -2742,6 +2767,7 @@
 				88E5818123ED6617007E0ADB /* ViewController.swift in Sources */,
 				88E5817F23ED6617007E0ADB /* DeviceData.swift in Sources */,
 				88E5818C23ED6617007E0ADB /* MyExtension.swift in Sources */,
+				885D2A2723FA7A5E00A1E733 /* LogData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2751,7 +2777,7 @@
 			files = (
 				88E5819523ED6617007E0ADB /* APIManager.swift in Sources */,
 				88E5819A23ED6617007E0ADB /* TTJBDetect.swift in Sources */,
-				88E5819023ED6617007E0ADB /* LogData.swift in Sources */,
+				88E5819023ED6617007E0ADB /* AppData.swift in Sources */,
 				88E5815923ED65EE007E0ADB /* CacheManager.m in Sources */,
 				88E5812423ED5C2D007E0ADB /* Constant.swift in Sources */,
 				88E5819423ED6617007E0ADB /* NewWindowViewController.swift in Sources */,
@@ -2769,6 +2795,7 @@
 				88E5819123ED6617007E0ADB /* ViewController.swift in Sources */,
 				88E5818F23ED6617007E0ADB /* DeviceData.swift in Sources */,
 				88E5819C23ED6617007E0ADB /* MyExtension.swift in Sources */,
+				885D2A2823FA7A5E00A1E733 /* LogData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2778,7 +2805,7 @@
 			files = (
 				88E581A523ED6618007E0ADB /* APIManager.swift in Sources */,
 				88E581AA23ED6618007E0ADB /* TTJBDetect.swift in Sources */,
-				88E581A023ED6618007E0ADB /* LogData.swift in Sources */,
+				88E581A023ED6618007E0ADB /* AppData.swift in Sources */,
 				88E5815C23ED65EF007E0ADB /* CacheManager.m in Sources */,
 				88E5812A23ED5C40007E0ADB /* Constant.swift in Sources */,
 				88E581A423ED6618007E0ADB /* NewWindowViewController.swift in Sources */,
@@ -2796,6 +2823,7 @@
 				88E581A123ED6618007E0ADB /* ViewController.swift in Sources */,
 				88E5819F23ED6618007E0ADB /* DeviceData.swift in Sources */,
 				88E581AC23ED6618007E0ADB /* MyExtension.swift in Sources */,
+				885D2A2923FA7A5E00A1E733 /* LogData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2805,7 +2833,7 @@
 			files = (
 				88E581B523ED6618007E0ADB /* APIManager.swift in Sources */,
 				88E581BA23ED6618007E0ADB /* TTJBDetect.swift in Sources */,
-				88E581B023ED6618007E0ADB /* LogData.swift in Sources */,
+				88E581B023ED6618007E0ADB /* AppData.swift in Sources */,
 				88E5816223ED65F0007E0ADB /* CacheManager.m in Sources */,
 				88E5812723ED5C38007E0ADB /* Constant.swift in Sources */,
 				88E581B423ED6618007E0ADB /* NewWindowViewController.swift in Sources */,
@@ -2823,6 +2851,7 @@
 				88E581B123ED6618007E0ADB /* ViewController.swift in Sources */,
 				88E581AF23ED6618007E0ADB /* DeviceData.swift in Sources */,
 				88E581BC23ED6618007E0ADB /* MyExtension.swift in Sources */,
+				885D2A2A23FA7A5E00A1E733 /* LogData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2832,7 +2861,7 @@
 			files = (
 				88E581C523ED6619007E0ADB /* APIManager.swift in Sources */,
 				88E581CA23ED6619007E0ADB /* TTJBDetect.swift in Sources */,
-				88E581C023ED6619007E0ADB /* LogData.swift in Sources */,
+				88E581C023ED6619007E0ADB /* AppData.swift in Sources */,
 				88E5815F23ED65F0007E0ADB /* CacheManager.m in Sources */,
 				88E5814423ED5E2E007E0ADB /* Constant.swift in Sources */,
 				88E581C423ED6619007E0ADB /* NewWindowViewController.swift in Sources */,
@@ -2850,6 +2879,7 @@
 				88E581C123ED6619007E0ADB /* ViewController.swift in Sources */,
 				88E581BF23ED6619007E0ADB /* DeviceData.swift in Sources */,
 				88E581CC23ED6619007E0ADB /* MyExtension.swift in Sources */,
+				885D2A2B23FA7A5E00A1E733 /* LogData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2859,7 +2889,7 @@
 			files = (
 				88E581D523ED6619007E0ADB /* APIManager.swift in Sources */,
 				88E581DA23ED6619007E0ADB /* TTJBDetect.swift in Sources */,
-				88E581D023ED6619007E0ADB /* LogData.swift in Sources */,
+				88E581D023ED6619007E0ADB /* AppData.swift in Sources */,
 				88E5816523ED65F1007E0ADB /* CacheManager.m in Sources */,
 				88E5814723ED5E8D007E0ADB /* Constant.swift in Sources */,
 				88E581D423ED6619007E0ADB /* NewWindowViewController.swift in Sources */,
@@ -2877,6 +2907,7 @@
 				88E581D123ED6619007E0ADB /* ViewController.swift in Sources */,
 				88E581CF23ED6619007E0ADB /* DeviceData.swift in Sources */,
 				88E581DC23ED6619007E0ADB /* MyExtension.swift in Sources */,
+				885D2A2C23FA7A5E00A1E733 /* LogData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2886,7 +2917,7 @@
 			files = (
 				88E581E523ED661A007E0ADB /* APIManager.swift in Sources */,
 				88E581EA23ED661A007E0ADB /* TTJBDetect.swift in Sources */,
-				88E581E023ED661A007E0ADB /* LogData.swift in Sources */,
+				88E581E023ED661A007E0ADB /* AppData.swift in Sources */,
 				88E5816823ED65F2007E0ADB /* CacheManager.m in Sources */,
 				88E5814A23ED5EA1007E0ADB /* Constant.swift in Sources */,
 				88E581E423ED661A007E0ADB /* NewWindowViewController.swift in Sources */,
@@ -2904,6 +2935,7 @@
 				88E581E123ED661A007E0ADB /* ViewController.swift in Sources */,
 				88E581DF23ED661A007E0ADB /* DeviceData.swift in Sources */,
 				88E581EC23ED661A007E0ADB /* MyExtension.swift in Sources */,
+				885D2A2D23FA7A5E00A1E733 /* LogData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2913,7 +2945,7 @@
 			files = (
 				88E581F523ED661A007E0ADB /* APIManager.swift in Sources */,
 				88E581FA23ED661A007E0ADB /* TTJBDetect.swift in Sources */,
-				88E581F023ED661A007E0ADB /* LogData.swift in Sources */,
+				88E581F023ED661A007E0ADB /* AppData.swift in Sources */,
 				88E5816B23ED65F2007E0ADB /* CacheManager.m in Sources */,
 				88E5814D23ED5EB5007E0ADB /* Constant.swift in Sources */,
 				88E581F423ED661A007E0ADB /* NewWindowViewController.swift in Sources */,
@@ -2931,6 +2963,7 @@
 				88E581F123ED661A007E0ADB /* ViewController.swift in Sources */,
 				88E581EF23ED661A007E0ADB /* DeviceData.swift in Sources */,
 				88E581FC23ED661A007E0ADB /* MyExtension.swift in Sources */,
+				885D2A2E23FA7A5E00A1E733 /* LogData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2940,7 +2973,7 @@
 			files = (
 				88ECAF7F23D043AB004B58CE /* AppUtility.swift in Sources */,
 				88ECAF8023D043AB004B58CE /* AppKey.swift in Sources */,
-				88ECAFA723D043B9004B58CE /* LogData.swift in Sources */,
+				88ECAFA723D043B9004B58CE /* AppData.swift in Sources */,
 				88ECAF7E23D043AB004B58CE /* APIManager.swift in Sources */,
 				88ECAF8123D043AB004B58CE /* AppTouchID.swift in Sources */,
 				88ECAF9D23D043B3004B58CE /* NewWKWebViewController.swift in Sources */,
@@ -2958,6 +2991,7 @@
 				88ECAF5E23D04348004B58CE /* Constant.swift in Sources */,
 				88ECAFA623D043B9004B58CE /* DeviceData.swift in Sources */,
 				88E5803823EC1152007E0ADB /* MyExtension.swift in Sources */,
+				885D2A2023FA7A5E00A1E733 /* LogData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2967,7 +3001,7 @@
 			files = (
 				88ECAF8D23D043AC004B58CE /* AppUtility.swift in Sources */,
 				88ECAF8E23D043AC004B58CE /* AppKey.swift in Sources */,
-				88ECAFA123D043B8004B58CE /* LogData.swift in Sources */,
+				88ECAFA123D043B8004B58CE /* AppData.swift in Sources */,
 				88ECAF8C23D043AC004B58CE /* APIManager.swift in Sources */,
 				88ECAF8F23D043AC004B58CE /* AppTouchID.swift in Sources */,
 				88ECAF9523D043B2004B58CE /* NewWKWebViewController.swift in Sources */,
@@ -2985,6 +3019,7 @@
 				88ECAF6123D04360004B58CE /* Constant.swift in Sources */,
 				88ECAFA023D043B8004B58CE /* DeviceData.swift in Sources */,
 				88E5803923EC1152007E0ADB /* MyExtension.swift in Sources */,
+				885D2A2123FA7A5E00A1E733 /* LogData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2994,7 +3029,7 @@
 			files = (
 				88ECAF8623D043AC004B58CE /* AppUtility.swift in Sources */,
 				88ECAF8723D043AC004B58CE /* AppKey.swift in Sources */,
-				88ECAFA423D043B8004B58CE /* LogData.swift in Sources */,
+				88ECAFA423D043B8004B58CE /* AppData.swift in Sources */,
 				88ECAF8523D043AC004B58CE /* APIManager.swift in Sources */,
 				88ECAF8823D043AC004B58CE /* AppTouchID.swift in Sources */,
 				88ECAF9923D043B3004B58CE /* NewWKWebViewController.swift in Sources */,
@@ -3012,6 +3047,7 @@
 				88ECAF6423D04366004B58CE /* Constant.swift in Sources */,
 				88ECAFA323D043B8004B58CE /* DeviceData.swift in Sources */,
 				88E5803A23EC1152007E0ADB /* MyExtension.swift in Sources */,
+				885D2A2223FA7A5E00A1E733 /* LogData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3324,7 +3360,7 @@
 				);
 				MARKETING_VERSION = 1.7.0;
 				PRODUCT_BUNDLE_IDENTIFIER = itstar.ios.Kimber188.dev;
-				PRODUCT_NAME = devSPORT;
+				PRODUCT_NAME = "dev SPORT";
 				SWIFT_OBJC_BRIDGING_HEADER = "newDubai/newDubai-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3348,7 +3384,7 @@
 				);
 				MARKETING_VERSION = 1.7.0;
 				PRODUCT_BUNDLE_IDENTIFIER = itstar.ios.Kimber188.dev;
-				PRODUCT_NAME = devSPORT;
+				PRODUCT_NAME = "dev SPORT";
 				SWIFT_OBJC_BRIDGING_HEADER = "newDubai/newDubai-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3409,12 +3445,13 @@
 			baseConfigurationReference = 0CA9F700F587A332DBE50659 /* Pods-BOFA178.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "launch image-1";
 				CODE_SIGN_ENTITLEMENTS = BOFA178/BOFA178.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.7.03;
+				CURRENT_PROJECT_VERSION = 1.7.04;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = C5235969FU;
-				INFOPLIST_FILE = newDubai/Info.plist;
+				INFOPLIST_FILE = BOFA178/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3434,11 +3471,12 @@
 			baseConfigurationReference = 4CF8D306A5EEB266D1BE6780 /* Pods-BOFA178.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "launch image-1";
 				CODE_SIGN_ENTITLEMENTS = BOFA178/BOFA178.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.7.03;
+				CURRENT_PROJECT_VERSION = 1.7.04;
 				DEVELOPMENT_TEAM = C5235969FU;
-				INFOPLIST_FILE = newDubai/Info.plist;
+				INFOPLIST_FILE = BOFA178/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3458,12 +3496,13 @@
 			baseConfigurationReference = 532F819BFACD73FBDE661E0E /* Pods-BOFA178-Dev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "launch image-1";
 				CODE_SIGN_ENTITLEMENTS = BOFA178/BOFA178.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.7.03;
+				CURRENT_PROJECT_VERSION = 1.7.04;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = C5235969FU;
-				INFOPLIST_FILE = newDubai/Info.plist;
+				INFOPLIST_FILE = BOFA178/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3483,12 +3522,13 @@
 			baseConfigurationReference = 3B4F23A3D8B1CF1C1E0A1422 /* Pods-BOFA178-Dev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "launch image-1";
 				CODE_SIGN_ENTITLEMENTS = BOFA178/BOFA178.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.7.03;
+				CURRENT_PROJECT_VERSION = 1.7.04;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = C5235969FU;
-				INFOPLIST_FILE = newDubai/Info.plist;
+				INFOPLIST_FILE = BOFA178/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3508,12 +3548,13 @@
 			baseConfigurationReference = 719C8452B6A75DEB655F858A /* Pods-BOFA178-Bft1-Dev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "launch image-1";
 				CODE_SIGN_ENTITLEMENTS = BOFA178/BOFA178.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.7.03;
+				CURRENT_PROJECT_VERSION = 1.7.04;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = C5235969FU;
-				INFOPLIST_FILE = newDubai/Info.plist;
+				INFOPLIST_FILE = BOFA178/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3533,12 +3574,13 @@
 			baseConfigurationReference = E6B4CBE913F027713A079AD8 /* Pods-BOFA178-Bft1-Dev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "launch image-1";
 				CODE_SIGN_ENTITLEMENTS = BOFA178/BOFA178.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.7.03;
+				CURRENT_PROJECT_VERSION = 1.7.04;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = C5235969FU;
-				INFOPLIST_FILE = newDubai/Info.plist;
+				INFOPLIST_FILE = BOFA178/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3558,12 +3600,13 @@
 			baseConfigurationReference = B45A76667B7A65B157BEC8E2 /* Pods-BOFA178-Bft2-Dev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "launch image-1";
 				CODE_SIGN_ENTITLEMENTS = BOFA178/BOFA178.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.7.03;
+				CURRENT_PROJECT_VERSION = 1.7.04;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = C5235969FU;
-				INFOPLIST_FILE = newDubai/Info.plist;
+				INFOPLIST_FILE = BOFA178/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3583,12 +3626,13 @@
 			baseConfigurationReference = 473185DC126284E6EE7D1788 /* Pods-BOFA178-Bft2-Dev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "launch image-1";
 				CODE_SIGN_ENTITLEMENTS = BOFA178/BOFA178.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.7.03;
+				CURRENT_PROJECT_VERSION = 1.7.04;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = C5235969FU;
-				INFOPLIST_FILE = newDubai/Info.plist;
+				INFOPLIST_FILE = BOFA178/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

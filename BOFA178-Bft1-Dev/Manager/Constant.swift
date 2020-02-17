@@ -21,5 +21,5 @@ let HardCodeURL = "https://www.bf1889.com/"
 let KEY_CODE = "bft1"
 let ISDEV = "1"
 
-let USEFLOATING = false
+let USEFLOATING = true
 let TaipeiWebConf = true

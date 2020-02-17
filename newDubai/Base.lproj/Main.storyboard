@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="devDubai_Palace" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BOFA178" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,7 +19,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch image-1" translatesAutoresizingMaskIntoConstraints="NO" id="pac-YG-P1h">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="og5-WY-wyQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="og5-WY-wyQ">
                                 <rect key="frame" x="0.0" y="762" width="414" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="maM-0x-T9Y"/>
@@ -32,7 +32,6 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="pac-YG-P1h" secondAttribute="bottom" id="2xg-nq-2NQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="og5-WY-wyQ" secondAttribute="bottom" id="4T0-g3-ta2"/>
                             <constraint firstItem="pac-YG-P1h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TvX-hZ-1uN"/>
                             <constraint firstItem="og5-WY-wyQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YY6-co-sXS"/>
                             <constraint firstItem="pac-YG-P1h" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="a2W-Tv-nmK"/>
@@ -42,6 +41,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="launchImageView" destination="pac-YG-P1h" id="po7-xD-5UZ"/>
                         <outlet property="myLabel" destination="og5-WY-wyQ" id="Gix-4u-Ia6"/>
                         <segue destination="xHu-qx-75j" kind="show" identifier="goToWeb" animates="NO" id="npv-W5-Zlx"/>
                     </connections>
@@ -53,7 +53,7 @@
         <!--Webkit View Controller-->
         <scene sceneID="Zhh-aA-vE0">
             <objects>
-                <viewController id="jgM-Fx-wzB" customClass="WebkitViewController" customModule="devDubai_Palace" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jgM-Fx-wzB" customClass="WebkitViewController" customModule="BOFA178" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pGy-8G-Ajq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,7 +72,7 @@
         <!--NewWK Web View Controller-->
         <scene sceneID="zlP-zb-RZC">
             <objects>
-                <viewController id="CbO-Fn-C5N" customClass="NewWKWebViewController" customModule="devDubai_Palace" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CbO-Fn-C5N" customClass="NewWKWebViewController" customModule="BOFA178" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ccj-VV-rMU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,7 +90,7 @@
         <!--New Window View Controller-->
         <scene sceneID="5HL-Vv-MbI">
             <objects>
-                <viewController id="9qt-dV-lpA" customClass="NewWindowViewController" customModule="devDubai_Palace" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9qt-dV-lpA" customClass="NewWindowViewController" customModule="BOFA178" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iuz-Fy-NGv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,6 +122,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="launch image-1" width="1536" height="2048"/>
+        <image name="launch image-1" width="1125" height="2436"/>
     </resources>
 </document>

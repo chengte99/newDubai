@@ -43,3 +43,15 @@ extension UIDevice {
         }
     }
 }
+
+extension UIApplication {
+    
+    static var launchImageName: String {
+        print("\(Int(UIScreen.main.nativeBounds.width)) x \(Int(UIScreen.main.nativeBounds.height))")
+        return "\(Int(UIScreen.main.nativeBounds.width)) x \(Int(UIScreen.main.nativeBounds.height))"
+    }
+    
+    static var launchImage: UIImage? {
+        return UIImage(named: launchImageName) ?? UIImage(named: "launch image-1")
+    }
+}

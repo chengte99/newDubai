@@ -16,6 +16,8 @@ import FirebasePerformance
 class ViewController: UIViewController {
 
     @IBOutlet weak var myLabel: UILabel!
+    @IBOutlet weak var launchImageView: UIImageView!
+    
     var feedback: Int = 1
     var sessid = ""
     var logid: String = ""
@@ -41,6 +43,14 @@ class ViewController: UIViewController {
     var dBFailCount = 0
     var dbDomainCount = 0
     var dbDomainFinal = ""
+    
+    var customYOffset1: CGFloat {
+        return AppData.isBF ? AppData.customWelcomeYOffsetBF1_1 : 0
+    }
+    
+    var customYOffset2: CGFloat {
+        return AppData.isBF ? AppData.customWelcomeYOffsetBF1_2 : 0
+    }
 
     func HGLog<T>(_ message: T, file: String = #file, function: String = #function,
         line: Int = #line) {
@@ -102,7 +112,20 @@ class ViewController: UIViewController {
 
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         view.backgroundColor = UIColor.black
-        self.myLabel.numberOfLines = 0
+        
+        if #available(iOS 11.0, *) {
+            NSLayoutConstraint.activate([myLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0.0 + customYOffset1)])
+        }
+        else {
+            NSLayoutConstraint(item: myLabel, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1.0, constant: 0.0 + customYOffset1).isActive = true
+        }
+        myLabel.numberOfLines = 0
+        
+        // 文字顏色調整
+        myLabel.textColor = AppData.isWhiteBackground ? .black : .white
+        
+        // 啟動圖片
+        launchImageView.image = UIApplication.launchImage
 
         let device = Device.current
         //        DeviceData.current.deviceModel = device.description
@@ -112,7 +135,7 @@ class ViewController: UIViewController {
         } else {
             DeviceData.current.deviceModel = device.description
         }
-
+        
         DeviceData.current.uuid = AppKey().getUUID()
         if let udid = UIDevice.current.identifierForVendor?.uuidString {
             DeviceData.current.udid = udid
@@ -352,14 +375,15 @@ class ViewController: UIViewController {
 
         let uuidLabel = UILabel()
         uuidLabel.text = "****\(subStr)"
-        uuidLabel.textColor = UIColor.white
+        uuidLabel.textColor = myLabel.textColor
         uuidLabel.adjustsFontSizeToFitWidth = true
         view.addSubview(uuidLabel)
         uuidLabel.translatesAutoresizingMaskIntoConstraints = false
         if #available(iOS 11.0, *) {
-            NSLayoutConstraint.activate([uuidLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10), uuidLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -10), uuidLabel.widthAnchor.constraint(equalToConstant: 80), uuidLabel.heightAnchor.constraint(equalToConstant: 30)])
-        } else {
-            NSLayoutConstraint(item: uuidLabel, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1.0, constant: -10).isActive = true
+            NSLayoutConstraint.activate([uuidLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10 + customYOffset2), uuidLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -10), uuidLabel.widthAnchor.constraint(equalToConstant: 80), uuidLabel.heightAnchor.constraint(equalToConstant: 30)])
+        }
+        else {
+            NSLayoutConstraint(item: uuidLabel, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1.0, constant: -10 + customYOffset2).isActive = true
             NSLayoutConstraint(item: uuidLabel, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1.0, constant: -10).isActive = true
             NSLayoutConstraint(item: uuidLabel, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 80).isActive = true
             NSLayoutConstraint(item: uuidLabel, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 30).isActive = true
