@@ -30,11 +30,16 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
     var screenImg: UIImageView!
     var progressLabel: UILabel!
     var progressView: UIProgressView!
+    var progressYOffset: CGFloat {
+        return AppData.isBF ? AppData.customWelcomeYOffsetBF : 0
+    }
     var uuidLabel: UILabel!
 
     var timer = Timer()
     let statusBarHeight = UIApplication.shared.statusBarFrame.height
 
+    var isViewAppeared: Bool = false
+    
     //configure statusbar
     var _statusBarStyle: UIStatusBarStyle = .lightContent
     var statusBarStyle: UIStatusBarStyle {
@@ -1049,6 +1054,7 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
         self.screenImg.isHidden = true
         self.wk.isHidden = false
         self.progressView.setProgress(0.0, animated: false)
+        statusBarStyle = .lightContent
 
         //        self.wk.evaluateJavaScript(getSiteTitle()) { (any, error) in
         //            if error == nil{
@@ -1085,16 +1091,17 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
         progressLabel.translatesAutoresizingMaskIntoConstraints = false
         screenImg.addSubview(progressLabel)
         if #available(iOS 11.0, *) {
-            NSLayoutConstraint.activate([progressLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 50.0), progressLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -50.0), progressLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10.0), progressLabel.heightAnchor.constraint(equalToConstant: 30.0)])
-        } else {
+            NSLayoutConstraint.activate([progressLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 50.0), progressLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -50.0), progressLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10.0 + progressYOffset), progressLabel.heightAnchor.constraint(equalToConstant: 30.0)])
+        }
+        else {
             NSLayoutConstraint(item: progressLabel, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1.0, constant: 50.0).isActive = true
             NSLayoutConstraint(item: progressLabel, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1.0, constant: -50.0).isActive = true
-            NSLayoutConstraint(item: progressLabel, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1.0, constant: -10.0).isActive = true
+            NSLayoutConstraint(item: progressLabel, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1.0, constant: -10.0 + progressYOffset).isActive = true
             NSLayoutConstraint(item: progressLabel, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 30.0).isActive = true
         }
         progressLabel.textAlignment = .center
         progressLabel.text = langDic["resourceLoading"]
-        progressLabel.textColor = .white
+        progressLabel.textColor = AppData.isWhiteBackground ? .black : .white
 
         progressView = UIProgressView()
         progressView.translatesAutoresizingMaskIntoConstraints = false
@@ -1107,7 +1114,7 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
             NSLayoutConstraint(item: progressView, attribute: .bottom, relatedBy: .equal, toItem: progressLabel, attribute: .top, multiplier: 1.0, constant: 0.0).isActive = true
         }
         progressView.trackTintColor = .clear
-        progressView.progressTintColor = .white
+        progressView.progressTintColor = AppData.isWhiteBackground ? .black : .white
         self.wk.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)
     }
 
@@ -1133,15 +1140,15 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
         uuidLabel.translatesAutoresizingMaskIntoConstraints = false
         screenImg.addSubview(uuidLabel)
         if #available(iOS 11.0, *) {
-            NSLayoutConstraint.activate([uuidLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10), uuidLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -10), uuidLabel.widthAnchor.constraint(equalToConstant: 80), uuidLabel.heightAnchor.constraint(equalToConstant: 30)])
+            NSLayoutConstraint.activate([uuidLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10 + progressYOffset), uuidLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -10), uuidLabel.widthAnchor.constraint(equalToConstant: 80), uuidLabel.heightAnchor.constraint(equalToConstant: 30)])
         } else {
-            NSLayoutConstraint(item: uuidLabel, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1.0, constant: -10).isActive = true
+            NSLayoutConstraint(item: uuidLabel, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1.0, constant: -10 + progressYOffset).isActive = true
             NSLayoutConstraint(item: uuidLabel, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1.0, constant: -10).isActive = true
             NSLayoutConstraint(item: uuidLabel, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 80).isActive = true
             NSLayoutConstraint(item: uuidLabel, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 30).isActive = true
         }
         uuidLabel.text = "****\(subStr)"
-        uuidLabel.textColor = UIColor.white
+        uuidLabel.textColor = AppData.isWhiteBackground ? .black : .white
         uuidLabel.adjustsFontSizeToFitWidth = true
     }
     //add screen image and UUIDLabel, progressview end
@@ -1154,7 +1161,14 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
         self.navigationController?.setToolbarHidden(true, animated: false)
 
         isStatusBarHidden = false
-        statusBarStyle = .lightContent
+        
+        // 還沒進首頁的 statusBarStyle 根據背脊設置顏色，進入後為白色
+        if isViewAppeared {
+            statusBarStyle = .lightContent
+        }
+        else {
+            statusBarStyle = AppData.isWhiteBackground ? .default : .lightContent
+        }
 
         AppUtility.lockOrientation(.portrait, andRotateTo: .portrait)
         WebData.shared.setBlankTitle(blankTitle: "游戏大厅")
@@ -1266,7 +1280,7 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
         NSLayoutConstraint(item: aButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 30).isActive = true
         aButton.setTitle("showCache", for: UIControl.State.normal)
         aButton.titleLabel?.adjustsFontSizeToFitWidth = true
-        aButton.backgroundColor = .white
+        aButton.backgroundColor = AppData.isWhiteBackground ? .black : .white
         aButton.addTarget(self, action: #selector(self.showCache), for: UIControl.Event.touchUpInside)
 
         let bButton = UIButton(type: .system)
@@ -1278,7 +1292,7 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
         NSLayoutConstraint(item: bButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 30).isActive = true
         bButton.setTitle("cleanCache", for: UIControl.State.normal)
         bButton.titleLabel?.adjustsFontSizeToFitWidth = true
-        bButton.backgroundColor = .white
+        bButton.backgroundColor = AppData.isWhiteBackground ? .black : .white
         bButton.addTarget(self, action: #selector(self.cleanCache), for: UIControl.Event.touchUpInside)
     }
 

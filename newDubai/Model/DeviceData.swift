@@ -6,7 +6,7 @@
 //  Copyright © 2019 KevinLin. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import CoreTelephony
 
 class DeviceData {
@@ -14,7 +14,7 @@ class DeviceData {
     var uuid = ""
     var deviceModel = ""
     var udid = ""
-
+    
     static let current = DeviceData()
 
     internal typealias MemoryUsageTuple = (usedMemory: UInt64, totalMemory: UInt64)
