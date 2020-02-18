@@ -26,13 +26,13 @@ struct AppData {
         return result
     }
     
-    /// 是不是BF178
+    /// 是不是BF178（客製歡迎頁用 ）
     static var isBF: Bool {
         var result = false
         
-        if let bundleID = Bundle.main.bundleIdentifier, bundleID.contains("BF178") {
-            result = true
-        }
+//        if let bundleID = Bundle.main.bundleIdentifier, bundleID.contains("BF178") {
+//            result = true
+//        }
         
         return result
     }
