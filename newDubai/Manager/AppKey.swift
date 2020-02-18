@@ -12,15 +12,15 @@ import SAMKeychain
 
 class AppKey {
     private var uuid: String?
-    
-    public func getUUID()->String{
-        if let UUIDDate = SAMKeychain.passwordData(forService: Bundle.main.bundleIdentifier!, account: Bundle.main.bundleIdentifier!){
+
+    public func getUUID() -> String {
+        if let UUIDDate = SAMKeychain.passwordData(forService: Bundle.main.bundleIdentifier!, account: Bundle.main.bundleIdentifier!) {
             uuid = String(data: UUIDDate, encoding: String.Encoding.utf8)
-        }else{
+        } else {
             uuid = UIDevice.current.identifierForVendor?.uuidString
             SAMKeychain.setPassword(uuid!, forService: Bundle.main.bundleIdentifier!, account: Bundle.main.bundleIdentifier!)
         }
-        
+
         return uuid!
     }
 }

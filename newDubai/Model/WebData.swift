@@ -8,7 +8,7 @@
 
 import Foundation
 
-class WebData: NSObject{
+class WebData: NSObject {
     @objc var mainWeb_url: String?
     @objc var otherWeb_url: String?
     @objc var isHiddenToolBar = false
@@ -17,36 +17,37 @@ class WebData: NSObject{
     @objc var openNewWindow: String?
     @objc var refreshIsDisable = false
     @objc var backIsDisable = false
+    
     var loginAcc = ""
     var nowOpenGame = false
-    
+
     var userAgent = ""
     var defaultUserAgent = ""
     var isUseHardURL = false
-    
+
     @objc static let shared = WebData()
-    
-    @objc func set(string: String?){
+
+    @objc func set(string: String?) {
         self.mainWeb_url = string
     }
-    
-    @objc func setOther(string: String?){
+
+    @objc func setOther(string: String?) {
         self.otherWeb_url = string
     }
-    
-    @objc func setIsHiddenToolBar(isHiddenToolBar: Bool){
+
+    @objc func setIsHiddenToolBar(isHiddenToolBar: Bool) {
         self.isHiddenToolBar = isHiddenToolBar
     }
-    
-    @objc func setIsHiddenReloadButton(isHiddenReloadButton: Bool){
+
+    @objc func setIsHiddenReloadButton(isHiddenReloadButton: Bool) {
         self.isHiddenReloadButton = isHiddenReloadButton
     }
-    
-    @objc func setBlankTitle(blankTitle: String?){
+
+    @objc func setBlankTitle(blankTitle: String?) {
         self.blankTitle = blankTitle
     }
-    
-    @objc func setNewWindow(string: String?){
+
+    @objc func setNewWindow(string: String?) {
         self.openNewWindow = string
     }
 }

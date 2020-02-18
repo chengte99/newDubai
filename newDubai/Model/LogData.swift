@@ -11,12 +11,12 @@ import Foundation
 class LogData {
     var dBDomainFinal = ""
     var sessID = ""
-    
+
     var checklinkLogID = ""
     var checklinkStartTime = ""
     var checklinkEndTime = ""
     var checklinkURLFinal = ""
     var checklinkResponse = ""
-    
+
     static let shared = LogData()
 }
