@@ -30,8 +30,11 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
     var screenImg: UIImageView!
     var progressLabel: UILabel!
     var progressView: UIProgressView!
-    var progressYOffset: CGFloat {
-        return AppData.isBF ? AppData.customWelcomeYOffsetBF : 0
+    var customYOffset1: CGFloat {
+        return AppData.isBF ? AppData.customWelcomeYOffsetBF2_1 : 0
+    }
+    var customYOffset2: CGFloat {
+        return AppData.isBF ? AppData.customWelcomeYOffsetBF2_2 : 0
     }
     var uuidLabel: UILabel!
 
@@ -1078,9 +1081,9 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
         NSLayoutConstraint(item: screenImg, attribute: .trailing, relatedBy: .equal, toItem: self.view, attribute: .trailing, multiplier: 1.0, constant: 0.0).isActive = true
         NSLayoutConstraint(item: screenImg, attribute: .top, relatedBy: .equal, toItem: self.view, attribute: .top, multiplier: 1.0, constant: 0.0).isActive = true
         NSLayoutConstraint(item: screenImg, attribute: .bottom, relatedBy: .equal, toItem: self.view, attribute: .bottom, multiplier: 1.0, constant: 0.0).isActive = true
-        screenImg.image = UIImage(named: "launch image-1")
+        screenImg.image = UIApplication.launchImage
         screenImg.contentMode = UIView.ContentMode.scaleAspectFill
-
+        
         showUUID()
         addProgressView()
     }
@@ -1091,12 +1094,12 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
         progressLabel.translatesAutoresizingMaskIntoConstraints = false
         screenImg.addSubview(progressLabel)
         if #available(iOS 11.0, *) {
-            NSLayoutConstraint.activate([progressLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 50.0), progressLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -50.0), progressLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10.0 + progressYOffset), progressLabel.heightAnchor.constraint(equalToConstant: 30.0)])
+            NSLayoutConstraint.activate([progressLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 50.0), progressLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -50.0), progressLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10.0 + customYOffset1), progressLabel.heightAnchor.constraint(equalToConstant: 30.0)])
         }
         else {
             NSLayoutConstraint(item: progressLabel, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1.0, constant: 50.0).isActive = true
             NSLayoutConstraint(item: progressLabel, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1.0, constant: -50.0).isActive = true
-            NSLayoutConstraint(item: progressLabel, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1.0, constant: -10.0 + progressYOffset).isActive = true
+            NSLayoutConstraint(item: progressLabel, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1.0, constant: -10.0 + customYOffset1).isActive = true
             NSLayoutConstraint(item: progressLabel, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 30.0).isActive = true
         }
         progressLabel.textAlignment = .center
@@ -1140,9 +1143,9 @@ class WebkitViewController: UIViewController, WKUIDelegate, WKNavigationDelegate
         uuidLabel.translatesAutoresizingMaskIntoConstraints = false
         screenImg.addSubview(uuidLabel)
         if #available(iOS 11.0, *) {
-            NSLayoutConstraint.activate([uuidLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10 + progressYOffset), uuidLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -10), uuidLabel.widthAnchor.constraint(equalToConstant: 80), uuidLabel.heightAnchor.constraint(equalToConstant: 30)])
+            NSLayoutConstraint.activate([uuidLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10 + customYOffset2), uuidLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -10), uuidLabel.widthAnchor.constraint(equalToConstant: 80), uuidLabel.heightAnchor.constraint(equalToConstant: 30)])
         } else {
-            NSLayoutConstraint(item: uuidLabel, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1.0, constant: -10 + progressYOffset).isActive = true
+            NSLayoutConstraint(item: uuidLabel, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1.0, constant: -10 + customYOffset2).isActive = true
             NSLayoutConstraint(item: uuidLabel, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1.0, constant: -10).isActive = true
             NSLayoutConstraint(item: uuidLabel, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 80).isActive = true
             NSLayoutConstraint(item: uuidLabel, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 30).isActive = true

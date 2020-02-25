@@ -500,6 +500,7 @@
 		885BF44223D81FF600EBF20B /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		885BF44523D81FFC00EBF20B /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		885D2A1E23FA7A5E00A1E733 /* LogData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogData.swift; sourceTree = "<group>"; };
+		88DB50882403ACD80028CC71 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88E5803623EC1151007E0ADB /* MyExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyExtension.swift; sourceTree = "<group>"; };
 		88E5804323ED362B007E0ADB /* BOFA178.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOFA178.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88E5807323ED4976007E0ADB /* dev BOFA178.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dev BOFA178.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -924,6 +925,7 @@
 				88E5811723ED4C7D007E0ADB /* BOFA178.entitlements */,
 				88E5811F23ED5AEC007E0ADB /* Manager */,
 				88E5812F23ED5D22007E0ADB /* Assets.xcassets */,
+				88DB50882403ACD80028CC71 /* Info.plist */,
 				88E5812E23ED5D22007E0ADB /* GoogleService-Info.plist */,
 			);
 			path = BOFA178;
@@ -3443,12 +3445,13 @@
 			baseConfigurationReference = 0CA9F700F587A332DBE50659 /* Pods-BOFA178.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "launch image-1";
 				CODE_SIGN_ENTITLEMENTS = BOFA178/BOFA178.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.7.03;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = C5235969FU;
-				INFOPLIST_FILE = newDubai/Info.plist;
+				INFOPLIST_FILE = BOFA178/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3468,11 +3471,12 @@
 			baseConfigurationReference = 4CF8D306A5EEB266D1BE6780 /* Pods-BOFA178.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "launch image-1";
 				CODE_SIGN_ENTITLEMENTS = BOFA178/BOFA178.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.7.03;
 				DEVELOPMENT_TEAM = C5235969FU;
-				INFOPLIST_FILE = newDubai/Info.plist;
+				INFOPLIST_FILE = BOFA178/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3492,12 +3496,13 @@
 			baseConfigurationReference = 532F819BFACD73FBDE661E0E /* Pods-BOFA178-Dev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "launch image-1";
 				CODE_SIGN_ENTITLEMENTS = BOFA178/BOFA178.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.7.03;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = C5235969FU;
-				INFOPLIST_FILE = newDubai/Info.plist;
+				INFOPLIST_FILE = BOFA178/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3517,12 +3522,13 @@
 			baseConfigurationReference = 3B4F23A3D8B1CF1C1E0A1422 /* Pods-BOFA178-Dev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "launch image-1";
 				CODE_SIGN_ENTITLEMENTS = BOFA178/BOFA178.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.7.03;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = C5235969FU;
-				INFOPLIST_FILE = newDubai/Info.plist;
+				INFOPLIST_FILE = BOFA178/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3542,12 +3548,13 @@
 			baseConfigurationReference = 719C8452B6A75DEB655F858A /* Pods-BOFA178-Bft1-Dev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "launch image-1";
 				CODE_SIGN_ENTITLEMENTS = BOFA178/BOFA178.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.7.03;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = C5235969FU;
-				INFOPLIST_FILE = newDubai/Info.plist;
+				INFOPLIST_FILE = BOFA178/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3567,12 +3574,13 @@
 			baseConfigurationReference = E6B4CBE913F027713A079AD8 /* Pods-BOFA178-Bft1-Dev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "launch image-1";
 				CODE_SIGN_ENTITLEMENTS = BOFA178/BOFA178.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.7.03;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = C5235969FU;
-				INFOPLIST_FILE = newDubai/Info.plist;
+				INFOPLIST_FILE = BOFA178/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3592,12 +3600,13 @@
 			baseConfigurationReference = B45A76667B7A65B157BEC8E2 /* Pods-BOFA178-Bft2-Dev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "launch image-1";
 				CODE_SIGN_ENTITLEMENTS = BOFA178/BOFA178.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.7.03;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = C5235969FU;
-				INFOPLIST_FILE = newDubai/Info.plist;
+				INFOPLIST_FILE = BOFA178/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3617,12 +3626,13 @@
 			baseConfigurationReference = 473185DC126284E6EE7D1788 /* Pods-BOFA178-Bft2-Dev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "launch image-1";
 				CODE_SIGN_ENTITLEMENTS = BOFA178/BOFA178.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.7.03;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = C5235969FU;
-				INFOPLIST_FILE = newDubai/Info.plist;
+				INFOPLIST_FILE = BOFA178/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
