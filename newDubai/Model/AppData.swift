@@ -13,7 +13,10 @@ struct AppData {
     // MARK: - 例外處理判斷
     
     /// 客製歡迎頁讀取文字位置
-    static let customWelcomeYOffsetBF: CGFloat = -240
+    static let customWelcomeYOffsetBF1_1: CGFloat = 12
+    static let customWelcomeYOffsetBF1_2: CGFloat = 0
+    static let customWelcomeYOffsetBF2_1: CGFloat = 0
+    static let customWelcomeYOffsetBF2_2: CGFloat = 0
     
     /// 歡迎頁是不是白色/淺色背景
     static var isWhiteBackground: Bool {

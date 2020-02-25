@@ -41,6 +41,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="launchImageView" destination="pac-YG-P1h" id="po7-xD-5UZ"/>
                         <outlet property="myLabel" destination="og5-WY-wyQ" id="Gix-4u-Ia6"/>
                         <segue destination="xHu-qx-75j" kind="show" identifier="goToWeb" animates="NO" id="npv-W5-Zlx"/>
                     </connections>
